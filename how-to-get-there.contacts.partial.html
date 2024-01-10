@@ -1,32 +1,41 @@
-<div class="background">
-  <h2>Contact Us</h2>
-  <p>
-    If you have any questions, feel free to get in touch with us at any time.
-  </p>
-  <address>
-    <p>Write Us</p>
-    <div>
-      <a href="mailto:yosemite@email.com">yosemite@email.com</a>
-    </div>
-    <p>Call Us</p>
-    <div>
-      <a href="tel:+1 (123) 45 67 89">+1 (123) 45 67 89</a><br />
-      <a href="tel:+1 (123) 45 67 00">+1 (123) 45 67 00</a>
-    </div>
-    <p>Visit Us</p>
-    <p>
-      Yosemite Mariposa County,<br />
-      Ca, USA
+<div class="contact">
+  <div class="contact__content">
+    <h2 class="contact__title">Contact Us</h2>
+    <p class="contact__description">
+      If you have any questions, feel free to get in touch with us at any time.
     </p>
-  </address>
-  <form>
-    <input type="text" name="name" placeholder="Name*" required />
+    <address class="contact__address">
+      <p class="contact__subtitle">Write Us</p>
+      <div class="contact__email">
+        <a href="mailto:yosemite@email.com">yosemite@email.com</a>
+      </div>
+      <p class="contact__subtitle">Call Us</p>
+      <div class="contact__phone">
+        <a href="tel:+1123456789">+1 (123) 45 67 89</a><br />
+        <a href="tel:+1123456700">+1 (123) 45 67 00</a>
+      </div>
+      <p class="contact__subtitle">Visit Us</p>
+      <p class="contact__address-details">
+        Yosemite Mariposa County,<br />
+        Ca, USA
+      </p>
+    </address>
+  </div>
+  <form class="contact__form">
+    <input
+      type="text"
+      name="name"
+      placeholder="Name*"
+      class="contact__input"
+      required
+    />
     <input
       type="text"
       name="phone-number"
       placeholder="Phone number*"
+      class="contact__input"
       required
     />
-    <input type="submit" value="Send" />
+    <input type="submit" value="Send" class="contact__submit" />
   </form>
 </div>
