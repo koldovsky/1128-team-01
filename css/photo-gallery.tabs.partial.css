@@ -18,3 +18,32 @@
 .gallery__tab-item--link-default {
     opacity: 1;
 }
+
+.tab-content__item {
+    width: 34%;
+    margin: 10px 0px;
+}
+
+.tab-content-summer .tab-content__item:nth-child(1),
+.tab-content-summer .tab-content__item:last-child,
+.tab-content-winter .tab-content__item:nth-child(1),
+.tab-content-winter .tab-content__item:last-child,
+.tab-content-spring .tab-content__item:first-child {
+    width: 64%;
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+.btn-open-lightbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
