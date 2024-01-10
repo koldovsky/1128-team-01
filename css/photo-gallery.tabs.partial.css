@@ -1,0 +1,20 @@
+.gallery__tabs-nav {
+    margin-bottom: 30px;
+    display: inline-flex;
+}
+
+.gallery__tab-item--link {
+    padding: 15px 20px;
+    display: flex;
+    opacity: 0.6;
+    border: 0px;
+    background: none;
+}
+
+.gallery__tab-item--link:hover {
+    opacity: 1;
+}
+
+.gallery__tab-item--link-default {
+    opacity: 1;
+}
