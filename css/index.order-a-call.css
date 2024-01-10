@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://db.onlinewebfonts.com/c/961a181da27e7cbc072ec2fb5bbfe2a9?family=Circular+Std+Bold');
+@media only screen and (max-width: 992px) {
+    section {
+        padding-top: 140px;
+        padding-bottom: 140px;
+}}
+@media (min-width: 992px) {
+    section {
+        padding-top: 125px;
+        padding-bottom: 125px;
+}}
+@media (min-width: 768px) {
+    section {
+        padding-top: 115px;
+        padding-bottom: 115px;
+}}
+.contacts {
+    background: url("../img/bg-order-a-call.jpg") 45.31% 26.32% / cover no-repeat, rgb(89, 150, 115);;
+    min-width: 320px;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: "Roboto", sans-serif;
+    border-radius: 10px;
+}
+
+@media (min-width: 992px){
+  .w-contacts__form {
+    padding-bottom: 50px !important;
+    padding-top: 50px !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}  
+}
+
+
+@media (min-width: 768px){
+.w-contacts__form {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+    padding-left: 34px !important;
+    padding-right: 34px !important;
+}
+}
+
+
+.contacts__inner {
+    display: flex;
+    justify-content:flex-end;
+    height: 500px;
+    width: 100%;
+}
+.contacts__item{
+    flex-basis: 58%;
+    max-width: 58%;
+    background-color: blue;
+}
+
+
+.w-contacts__form{
+    margin-right: 50px;
+    max-width: 42%;
+    flex-basis: 42%;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.05);
+    background-color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+    justify-content: center;
+}
+
+.contacts__item {
+    width: 60%;
+    margin-left: 60px;
+    margin-right: 80px;
+    /* margin-right: 300px; */
+}
+
+input[type="text"] {
+    width: 100%;
+    margin-bottom: 24px;
+    margin-top: 12px;
+    display: block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: left;
+    border-color: #599673;
+    background-color: rgba(40, 37, 32, 0.12);
+    box-shadow: none;
+    border: 0;
+    line-height: 1.6;
+    border-radius: 34px;
+    font-size: 14px;
+    padding: 13px 20px 13px 20px;
+}
+button[type=submit] {
+    width: 100%;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 56px;
+    border-radius: 34px;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    background-color: #f98250;
+}
+button[type=submit]:hover {
+    width: 100%;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 56px;
+    border-radius: 34px;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    background-color: rgb(89, 150, 115);
+}
+
+.submit-button-text {
+    color: white;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-style: normal;
+    word-wrap: break-word;
+}
+.container {
+    margin: 0 auto;
+}
+
