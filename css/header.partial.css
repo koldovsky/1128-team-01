@@ -1,1 +1,5 @@
-@import url(css/);
+.header{
+    height: 40px;
+    background: var(--sky-l3);
+    text-align: center
+}
