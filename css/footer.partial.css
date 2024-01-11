@@ -19,9 +19,9 @@
     cursor: pointer
 }
 .footer__creat{
-    padding-left: auto;
+    text-align: left;
 }
 
 .footer_rights{
-    padding-right: auto;
+    text-align: right;
 }
