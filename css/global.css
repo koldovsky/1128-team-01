@@ -9,6 +9,7 @@
 :root {
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
+    --bottom-border-tabs-nav-color: #d9d9d6;
 }
 
 img {
