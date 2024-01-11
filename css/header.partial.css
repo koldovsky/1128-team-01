@@ -1,5 +1,6 @@
-.header{
-    height: 40px;
-    background: var(--sky-l3);
-    text-align: center
+.header__logo{
+    display: block;
+    position: relative;
+    max-width: 100%;
+
 }
