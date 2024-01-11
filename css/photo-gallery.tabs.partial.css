@@ -1,0 +1,55 @@
+.gallery__tabs-nav {
+    margin-bottom: 30px;
+    display: inline-flex;
+}
+
+.gallery__tab-item--link {
+    padding: 15px 20px;
+    display: flex;
+    opacity: 0.6;
+    border: 0px;
+    background: none;
+}
+
+.gallery__tab-item--link:hover {
+    opacity: 1;
+}
+
+.gallery__tab-item--link-default {
+    opacity: 1;
+}
+
+.tab-content__item {
+    width: 34%;
+    margin: 10px 0px;
+}
+
+.tab-content-summer .tab-content__item:nth-child(1),
+.tab-content-summer .tab-content__item:last-child,
+.tab-content-winter .tab-content__item:nth-child(1),
+.tab-content-winter .tab-content__item:last-child,
+.tab-content-spring .tab-content__item:first-child
+.tab-content-autumn .tab-content__item:nth-child(1),
+.tab-content-autumn .tab-content__item:last-child,
+.tab-content-fishing .tab-content__item:nth-child(1),
+.tab-content-fishing .tab-content__item:last-child,
+.tab-content-spa .tab-content__item:first-child
+{
+    width: 64%;
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+.btn-open-lightbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}

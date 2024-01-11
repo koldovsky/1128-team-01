@@ -1,0 +1,30 @@
+<title>Registration form</title>
+<div class="register__form-container">
+  <h2 class="form__title">Choose the best one</h2>
+  <p class="form__under-title">Complete the form below to make a reservation</p>
+  <form action="#" class="contact__form-max">
+    <input type="text" name="name" id="input" placeholder="Name*" required />
+    <input
+      type="text"
+      name="telephonenumber"
+      id="phone-input"
+      placeholder="Phone Number"
+      required
+    />
+    <label for="checkin">Check in date</label>
+    <input type="datetime-local" id="checkin" name="checkin" required />
+    <label for="checkout">Check out date</label>
+    <input type="datetime-local" id="checkout" name="checkout" required />
+    <label for="cabinType">Cabin type</label>
+    <select id="cabinType" name="cabinType">
+      <option value="classic">Cabin Classic</option>
+      <option value="superior">Cabin Superior</option>
+      <option value="superiorPlus">Cabin Superior+</option>
+      <option value="firehouse">American Eagle</option>
+      <option value="firehouse">The Firehouse</option>
+    </select>
+    <button type="submit" class="contact__forma-submit">
+      <span class="make__reserv-button">MAKE A RESERVATION</span>
+    </button>
+  </form>
+</div>
