@@ -18,3 +18,10 @@
     align-items: center;
     cursor: pointer
 }
+.footer__creat{
+    margin-left: auto;
+}
+
+.footer_rights{
+    margin-right: auto;
+}
