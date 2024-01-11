@@ -1,0 +1,29 @@
+.contact {
+    background-color: #676363;
+    background-image: url(../img/how-to-get-contacts-bg.jpg);
+    background-position: 100% -1200px;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    filter: brightness(50%);
+    
+
+}
+
+.contact__bg {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+
+h2.contact__title {
+    font-family: 'Circular Std Bold', sans-serif;
+    font-size: 39px;
+    filter: brightness(200%)
+    
+}
+
+p.contact__description {
+    font-size: 19px;
+}
