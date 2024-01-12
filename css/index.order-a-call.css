@@ -148,13 +148,13 @@
     word-wrap: break-word;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
     .ordercall {
         padding-top: 140px;
         padding-bottom: 140px;
 }}
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     .ordercall {
         padding-top: 115px;
         padding-bottom: 115px;
