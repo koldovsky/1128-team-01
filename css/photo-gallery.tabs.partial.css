@@ -1,5 +1,9 @@
+.gallery__title {
+    color: var(--font-standard-color);
+}
+
 .gallery__tabs {
-    margin: 0 5%;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,20 +11,29 @@
 }
 
 .gallery__tabs-nav {
-  margin-bottom: 30px;
-  display: inline-flex;
+    display: inline-flex;
+    border-bottom: 1px solid var(--bottom-border-tabs-nav-color);
+    margin-bottom: 30px;
+    font-size: 18px;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+    color: var(--font-standard-color);
 }
 
 .gallery__tab-item--link {
-  padding: 15px 20px;
-  display: flex;
-  opacity: 0.6;
-  border: 0px;
-  background: none;
+    font-family: "Circular Std Bold";
+    padding: 15px 20px;
+    display: flex;
+    opacity: 0.6;
+    border: 0px;
+    background: none;
+    cursor: pointer;
+
 }
 
 .gallery__tab-item--link:hover {
-  opacity: 1;
+    opacity: 1;
 }
 
 .tab-item-active {
@@ -29,15 +42,27 @@
 }
 
 .gallery__tab-content {
-    /* check lower margin - it overflows grid */
-    margin: 50px 0;
-    display: grid;
+    display: none;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    gap: 10px;
+    gap: 30px;
+}
+
+.gallery__tab-content--default {
+    display: grid;
 }
 
 /* redo with grid-template-area */
+
+.big-img {
+    max-width: 770px;
+    max-height: 664px;
+}
+
+.small-img {
+    max-width: 370px;
+    max-height: 317px;
+}
 
 .tab-content-summer .tab-content__item:first-child {
     grid-column: span 2;
@@ -73,6 +98,7 @@
     grid-column: span 2;
     grid-row: span 2;
 }
+
 .tab-content-winter .tab-content__item:last-child {
     grid-column: 2 / span 2;
     grid-row: 3 / span 2;
@@ -103,14 +129,14 @@
     grid-row: span 4
 }
 
-.tab-content-spring .tab-content__item:nth-child(2){
+.tab-content-spring .tab-content__item:nth-child(2) {
     grid-column: 3;
     grid-row: span 2;
 }
 
-.tab-content-spring .tab-content__item:nth-child(3){
+.tab-content-spring .tab-content__item:nth-child(3) {
     grid-column: 3;
-    grid-row:  3 / span 2;
+    grid-row: 3 / span 2;
 }
 
 .tab-content-autumn .tab-content__item:first-child {
@@ -118,14 +144,14 @@
     grid-row: span 4
 }
 
-.tab-content-autumn .tab-content__item:nth-child(2){
+.tab-content-autumn .tab-content__item:nth-child(2) {
     grid-column: 3;
     grid-row: span 2;
 }
 
-.tab-content-autumn .tab-content__item:nth-child(3){
+.tab-content-autumn .tab-content__item:nth-child(3) {
     grid-column: 3;
-    grid-row:  3 / span 2;
+    grid-row: 3 / span 2;
 }
 
 .tab-content-fishing .tab-content__item:first-child {
@@ -133,28 +159,29 @@
     grid-row: span 4
 }
 
-.tab-content-fishing .tab-content__item:nth-child(2){
+.tab-content-fishing .tab-content__item:nth-child(2) {
     grid-column: 3;
     grid-row: span 2;
 }
 
-.tab-content-fishing .tab-content__item:nth-child(3){
+.tab-content-fishing .tab-content__item:nth-child(3) {
     grid-column: 3;
-    grid-row:  3 / span 2;
+    grid-row: 3 / span 2;
 }
+
 .tab-content-spa .tab-content__item:first-child {
     grid-column: span 2;
     grid-row: span 4
 }
 
-.tab-content-spa .tab-content__item:nth-child(2){
+.tab-content-spa .tab-content__item:nth-child(2) {
     grid-column: 3;
     grid-row: span 2;
 }
 
-.tab-content-spa .tab-content__item:nth-child(3){
+.tab-content-spa .tab-content__item:nth-child(3) {
     grid-column: 3;
-    grid-row:  3 / span 2;
+    grid-row: 3 / span 2;
 }
 
 
@@ -163,28 +190,24 @@
 }
 
 .tab-content__item img {
-    object-fit: cover;
+    /* object-fit: cover; */
     border-radius: 10px;
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
 
 .img-wrapper {
-  position: relative;
+    position: relative;
 }
 
 .btn-open-lightbox {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: none;
-  cursor: pointer;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-}
-
-@media screen {
-    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
 }
