@@ -7,7 +7,7 @@
 }
 
 .ordercall {
-    background: url("../img/bg-order-a-call.jpg") 45.31% 26.32% / cover no-repeat, rgb(89, 150, 115);;
+    background: url("../img/bg-order-a-call.jpg") 45.31% 26.32% / cover no-repeat, rgb(89, 150, 115);
     min-width: 320px;
     font-size: 16px;
     line-height: 1.6;
@@ -31,11 +31,10 @@
     width: 100%;
 }
 .ordercall__grid {
-    width: calc(100% + 30px);
+    width: 100%;
     display: grid;
     grid-template-columns: 60% 42%;
     margin-left: -15px;
-    margin-right: -15px;
 }
 .ordercall__grid:first-child {
     grid-column: 1;
@@ -43,13 +42,11 @@
 .ordercall__grid:last-child {
     grid-column: 2;
 }
-
 .ordercall__item{
     flex-basis: 58%;
     max-width: 58%;
     width: 60%;
 }
-
 .ordercall__form-content{
     position: relative;
     max-width: 100%;
@@ -160,10 +157,11 @@
         padding-top: 140px;
         padding-bottom: 140px;
 }}
+
 @media screen and (min-width: 768px) {
     .ordercall {
-        padding-top: 125px;
-        padding-bottom: 125px;
+        padding-top: 115px;
+        padding-bottom: 115px;
 }}
 
 @media screen and (max-width: 767px){
