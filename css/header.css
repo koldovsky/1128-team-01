@@ -1,15 +1,14 @@
-
-.header__container{
+.header__container {
     margin:0;
     padding:0;
 }
-.header__logo{
-    
+
+.header__logo {
     display: block;
     position: relative;
     max-width: 100%;
-
 }
+
 .header__adress{
     font-size: 44px;
     color: #282520;
