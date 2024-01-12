@@ -10,6 +10,7 @@
     padding-top: 80px;
     padding-bottom: 80px;
 }
+
 .adventure__header {
     text-align: center;
     display: flex;
@@ -18,6 +19,7 @@
     max-width: 100%;
     box-sizing: border-box;
 }
+
 .adventure__header-title {
     font-family: "Circular Std Bold";
     font-weight: normal;
@@ -25,6 +27,8 @@
     font-size: 44px;
     line-height: 1.18;
 }
+
 .grid-item__img {
     width: 100px;
 }
+
