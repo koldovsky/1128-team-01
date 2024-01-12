@@ -1,4 +1,5 @@
-@import "header.css";
-@import "footer.partial.css";
 @import "global.css";
 @import "fonts.css";
+@import "header.css";
+@import "adventure.css";
+@import "footer.partial.css";
