@@ -1,6 +1,7 @@
 @import "global.css";
 @import "photo-gallery.tabs.partial.css";
 @import "header.css";
+@import "footer.partial.css";
 
 
 .gallery {
@@ -22,20 +23,3 @@
     max-width: 1200px;
 }
 
-@media (min-width: 992px) {
-    .gallery__title {
-        font-size: 44px;
-    }
-}
-
-@media (min-width: 768px) {
-    .gallery__title {
-        font-size: 39px;
-    }
-}
-
-@media (max-width: 767px) {
-    .gallery__title {
-        font-size: 34px;
-    }
-}
