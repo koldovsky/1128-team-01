@@ -1,5 +1,7 @@
+@import "global.css";
 @import "photo-gallery.tabs.partial.css";
 @import "header.css";
+
 
 .gallery {
     display: flex;
@@ -16,23 +18,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 15px;
+    margin: 0 5%;
     max-width: 1200px;
 }
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
     .gallery__title {
         font-size: 44px;
     }
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .gallery__title {
         font-size: 39px;
     }
 }
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
     .gallery__title {
         font-size: 34px;
     }
