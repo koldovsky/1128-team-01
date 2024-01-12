@@ -54,7 +54,7 @@
     padding: 40px 50px;
     border-radius: 10px;
     box-shadow: 0 5px 20px var(--form-content-box-shadow-color);
-    background-color: var(--bg-white);
+    background-color: var(--form-bg-color);
     text-align: center;
     box-sizing: border-box;
     display: inline-block;

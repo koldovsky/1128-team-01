@@ -9,7 +9,7 @@
 :root {
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
-    --bg-white: #fff;
+    --form-bg-color: #fff;
     --classic-white: #fff;
     --bottom-border-tabs-nav-color: #d9d9d6;
     --form-submit-button-bg-color: #f98250;
