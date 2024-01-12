@@ -7,6 +7,7 @@
 :root {
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
+    --font-standart-color: #282520;
     --form-bg-color: #fff;
     --classic-white: #fff;
     --bottom-border-tabs-nav-color: #d9d9d6;
