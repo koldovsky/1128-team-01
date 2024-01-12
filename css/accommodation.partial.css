@@ -1,0 +1,198 @@
+.accommodation-style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.river__chalet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #F2F2F0;
+    font-family: 'Circular Std Bold', Arial, Helvetica, sans-serif;
+    margin: 50px;
+}
+
+.river__chalet-photo {
+    float: left;
+    width: 50%;
+    height: auto;
+    border-radius: 3%;
+}
+
+.river__chalet-inner-list {
+    float: right;
+}
+
+.river__chalet-cost-price {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.river__chalet-color-price {
+    color: #629673;
+}
+
+.river__chalet-name-cabin {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.lookout__lodge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-family: 'Circular Std Bold', Arial, Helvetica, sans-serif;
+    margin: 50px;
+}
+
+.lookout__lodge-photo {
+    float: left;
+    width: 50%;
+    height: auto;
+    border-radius: 3%;
+}
+
+.lookout__lodge-inner-list {
+    float: right;
+}
+
+.lookout__lodge-cost-price {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.lookout__lodge-color-price {
+    color: #629673;
+}
+
+.lookout__lodge-name-cabin {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.smoky__view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #F2F2F0;
+    font-family: 'Circular Std Bold', Arial, Helvetica, sans-serif;
+    margin: 50px;
+}
+
+.smoky__view-photo {
+    float: left;
+    width: 50%;
+    height: auto;
+    border-radius: 3%;
+}
+
+.smoky__view-inner-list {
+    float: right;
+}
+
+.smoky__view-cost-price {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.smoky__view-color-price {
+    color: #629673;
+}
+
+.smoky__view-name-cabin {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.mountain__haven {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-family: 'Circular Std Bold', Arial, Helvetica, sans-serif;
+    margin: 50px;
+}
+
+.mountain__haven-photo {
+    float: left;
+    width: 50%;
+    height: auto;
+    border-radius: 3%;
+}
+
+.mountain__haven-list {
+    float: right;
+}
+
+.mountain__haven-cost-price {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.mountain__haven-color-price {
+    color: #629673;
+}
+
+.mountain__haven-name-cabin {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.mountain__splash {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #F2F2F0;
+    font-family: 'Circular Std Bold', Arial, Helvetica, sans-serif;
+    margin: 50px;
+}
+
+.mountain__splash-photo {
+    float: left;
+    width: 50%;
+    height: auto;
+    border-radius: 3%;
+}
+
+.mountain__splash-list {
+    float: right;
+}
+
+.mountain__splash-cost-price {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.mountain__splash-color-price {
+    color: #629673;
+}
+
+.mountain__splash-name-cabin {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.reserve-cabin-button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10%;
+}
