@@ -1,4 +1,5 @@
 @import "photo-gallery.tabs.partial.css";
+@import "header.css";
 
 .gallery {
     display: flex;
@@ -7,21 +8,31 @@
     font-family: "Circular Std Bold";
     background-image: url("../img/gallery/gallery-background.jpg");
     background-size: cover;
+    background-position: center;
+    padding: 80px 0;
 }
 
-@media screen and (min-width: 992px){
+.gallery__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+    max-width: 1200px;
+}
+
+@media (min-width: 992px){
     .gallery__title {
         font-size: 44px;
     }
 }
 
-@media screen and (min-width: 768px){
+@media (min-width: 768px){
     .gallery__title {
         font-size: 39px;
     }
 }
 
-@media screen and (max-width: 767px){
+@media (max-width: 767px){
     .gallery__title {
         font-size: 34px;
     }

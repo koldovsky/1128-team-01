@@ -32,10 +32,12 @@
     /* check lower margin - it overflows grid */
     margin: 50px 0;
     display: grid;
-    grid-template-columns: 33% 34% 33%;
-    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 10px;
 }
+
+/* redo with grid-template-area */
 
 .tab-content-summer .tab-content__item:first-child {
     grid-column: span 2;
@@ -163,6 +165,7 @@
 .tab-content__item img {
     object-fit: cover;
     border-radius: 10px;
+    width: 100%;
     height: 100%;
 }
 
@@ -180,4 +183,8 @@
   opacity: 0;
   width: 100%;
   height: 100%;
+}
+
+@media screen {
+    
 }
