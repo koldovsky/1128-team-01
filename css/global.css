@@ -1,3 +1,5 @@
+@import "fonts.css";
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +9,7 @@
 :root {
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
+    --font-standard-color: #282520;
     --form-bg-color: #fff;
     --classic-white: #fff;
     --bottom-border-tabs-nav-color: #d9d9d6;
