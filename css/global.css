@@ -9,11 +9,7 @@
 :root {
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
-<<<<<<< HEAD
     --font-standard-color: #282520;
-=======
-    --font-standart-color: #282520;
->>>>>>> ebd4f6505bba9c8a110da43a34ac6f97262ab460
     --form-bg-color: #fff;
     --classic-white: #fff;
     --bottom-border-tabs-nav-color: #d9d9d6;
