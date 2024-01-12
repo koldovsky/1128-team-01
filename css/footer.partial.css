@@ -1,0 +1,27 @@
+.footer__logo_soc{
+    width: 30px;
+    height: 30px;
+    color: #599673;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer
+}
+.footer__creat{
+    text-align: left;
+}
+
+.footer_rights{
+    text-align: right;
+}

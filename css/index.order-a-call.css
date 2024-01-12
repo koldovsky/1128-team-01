@@ -1,4 +1,7 @@
+@import "global.css";
 @import "fonts.css";
+
+
 
 @media only screen and (max-width: 992px) {
     .ordercall {
@@ -16,7 +19,7 @@
         padding-bottom: 115px;
 }}
 
-@media (min-width: 992px){
+/* @media (min-width: 992px){
     .ordercall__form-content {
       padding-bottom: 50px !important;
       padding-top: 50px !important;
@@ -32,7 +35,7 @@
         padding-left: 34px !important;
         padding-right: 34px !important;
 }
-}
+} */
 
 .container {
     margin: 0 auto;
@@ -50,13 +53,37 @@
 .ordercall__inner {
     display: flex;
     justify-content:flex-end;
-    height: 500px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.ordercall__content {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
     width: 100%;
 }
+.ordercall__grid {
+    width: calc(100% + 30px);
+    display: grid;
+    grid-template-columns: 60% 42%;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.ordercall__grid:first-child {
+    grid-column: 1;
+}
+.ordercall__grid:last-child {
+    grid-column: 2;
+}
+
+
 .ordercall__item{
     flex-basis: 58%;
     max-width: 58%;
-    background-color: blue;
+    /* background-color: blue; */
     width: 60%;
     margin-left: 60px;
     margin-right: 80px;
@@ -64,11 +91,14 @@
 }
 
 .ordercall__form-content{
-    margin-right: 50px;
-    max-width: 42%;
-    flex-basis: 42%;
-    padding-left: 15px;
-    padding-right: 15px;
+    position: relative;
+    max-width: 100%;
+    flex-basis: 100%; 
+    /* flex-basis: 41.66667%;
+    max-width: 98.66667%; */
+    padding: 40px 50px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0,0,0,.05);
     background-color: #fff;
@@ -78,30 +108,66 @@
     justify-content: center;
 }
 
-
-
-.ordercall__form-input-name,
-.ordercall__form-input-phone {
-    width: 100%;
-    margin-bottom: 24px;
-    margin-top: 12px;
-    display: block;
-    border-radius: 4px;
+.ordercall__form-header{
+    color: #282520;
+    font-size: 25px;
+    font-family: 'Circular Std', sans-serif;
+    line-height: 1.4;
+    font-weight: 550;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+.ordercall__form-text{
+    color: #848484;
+    font-size: 16px;
+    font-family:"Roboto", serif;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    line-height: 1.6;
+    font-weight: 400;
+    position: relative;
+    max-width: 100%;
+    word-wrap: break-word;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    text-align: center;
+}
+.form__inputs-block {
+    margin-top: 30px;
+}
+
+.form__field {
     text-align: left;
+    margin-bottom: 24px;
+    width: 100%;
+    
+}
+.form__field:last-of-type {
+    margin-bottom: 0px;
+}
+.form__input {
+    width: 100%;
+    margin-top: 20px;
+    display: block;
+    border-radius: 34px;
+    box-sizing: border-box;
     border-color: #599673;
     background-color: rgba(40, 37, 32, 0.12);
     box-shadow: none;
     border: 0;
-    line-height: 1.6;
+    line-height: 1.2;
     border-radius: 34px;
     font-size: 14px;
-    padding: 13px 20px 13px 20px;
+    padding: 16px 24px;
 }
 .ordercall__form-submit-button {
     width: 100%;
     color: white;
-    padding: 14px 20px;
+    padding: 16px 24px;
     margin-top: 56px;
     border-radius: 34px;
     cursor: pointer;
@@ -112,7 +178,7 @@
 .ordercall__form-submit-button:hover {
     width: 100%;
     color: white;
-    padding: 14px 20px;
+    padding: 16px 24px;
     margin-top: 56px;
     border-radius: 34px;
     cursor: pointer;
@@ -123,8 +189,9 @@
 
 .submit-button__text {
     color: white;
+    margin-top: 5px;
     font-size: 14px;
-    font-family: "Roboto", sans-serif;
+    font-family:"Roboto", serif;
     line-height: 1;
     font-weight: 600;
     text-transform: uppercase;
