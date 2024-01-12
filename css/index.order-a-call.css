@@ -165,16 +165,22 @@
         padding-bottom: 140px;
 }}
 
+@media screen and (max-width: 845px) {
+    .ordercall {
+        padding-top: 125px;
+        padding-bottom: 125px;
+}}
+
 @media screen and (max-width: 768px) {
     .ordercall {
         padding-top: 115px;
         padding-bottom: 115px;
 }}
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
     .ordercall {
-        padding-top: 115px;
-        padding-bottom: 115px;
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
     .ordercall__grid {
         grid-template-columns: auto;
