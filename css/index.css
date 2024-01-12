@@ -1,2 +1,3 @@
 @import "header.css";
-@import "css\footer.partial.css";
+@import "footer.partial.css";
+@import "global.css"
