@@ -18,6 +18,7 @@
     --form-input-text-color: #848484;
     --form-input-border-color: #599673;
     --form-input-header-color: #282520;
+    --form-content-box-shadow-color: rgba(0,0,0,.05);
 }
 
 img {
