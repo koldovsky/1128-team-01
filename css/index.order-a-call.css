@@ -2,27 +2,6 @@
 @import "fonts.css";
 
 
-
-
-
-/* @media (min-width: 992px){
-    .ordercall__form-content {
-      padding-bottom: 50px !important;
-      padding-top: 50px !important;
-      padding-left: 40px !important;
-      padding-right: 40px !important;
-}  
-}
-
-@media (min-width: 768px){
-    .ordercall__form-content {
-        padding-top: 40px !important;
-        padding-bottom: 40px !important;
-        padding-left: 34px !important;
-        padding-right: 34px !important;
-}
-} */
-
 .container {
     margin: 0 auto;
 }
@@ -65,26 +44,17 @@
     grid-column: 2;
 }
 
-
 .ordercall__item{
     flex-basis: 58%;
     max-width: 58%;
-    /* background-color: blue; */
     width: 60%;
-    margin-left: 60px;
-    margin-right: 80px;
-    /* margin-right: 300px; */
 }
 
 .ordercall__form-content{
     position: relative;
     max-width: 100%;
     flex-basis: 100%; 
-    /* flex-basis: 41.66667%;
-    max-width: 98.66667%; */
     padding: 40px 50px;
-    /* padding-left: 15px;
-    padding-right: 15px; */
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0,0,0,.05);
     background-color: #fff;
