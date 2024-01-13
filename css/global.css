@@ -20,6 +20,9 @@
     --form-input-border-color: #599673;
     --form-input-header-color: #282520;
     --form-content-box-shadow-color: rgba(0,0,0,.05);
+    --activity-description-color: rgb(132, 132, 132);
+    --activity-price-color: rgb(249,130,80);
+    --activity-title-color: rgb(40, 37, 12);
 }
 
 img {

@@ -2,4 +2,6 @@
 @import "index.order-a-call.css";
 @import "header.css";
 @import "adventure.css";
+@import "index.activity.partial.css";
+@import "index.question.partial.css";
 @import "footer.partial.css";

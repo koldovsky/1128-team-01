@@ -1,0 +1,41 @@
+.activities {
+  background-image: url("../img/background-mountains.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.activities__title {
+  color: var(--activity-title-color);
+  font-family: "Circular Std", serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: 44px;
+  font-stretch: 100%;
+}
+/*.activities_activity{
+ }*/
+
+.activity__image {
+  width: 258.125px;
+}
+
+.activity__title {
+  color: var(--activity-title-color);
+  font-family: "Circular Std", serif;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.activity__price {
+  color: var(--activity-price-color);
+  font-family: "Circular Std", serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.activity__description {
+  color: var(--activity-description-color);
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
