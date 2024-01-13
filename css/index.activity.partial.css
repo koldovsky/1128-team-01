@@ -2,6 +2,8 @@
   background-image: url("../img/background-mountains.jpg");
   background-size: cover;
   background-position: center;
+  width: 100%;
+  font-family: Times New Roman;
 }
 
 .activities__title {
@@ -12,11 +14,20 @@
   font-size: 44px;
   font-stretch: 100%;
 }
-/*.activities_activity{
- }*/
+.activities__activity {
+  background-color: var(--classic-white);
+  padding: 15px; /* Зменшили відступи */
+  margin: 15px; /* Зменшили відступи */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 412.525px;
+  width: 298.125px;
+  line-height:25.6px;
+}
 
 .activity__image {
   width: 258.125px;
+  border-radius: 8px;
 }
 
 .activity__title {
@@ -38,4 +49,7 @@
   font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 400;
+}
+.activity__title, .activity__price, .activity__description{
+  margin-top: 10px;
 }
