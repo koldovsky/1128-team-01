@@ -5,6 +5,7 @@
   width: 100%;
   font-family: Times New Roman, serif;
   padding: 80px;
+  min-width: 320px;
 }
 
 .activities__title {
@@ -29,12 +30,13 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   height: 412.525px;
   width: 298.125px;
-  line-height:25.6px;
+  line-height: 25.6px;
 
 }
 
 .activity__image {
   width: 258.125px;
+  height:171.125px;
   border-radius: 8px;
 }
 
@@ -59,5 +61,7 @@
   font-weight: 400;
 }
 .activity__title, .activity__price, .activity__description{
-  margin-top: 10px;
+  margin: 10px;
+  
 }
+
