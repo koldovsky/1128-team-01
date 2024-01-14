@@ -1,14 +1,18 @@
-.container {
-    margin: auto;
-}
 
 .adventure {
-    background: url("../img/adventures-bg.jpg");
+    background: url("../img/adventures-bg.jpg") 45% 25% / cover;
     min-width: 320px;
     font-size: 16px;
     font-family: "Roboto", sans-serif;
     padding-top: 80px;
     padding-bottom: 80px;
+}
+
+.adventure__inner {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .adventure__header {
@@ -17,7 +21,7 @@
     flex-direction: column;
     flex-basis: 100%;
     max-width: 100%;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 .adventure__header-title {
@@ -25,10 +29,90 @@
     font-weight: normal;
     color: var(--font-standart-color);
     font-size: 44px;
-    line-height: 1.18;
+    line-height: 51.92px;
+    letter-spacing: -0.924px;
 }
 
-.grid-item__img {
-    width: 100px;
+.adventure__header-text {
+    justify-content: center;
+    margin-top: 30px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    line-height: 30px;
+    font-size: 19px;
+    letter-spacing: normal;
+    color: var(--form-adventures-text-color);
 }
 
+.adventure__content {
+    margin-top: 50px;
+}
+
+.adventure__grid {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 30px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.image-wrapper {
+    position: relative;
+    margin: 0 auto;
+    --image-wrapper-width:90%;
+    width: var(--image-wrapper-width);
+    height: 0;
+    padding-top: calc(100% * (100 / 180));
+}
+
+.image-wrapper-img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 10px;
+}
+
+.image-wrapper-btn-lightbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item__text-wrapper {
+    margin: 20px auto 0px auto;
+    max-width: 350px;
+    text-align: center;
+}
+
+.grid-item__text {
+    font-family: "Circular Std", sans-serif;
+    font-size: 25px;
+}
+
+
+
+@media (max-width: 992px) {
+    .adventure__grid {
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 786px) {
+    .adventure__grid {
+        grid-template-columns: 1fr;
+    }
+}
