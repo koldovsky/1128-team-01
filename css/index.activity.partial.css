@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  font-family: Times New Roman, serif;
+  font-family:'Times New Roman', Times, serif;
   padding: 80px;
   min-width: 320px;
 }
