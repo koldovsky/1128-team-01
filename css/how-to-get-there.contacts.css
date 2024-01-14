@@ -1,22 +1,23 @@
 .contact {
   background-color: #676363;
-  background-size: 100%;
-  max-height: 70%;
+  background-size: cover;
+  box-sizing: border-box;
+
   background-image: url(../img/how-to-get-contacts-bg.jpg);
   background-position: 100% 70%;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   padding-top: 100px;
   padding-bottom: 100px;
+  width: 100%;
 }
 
 .contact__container {
     max-width: 1200px;
-    margin: auto;
     display: flex;
     flex-direction: column;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .contact__content {
@@ -51,7 +52,12 @@ p.contact__subtitle {
   background-color: var(--form-bg-color);
   border-radius: 14px;
   text-align: center;
-  padding: auto;
+  padding-top: 39px;
+  padding-bottom: 39px;
+  padding-left: 55px;
+  padding-right: 55px;
+  width: 100%;
+
   
 }
 
@@ -63,9 +69,9 @@ p.contact__subtitle {
   padding-bottom: 16px;
   padding-top: 16px;
   text-align: center;
-  width: 80%;
   border: 0px;
   margin-top: 12px;
+  width: 100%;
 }
 
 .contact__submit {
@@ -79,8 +85,8 @@ p.contact__subtitle {
   padding-bottom: 16px;
   padding-top: 16px;
   text-align: center;
-  width: 80%;
   margin-top: 56px;
+  width: 100%;
 }
 
 .contact__submit:hover {
