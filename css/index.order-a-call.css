@@ -1,53 +1,23 @@
-@import "global.css";
-@import "fonts.css";
-
-
-
-@media only screen and (max-width: 992px) {
-    .ordercall {
-        padding-top: 140px;
-        padding-bottom: 140px;
-}}
-@media (min-width: 992px) {
-    .ordercall {
-        padding-top: 125px;
-        padding-bottom: 125px;
-}}
-@media (min-width: 768px) {
-    .ordercall {
-        padding-top: 115px;
-        padding-bottom: 115px;
-}}
-
-/* @media (min-width: 992px){
-    .ordercall__form-content {
-      padding-bottom: 50px !important;
-      padding-top: 50px !important;
-      padding-left: 40px !important;
-      padding-right: 40px !important;
-}  
-}
-
-@media (min-width: 768px){
-    .ordercall__form-content {
-        padding-top: 40px !important;
-        padding-bottom: 40px !important;
-        padding-left: 34px !important;
-        padding-right: 34px !important;
-}
-} */
-
 .container {
     margin: 0 auto;
 }
 
 .ordercall {
-    background: url("../img/bg-order-a-call.jpg") 45.31% 26.32% / cover no-repeat, rgb(89, 150, 115);;
+    background: url("../img/bg-order-a-call.jpg") 45% 26%/ cover no-repeat, rgb(89, 150, 115);
     min-width: 320px;
     font-size: 16px;
     line-height: 1.6;
     font-family: "Roboto", sans-serif;
-    border-radius: 10px;
+    position: static;
+    min-height: 446px;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-attachment: scroll!important;
+    object-fit: cover;
 }
 
 .ordercall__inner {
@@ -66,11 +36,10 @@
     width: 100%;
 }
 .ordercall__grid {
-    width: calc(100% + 30px);
+    width: 100%;
     display: grid;
     grid-template-columns: 60% 42%;
     margin-left: -15px;
-    margin-right: -15px;
 }
 .ordercall__grid:first-child {
     grid-column: 1;
@@ -78,30 +47,19 @@
 .ordercall__grid:last-child {
     grid-column: 2;
 }
-
-
 .ordercall__item{
     flex-basis: 58%;
     max-width: 58%;
-    /* background-color: blue; */
     width: 60%;
-    margin-left: 60px;
-    margin-right: 80px;
-    /* margin-right: 300px; */
 }
-
 .ordercall__form-content{
     position: relative;
     max-width: 100%;
     flex-basis: 100%; 
-    /* flex-basis: 41.66667%;
-    max-width: 98.66667%; */
     padding: 40px 50px;
-    /* padding-left: 15px;
-    padding-right: 15px; */
     border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0,0,0,.05);
-    background-color: #fff;
+    box-shadow: 0 5px 20px var(--form-content-box-shadow-color);
+    background-color: var(--form-bg-color);
     text-align: center;
     box-sizing: border-box;
     display: inline-block;
@@ -109,7 +67,7 @@
 }
 
 .ordercall__form-header{
-    color: #282520;
+    color: var(--font-standart-color);
     font-size: 25px;
     font-family: 'Circular Std', sans-serif;
     line-height: 1.4;
@@ -121,7 +79,7 @@
     word-wrap: break-word;
 }
 .ordercall__form-text{
-    color: #848484;
+    color: var(--form-input-text-color);
     font-size: 16px;
     font-family:"Roboto", serif;
     margin-top: 10px;
@@ -155,8 +113,8 @@
     display: block;
     border-radius: 34px;
     box-sizing: border-box;
-    border-color: #599673;
-    background-color: rgba(40, 37, 32, 0.12);
+    border-color: var(--form-input-border-color);
+    background-color: var(--form-input-bg-color);
     box-shadow: none;
     border: 0;
     line-height: 1.2;
@@ -166,29 +124,29 @@
 }
 .ordercall__form-submit-button {
     width: 100%;
-    color: white;
+    color: var(--classic-white);
     padding: 16px 24px;
     margin-top: 56px;
     border-radius: 34px;
     cursor: pointer;
     border: none;
     font-size: 14px;
-    background-color: #f98250;
+    background-color: var(--form-submit-button-bg-color);
 }
 .ordercall__form-submit-button:hover {
     width: 100%;
-    color: white;
+    color: var(--classic-white);
     padding: 16px 24px;
     margin-top: 56px;
     border-radius: 34px;
     cursor: pointer;
     border: none;
     font-size: 14px;
-    background-color: rgb(89, 150, 115);
+    background-color: var(--form-submit-button-hover-bg-color);
 }
 
 .submit-button__text {
-    color: white;
+    color: var(--classic-white);
     margin-top: 5px;
     font-size: 14px;
     font-family:"Roboto", serif;
@@ -200,3 +158,31 @@
 }
 
 
+
+@media screen and (max-width: 992px) {
+    .ordercall {
+        padding-top: 140px;
+        padding-bottom: 140px;
+}}
+
+@media screen and (max-width: 845px) {
+    .ordercall {
+        padding-top: 125px;
+        padding-bottom: 125px;
+}}
+
+@media screen and (max-width: 768px) {
+    .ordercall {
+        padding-top: 115px;
+        padding-bottom: 115px;
+}}
+
+@media screen and (max-width: 767px) {
+    .ordercall {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .ordercall__grid {
+        grid-template-columns: auto;
+    }
+}

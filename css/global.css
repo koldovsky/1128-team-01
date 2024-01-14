@@ -9,7 +9,20 @@
 :root {
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
+    --font-standard-color: #282520;
+    --form-bg-color: #fff;
+    --classic-white: #fff;
     --bottom-border-tabs-nav-color: #d9d9d6;
+    --form-submit-button-bg-color: #f98250;
+    --form-submit-button-hover-bg-color: rgb(89, 150, 115);
+    --form-input-bg-color: rgba(40, 37, 32, 0.12);
+    --form-input-text-color: #848484;
+    --form-input-border-color: #599673;
+    --form-input-header-color: #282520;
+    --form-content-box-shadow-color: rgba(0,0,0,.05);
+    --activity-description-color: rgb(132, 132, 132);
+    --activity-price-color: rgb(249,130,80);
+    --activity-title-color: rgb(40, 37, 12);
 }
 
 img {
