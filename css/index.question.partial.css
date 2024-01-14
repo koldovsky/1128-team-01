@@ -79,10 +79,12 @@
   text-transform: uppercase;
   word-break: break-word;
 }
-/*.questions__reservation{
+.questions__reservation{
+  text-decoration: none;
+  }
 
-}*/
-
-/*.questions__group-buttons{
-
-}*/
+.questions__group-buttons{
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+}

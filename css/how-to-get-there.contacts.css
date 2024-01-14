@@ -13,11 +13,11 @@
 }
 
 .contact__container {
-    max-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    padding-left: 24px;
-    padding-right: 24px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .contact__content {
