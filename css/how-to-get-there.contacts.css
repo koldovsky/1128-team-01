@@ -1,73 +1,88 @@
 .contact {
-    background-color: #676363; 
-    background-size: 100%;
-    max-height: 70%;
-    background-image: url(../img/how-to-get-contacts-bg.jpg);
-    background-position: 100% 70%;
-    background-repeat: no-repeat;
-    background-blend-mode: multiply;
-    min-width: 360px;
+  background-color: #676363;
+  background-size: 100%;
+  max-height: 70%;
+  background-image: url(../img/how-to-get-contacts-bg.jpg);
+  background-position: 100% 70%;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.contact__container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .contact__content {
-    color: white;
-    font-family: 'Roboto', sans-serif;
+  color: var(--classic-white);
 }
 
 h2.contact__title {
-    font-family: 'Circular Std Bold', sans-serif;
-    font-size: 39px;
+  font-family: "Circular Std Bold", sans-serif;
+  font-size: 39px;
 }
 
 p.contact__description {
-    font-size: 19px;
+  font-size: 19px;
 }
 
-p.contact__subtitle  {
-    font-family: 'Circular Std Bold', sans-serif;
-    font-size: 18px 
+p.contact__subtitle {
+  font-family: "Circular Std Bold", sans-serif;
+  font-size: 18px;
 }
 
 .contact__address {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .contact__address a {
-    text-decoration: none;
-    color: white;
+  color: var(--classic-white);
 }
 
 /* CSS for form */
 
 .contact__form {
-    background-color: white;
-    border-radius: 14px;
-    text-align: center;
+  background-color: var(--form-bg-color);
+  border-radius: 14px;
+  text-align: center;
+  padding: auto;
+  
 }
 
 .contact__input {
-    border-radius: 34px;
-    text-align: center;
-    background-color: #e5e4e4;
-    border-width: 0px;
-    padding-bottom: 16px;
-    padding-top: 16px;
-    text-align: center;
-    width: 80%;
-    border: 0px;
-    margin-top: 12px;
+  border-radius: 34px;
+  text-align: center;
+  background-color: var(--form-input-bg-color);
+  border-width: 0px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  text-align: center;
+  width: 80%;
+  border: 0px;
+  margin-top: 12px;
 }
+
 .contact__submit {
-    color: white;
-    border-radius: 34px;
-    background-color: #f98250;
-    font-size: 14px;
-    border-width: 0px;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 16px;
-    padding-top: 16px;
-    text-align: center;
-    width: 80%;
-    margin-top: 56px;
+  color: var(--classic-white);
+  border-radius: 34px;
+  background-color: var(--form-submit-button-bg-color);
+  font-size: 14px;
+  border-width: 0px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  text-align: center;
+  width: 80%;
+  margin-top: 56px;
+}
+
+.contact__submit:hover {
+  background-color: var(--form-submit-button-hover-bg-color);
 }

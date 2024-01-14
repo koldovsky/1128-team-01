@@ -1,2 +1,5 @@
 @import "how-to-get-there.contacts.css";
-@import "fonts.css"
+@import "fonts.css";
+@import "global.css";
+@import "header.css";
+@import "footer.partial.css";
