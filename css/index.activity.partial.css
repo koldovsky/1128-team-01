@@ -3,7 +3,8 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  font-family: Times New Roman;
+  font-family: Times New Roman, serif;
+  padding: 80px;
 }
 
 .activities__title {
@@ -11,18 +12,25 @@
   font-family: "Circular Std", serif;
   text-align: center;
   font-weight: 700;
-  font-size: 44px;
+  font-size: 2.75rem;
   font-stretch: 100%;
 }
-.activities__activity {
+.activities__group{ 
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  margin-top: 50px;
+}
+.activities__item {
   background-color: var(--classic-white);
-  padding: 15px; /* Зменшили відступи */
-  margin: 15px; /* Зменшили відступи */
+  padding: 15px; 
+  margin: 15px; 
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   height: 412.525px;
   width: 298.125px;
   line-height:25.6px;
+
 }
 
 .activity__image {
@@ -33,7 +41,7 @@
 .activity__title {
   color: var(--activity-title-color);
   font-family: "Circular Std", serif;
-  font-size: 25px;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
