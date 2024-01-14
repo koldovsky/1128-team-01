@@ -20,9 +20,14 @@
     --form-input-border-color: #599673;
     --form-input-header-color: #282520;
     --form-content-box-shadow-color: rgba(0,0,0,.05);
+    --form-adventures-text-color: #848484;
 }
 
 img {
     width: 100%;
     display: block;
+}
+
+.container {
+    margin: 0 auto;
 }
