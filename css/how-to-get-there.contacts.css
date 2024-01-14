@@ -31,6 +31,7 @@ h2.contact__title {
 
 p.contact__description {
   font-size: 19px;
+  margin-top: 25px;
 }
 
 p.contact__subtitle {
@@ -40,6 +41,7 @@ p.contact__subtitle {
 
 .contact__address {
   font-size: 16px;
+  margin-top: 25px;
 }
 
 .contact__address a {
@@ -57,8 +59,7 @@ p.contact__subtitle {
   padding-left: 55px;
   padding-right: 55px;
   width: 100%;
-
-  
+  margin-top: 50px;
 }
 
 .contact__input {
