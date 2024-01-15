@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  font-family:'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   padding: 80px;
   min-width: 320px;
 }
@@ -16,27 +16,26 @@
   font-size: 2.75rem;
   font-stretch: 100%;
 }
-.activities__group{ 
-  display:flex;
-  flex-direction:row;
+.activities__group {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   margin-top: 50px;
 }
 .activities__item {
   background-color: var(--classic-white);
-  padding: 15px; 
-  margin: 15px; 
+  padding: 15px;
+  margin: 15px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   height: 412.525px;
   width: 298.125px;
   line-height: 25.6px;
-
 }
 
 .activity__image {
   width: 258.125px;
-  height:171.125px;
+  height: 171.125px;
   border-radius: 8px;
 }
 
@@ -60,8 +59,8 @@
   font-size: 16px;
   font-weight: 400;
 }
-.activity__title, .activity__price, .activity__description{
+.activity__title,
+.activity__price,
+.activity__description {
   margin: 10px;
-  
 }
-
