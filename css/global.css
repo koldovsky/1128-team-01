@@ -25,6 +25,7 @@
   --activity-price-color: rgb(249, 130, 80);
   --activity-title-color: rgb(40, 37, 12);
   --questions-reservation-color:rgba(0, 0, 0, 0);
+  --facilities-header-text: #282520;
 }
 
 img {
