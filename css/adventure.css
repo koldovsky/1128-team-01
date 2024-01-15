@@ -103,8 +103,6 @@
     font-size: 25px;
 }
 
-
-
 @media (max-width: 992px) {
     .adventure__grid {
         grid-template-columns:repeat(2, 1fr);
