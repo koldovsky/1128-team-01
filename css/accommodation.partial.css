@@ -154,3 +154,17 @@ body {
 .colored-text-price {
     color: var(--price-color);
 }
+
+.button-holder__button-to-push {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff8c00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.button-holder__button-to-push:hover {
+    background-color: #ff9933;
+}
