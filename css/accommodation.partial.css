@@ -1,203 +1,181 @@
-.accommodation-style {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 :root {
-    --background-color-section: #F2F2F0;
+    --background-color-section: rgba(152, 152, 152, 0.2);
     --price-color: #629673;
 }
 
-.river__chalet {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin-bottom: 20px;
-    padding: 20px;
+body {
+    font-family: 'Circular Std Bold', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.accommodation-main-contain__background-image {
+    background-image: url('../img/accommodation_background.jpg');
+    background-size: auto;
+    width: 100%;
+}
+
+.accommodation-main-contain__background-color {
     background-color: var(--background-color-section);
-    font-family: 'Circular Std Bold', Arial, Helvetica, sans-serif;
-    margin: 50px;
+    background-size: auto;
+    width: 100%;
 }
 
-.river__chalet-photo {
-    float: left;
-    width: 50%;
-    height: auto;
-    border-radius: 3%;
-}
-
-.river__chalet-inner-list {
-    float: right;
-}
-
-.river__chalet-cost-price {
-    font-weight: bold;
-    font-size: 35px;
-}
-
-.river__chalet-color-price {
-    color: var(--price-color);
-}
-
-.river__chalet-name-cabin {
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.lookout__lodge {
+.river-chalet {
+    flex-wrap: wrap;
+    margin-left: 351px;
+    margin-right: 351px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin-bottom: 20px;
-    padding: 20px;
-    font-family: 'Circular Std Bold', Arial, Helvetica, sans-serif;
-    margin: 50px;
+    min-width: 120px;
+    height: 482px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
-.lookout__lodge-photo {
+
+.river-chalet__photo {
     float: left;
-    width: 50%;
+    width: 70%;
     height: auto;
+    min-width: 390px;
+    min-height: auto;
     border-radius: 3%;
 }
 
-.lookout__lodge-inner-list {
-    float: right;
+.river-chalet__list-information {
+    text-align: left;
+    float: left;
 }
 
-.lookout__lodge-cost-price {
-    font-weight: bold;
-    font-size: 35px;
-}
-
-.lookout__lodge-color-price {
-    color: var(--price-color);
-}
-
-.lookout__lodge-name-cabin {
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.smoky__view {
+.lookout-lodge {
+    flex-wrap: wrap;
+    margin-left: 351px;
+    margin-right: 351px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: var(--background-color-section);
-    font-family: 'Circular Std Bold', Arial, Helvetica, sans-serif;
-    margin: 50px;
+    min-width: 120px;
+    height: 482px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
-.smoky__view-photo {
+
+.lookout-lodge__photo {
     float: left;
-    width: 50%;
+    width: 70%;
     height: auto;
+    min-width: 390px;
+    min-height: auto;
     border-radius: 3%;
 }
 
-.smoky__view-inner-list {
-    float: right;
+.lookout-lodge__list-information {
+    text-align: left;
+    float: left;
 }
 
-.smoky__view-cost-price {
-    font-weight: bold;
-    font-size: 35px;
-}
-
-.smoky__view-color-price {
-    color: var(--price-color);
-}
-
-.smoky__view-name-cabin {
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.mountain__haven {
+.smoky-view {
+    flex-wrap: wrap;
+    margin-left: 351px;
+    margin-right: 351px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin-bottom: 20px;
-    padding: 20px;
-    font-family: 'Circular Std Bold', Arial, Helvetica, sans-serif;
-    margin: 50px;
+    min-width: 120px;
+    height: 482px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
-.mountain__haven-photo {
+
+.smoky-view__photo {
     float: left;
-    width: 50%;
+    width: 70%;
     height: auto;
+    min-width: 390px;
+    min-height: auto;
     border-radius: 3%;
 }
 
-.mountain__haven-list {
-    float: right;
+.smoky-view__list-information {
+    text-align: left;
+    float: left;
 }
 
-.mountain__haven-cost-price {
-    font-weight: bold;
-    font-size: 35px;
-}
-
-.mountain__haven-color-price {
-    color: var(--price-color);
-}
-
-.mountain__haven-name-cabin {
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.mountain__splash {
+.mountain-haven {
+    flex-wrap: wrap;
+    margin-left: 351px;
+    margin-right: 351px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: var(--background-color-section);
-    font-family: 'Circular Std Bold', Arial, Helvetica, sans-serif;
-    margin: 50px;
+    min-width: 120px;
+    height: 482px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
-.mountain__splash-photo {
+
+.mountain-haven__photo {
     float: left;
-    width: 50%;
+    width: 70%;
     height: auto;
+    min-width: 390px;
+    min-height: auto;
     border-radius: 3%;
 }
 
-.mountain__splash-list {
-    float: right;
+.mountain-haven__list-information {
+    text-align: left;
+    float: left;
 }
 
-.mountain__splash-cost-price {
-    font-weight: bold;
+.mountain-splash {
+    flex-wrap: wrap;
+    margin-left: 351px;
+    margin-right: 351px;
+    display: flex;
+    flex-direction: column;
+    min-width: 120px;
+    height: 482px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+.mountain-splash__photo {
+    float: left;
+    width: 70%;
+    height: auto;
+    min-width: 390px;
+    min-height: auto;
+    border-radius: 3%;
+}
+
+.mountain-splash__list-information {
+    text-align: left;
+    float: left;
+}
+
+.cost-room-text {
     font-size: 35px;
 }
 
-.mountain__splash-color-price {
+.colored-text-price {
     color: var(--price-color);
 }
 
-.mountain__splash-name-cabin {
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.reserve-cabin-button {
-    background-color: orange;
-    color: white;
+.button-holder__button-to-push {
+    display: inline-block;
     padding: 10px 20px;
-    margin-top: 20px;
-    cursor: pointer;
-    border: none;
-    border-radius: 10%;
+    background-color: #ff8c00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.button-holder__button-to-push:hover {
+    background-color: #ff9933;
 }
