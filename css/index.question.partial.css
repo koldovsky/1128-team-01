@@ -22,7 +22,7 @@
 
 .questions__call-us {
   font-family: "Roboto", sans-serif;
-  font-size: 15.4px;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
   letter-spacing: normal;
@@ -64,7 +64,7 @@
 
 .questions__call-us:hover {
   color: var(--activity-title-color);
-  border-color: var(--classic-white);
+  background-color: var(--classic-white);
 }
 
 .questions__call-us {
@@ -80,11 +80,30 @@
   word-break: break-word;
 }
 .questions__reservation{
+  background-color: var(--questions-reservation-color);
   text-decoration: none;
+  display: inline-block;
+  padding: 20px 32px;
+  border-radius: 32px;
+  border: 1px solid var(--classic-white);
+  color: var(--classic-white);
+  text-align:center;
+  margin: 10px;
+  font-weight:600px;
+  text-transform:uppercase;
+  font-family: "Roboto", sans-serif;
+  font-stretch:100%;
+  font-size: 1rem;
   }
+
+  .questions__reservation:hover {
+    color: var(--activity-title-color);
+    background-color: var(--classic-white);}
 
 .questions__group-buttons{
   display:flex;
   flex-direction:row;
   justify-content: center;
+  margin: 10px;
+
 }
