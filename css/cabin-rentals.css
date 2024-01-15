@@ -1,73 +1,66 @@
 .cabin-rentals {
-    background-image: url(../img/cabin_rental_background.webp);
-    background-attachment: local;
-
+  background-image: url(../img/cabin_rental_background.webp);
+  background-attachment: local;
 }
 
 .cabin-rentals__inner {
-    margin: auto;
-    position: static;
-    min-width: 320px;
-    width: auto;
-    text-align: center;
-    display: block;
-    color: var(--classic-white);
+  margin: auto;
+  position: static;
+  min-width: 320px;
+  width: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--classic-white);
 }
 
 .cabin-rentals__title {
-    padding-top: 150px;
-    padding-bottom: 50px;
-    font-size: 44px;
-    font-family: "Circular Std", "Calibri";
+  padding-top: 150px;
+  padding-bottom: 50px;
+  font-size: 44px;
+  font-family: "Circular Std", "Calibri";
 }
 
 .cabin-rentals__cabin-block {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    max-width: 1200px;
-    /* margin-left: 25px;
-    margin-right: 25px; */
-
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1200px;
 }
 
 .cabin-rentals__cabin {
-    display: flex;
-    aspect-ratio: 1;
-    position: relative;
-    margin: 0 auto;
-    border-radius: 10px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 320px;
-    width: 100%;
-    height: 100%;
-    /* padding: 70px 35px; */
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  aspect-ratio: 1;
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  min-width: 320px;
+  width: 100%;
+  height: 100%;
+  padding: 15% 30%;
+  align-items: center;
+  justify-content: center;
 }
 
 .first-cabin {
-    background-image: url('../img/first_cabin.webp');
+  background-image: url("../img/first_cabin.webp");
 }
 
 .second-cabin {
-    background-image: url('../img/second_cabin.webp');
+  background-image: url("../img/second_cabin.webp");
 }
 
 .third-cabin {
-    background-image: url('../img/third_cabin.webp');
+  background-image: url("../img/third_cabin.webp");
 }
 
 .fourth-cabin {
-    background-image: url('../img/fourth_cabin.webp');
+  background-image: url("../img/fourth_cabin.webp");
 }
-
 
 /* .cabin-rentals__cabin img {
     width: 100%;
