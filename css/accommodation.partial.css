@@ -1,5 +1,5 @@
 :root {
-    --background-color-section: #989898;
+    --background-color-section: rgba(152, 152, 152, 0.2);
     --price-color: #629673;
 }
 
@@ -13,8 +13,8 @@ body {
     margin-right: auto;
 }
 
+
 .river-chalet {
-    border: 10px solid #ece89d;
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
@@ -25,6 +25,7 @@ body {
     background-color: var(--background-color-section);
     margin: 50px;
 }
+
 
 .river-chalet__photo {
     float: left;
@@ -41,91 +42,110 @@ body {
 }
 
 .lookout-lodge {
+    flex-wrap: wrap;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 80%;
+    min-width: 120px;
+    height: 482px;
     margin-bottom: 20px;
     padding: 20px;
     margin: 50px;
 }
 
+
 .lookout-lodge__photo {
     float: left;
-    width: 50%;
+    width: 70%;
     height: auto;
+    min-width: 390px;
+    min-height: auto;
     border-radius: 3%;
 }
 
 .lookout-lodge__list-information {
-    float: right;
+    text-align: left;
+    float: left;
 }
 
 .smoky-view {
+    flex-wrap: wrap;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 80%;
+    min-width: 120px;
+    height: 482px;
     margin-bottom: 20px;
     padding: 20px;
     background-color: var(--background-color-section);
     margin: 50px;
 }
 
+
 .smoky-view__photo {
     float: left;
-    width: 50%;
+    width: 70%;
     height: auto;
+    min-width: 390px;
+    min-height: auto;
     border-radius: 3%;
 }
 
 .smoky-view__list-information {
-    float: right;
+    text-align: left;
+    float: left;
 }
 
 .mountain-haven {
+    flex-wrap: wrap;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 80%;
+    min-width: 120px;
+    height: 482px;
     margin-bottom: 20px;
     padding: 20px;
     margin: 50px;
 }
 
+
 .mountain-haven__photo {
     float: left;
-    width: 50%;
+    width: 70%;
     height: auto;
+    min-width: 390px;
+    min-height: auto;
     border-radius: 3%;
 }
 
 .mountain-haven__list-information {
-    float: right;
+    text-align: left;
+    float: left;
 }
 
 .mountain-splash {
+    flex-wrap: wrap;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 80%;
+    min-width: 120px;
+    height: 482px;
     margin-bottom: 20px;
     padding: 20px;
     background-color: var(--background-color-section);
     margin: 50px;
 }
 
+
 .mountain-splash__photo {
     float: left;
-    width: 50%;
+    width: 70%;
     height: auto;
+    min-width: 390px;
+    min-height: auto;
     border-radius: 3%;
 }
 
 .mountain-splash__list-information {
-    float: right;
+    text-align: left;
+    float: left;
 }
-
 
 .cost-room-text {
     font-size: 35px;
