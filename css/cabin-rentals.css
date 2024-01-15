@@ -1,0 +1,46 @@
+.cabin-rentals {
+    background-image: url(../img/cabin_rental_background.webp);
+    background-attachment: local;
+    position: static;
+    min-width: 320px;
+    width: auto;
+    text-align: center;
+    display: block;
+    color: var(--classic-white);
+}
+
+.cabin-rentals__title {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    font-size: 44px;
+    font-family: "Circular Std", "Calibri";
+}
+
+.cabin-rentals__cabin-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.cabin-rentals__cabin {
+    position: relative;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    min-width: 320px;
+}
+
+.cabin-rentals__cabin img {
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.cabin-rentals__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
