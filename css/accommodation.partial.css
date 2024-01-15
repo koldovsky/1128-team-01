@@ -7,23 +7,27 @@ body {
     font-family: 'Circular Std Bold', Arial, Helvetica, sans-serif;
 }
 
-.accommodation-main-contain {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+h1 {
+    text-align: center;
 }
 
+.accommodation-main-contain__background-to-part {
+    background-color: var(--background-color-section);
+    background-image: url('../img/accommodation_background.jpg');
+    background-size: auto;
+    width: 100%;
+}
 
 .river-chalet {
     flex-wrap: wrap;
+    margin-left: 351px;
+    margin-right: 351px;
     display: flex;
     flex-direction: column;
     min-width: 120px;
     height: 482px;
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: var(--background-color-section);
-    margin: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 
@@ -43,13 +47,14 @@ body {
 
 .lookout-lodge {
     flex-wrap: wrap;
+    margin-left: 351px;
+    margin-right: 351px;
     display: flex;
     flex-direction: column;
     min-width: 120px;
     height: 482px;
-    margin-bottom: 20px;
-    padding: 20px;
-    margin: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 
@@ -69,14 +74,15 @@ body {
 
 .smoky-view {
     flex-wrap: wrap;
+    margin-left: 351px;
+    margin-right: 351px;
     display: flex;
     flex-direction: column;
     min-width: 120px;
     height: 482px;
-    margin-bottom: 20px;
-    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     background-color: var(--background-color-section);
-    margin: 50px;
 }
 
 
@@ -96,13 +102,14 @@ body {
 
 .mountain-haven {
     flex-wrap: wrap;
+    margin-left: 351px;
+    margin-right: 351px;
     display: flex;
     flex-direction: column;
     min-width: 120px;
     height: 482px;
-    margin-bottom: 20px;
-    padding: 20px;
-    margin: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 
@@ -122,14 +129,15 @@ body {
 
 .mountain-splash {
     flex-wrap: wrap;
+    margin-left: 351px;
+    margin-right: 351px;
     display: flex;
     flex-direction: column;
     min-width: 120px;
     height: 482px;
-    margin-bottom: 20px;
-    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     background-color: var(--background-color-section);
-    margin: 50px;
 }
 
 
