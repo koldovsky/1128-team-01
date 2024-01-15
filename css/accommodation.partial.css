@@ -11,9 +11,14 @@ h1 {
     text-align: center;
 }
 
-.accommodation-main-contain__background-to-part {
-    background-color: var(--background-color-section);
+.accommodation-main-contain__background-image {
     background-image: url('../img/accommodation_background.jpg');
+    background-size: auto;
+    width: 100%;
+}
+
+.accommodation-main-contain__background-color {
+    background-color: var(--background-color-section);
     background-size: auto;
     width: 100%;
 }
@@ -82,7 +87,6 @@ h1 {
     height: 482px;
     padding-top: 80px;
     padding-bottom: 80px;
-    background-color: var(--background-color-section);
 }
 
 
@@ -137,7 +141,6 @@ h1 {
     height: 482px;
     padding-top: 80px;
     padding-bottom: 80px;
-    background-color: var(--background-color-section);
 }
 
 
