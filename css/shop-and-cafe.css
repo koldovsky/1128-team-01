@@ -1,0 +1,103 @@
+.shop-and-cafe {
+  display: block;
+  background-image: url("../img/shop_and_cafe_background.jpg");
+  background-size: cover;
+  background-position: center;
+  min-width: 320px;
+  width: 100%;
+}
+
+.shop-and-cafe__content {
+  padding: 105px 40px 110px 40px;
+  margin: 0 3.6px;
+}
+
+.shop-and-cafe__header {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-pack: center;
+  text-align: center;
+}
+
+.shop-and-cafe__title {
+  font-family: "Circular Std";
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: -0.924px;
+  line-height: 51.92px;
+  text-align: center;
+  color: var(--classic-white);
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 30px;
+}
+
+.shop-and-cafe__description {
+  color: var(--shop-and-cafe-description-color);
+  margin-top: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 30.4px;
+  text-align: center;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: block;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.shop-and-cafe__features {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  align-items: center;
+
+.feature {
+  display: flex;
+  flex-basis: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color:var(--shop-and-cafe-feature-color)
+}
+
+.feature__content {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/*.feature__image {
+}*/
+
+.feature__title {
+    margin-top:20px;
+    max-width:100%;
+    font-family:"Circular Std", serif;
+    font-size:25px;
+    font-weight:500;
+    line-height:35px;
+    color: var(--classic-white);
+    
+}
+
+.feature__description {
+    margin-top: 5px;
+    color: var(--shop-and-cafe-description-color);
+}
