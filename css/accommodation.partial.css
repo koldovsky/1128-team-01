@@ -1,8 +1,11 @@
 :root {
-    --background-color-section: rgba(152, 152, 152, 0.2);
+    --background-color-section: rgba(183, 183, 183, 0.2);
     --price-color: #629673;
     --main-text-color: #3e3e3e;
-    --orange-check-mark: "M255 0C114.75 0 0 114.75 0 255s114.75 255 255 255 255-114.75 255-255S395.25 0 255 0zm-51 382.5L76.5 255l35.7-35.7 91.8 91.8 193.8-193.8 35.7 35.7L204 382.5z";
+    --button-reserve-color: #f98250;
+    --button-reserve-hover: #51d7a8;
+    --button-reserve-text-color: #fff;
+
 }
 
 body {
@@ -191,16 +194,18 @@ h1 {
 
 .button-holder__button-to-push {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff8c00;
-    color: #fff;
+    padding: 15px 30px;
+    background-color: var(--button-reserve-color);
+    color: var(--button-reserve-text-color);
     text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
     border-radius: 25px;
     transition: background-color 0.3s ease;
 }
 
 .button-holder__button-to-push:hover {
-    background-color: #ff9933;
+    background-color: var(--button-reserve-hover);
 }
 
 .cost-room-text {
