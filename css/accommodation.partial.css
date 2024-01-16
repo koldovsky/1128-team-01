@@ -1,10 +1,13 @@
 :root {
     --background-color-section: rgba(152, 152, 152, 0.2);
     --price-color: #629673;
+    --main-text-color: #3e3e3e;
+    --orange-check-mark: "M255 0C114.75 0 0 114.75 0 255s114.75 255 255 255 255-114.75 255-255S395.25 0 255 0zm-51 382.5L76.5 255l35.7-35.7 91.8 91.8 193.8-193.8 35.7 35.7L204 382.5z";
 }
 
 body {
     font-family: 'Circular Std Bold', Arial, Helvetica, sans-serif;
+    color: var(--main-text-color);
 }
 
 h1 {
@@ -55,111 +58,127 @@ h1 {
 }
 
 .lookout-lodge {
-    flex-wrap: wrap;
-    margin-left: 351px;
-    margin-right: 351px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    margin-left: 350px;
+    margin-right: 350px;
     min-width: 120px;
-    height: 482px;
+    height: auto;
     padding-top: 80px;
     padding-bottom: 80px;
+    justify-content: center;
 }
 
 
 .lookout-lodge__photo {
-    float: left;
-    width: 70%;
-    height: auto;
-    min-width: 390px;
+    object-position: bottom;
+    object-fit: cover;
+    grid-column: 1;
+    padding: 0px 15px;
+    width: 670px;
+    height: 440px;
+    min-width: auto;
     min-height: auto;
     border-radius: 3%;
 }
 
 .lookout-lodge__list-information {
     text-align: left;
-    float: left;
+    padding-left: 15px;
 }
 
 .smoky-view {
-    flex-wrap: wrap;
-    margin-left: 351px;
-    margin-right: 351px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    margin-left: 350px;
+    margin-right: 350px;
     min-width: 120px;
-    height: 482px;
+    height: auto;
     padding-top: 80px;
     padding-bottom: 80px;
+    justify-content: center;
 }
 
 
 .smoky-view__photo {
-    float: left;
-    width: 70%;
-    height: auto;
-    min-width: 390px;
+    object-position: bottom;
+    object-fit: cover;
+    grid-column: 1;
+    padding: 0px 15px;
+    width: 670px;
+    height: 440px;
+    min-width: auto;
     min-height: auto;
     border-radius: 3%;
 }
 
 .smoky-view__list-information {
     text-align: left;
-    float: left;
+    padding-left: 15px;
 }
 
-.mountain-haven {
-    flex-wrap: wrap;
-    margin-left: 351px;
-    margin-right: 351px;
-    display: flex;
-    flex-direction: column;
+.river-chalet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    margin-left: 350px;
+    margin-right: 350px;
     min-width: 120px;
-    height: 482px;
+    height: auto;
     padding-top: 80px;
     padding-bottom: 80px;
+    justify-content: center;
 }
 
 
-.mountain-haven__photo {
-    float: left;
-    width: 70%;
-    height: auto;
-    min-width: 390px;
+.river-chalet__photo {
+    object-position: bottom;
+    object-fit: cover;
+    grid-column: 1;
+    padding: 0px 15px;
+    width: 670px;
+    height: 440px;
+    min-width: auto;
     min-height: auto;
     border-radius: 3%;
 }
 
-.mountain-haven__list-information {
+.river-chalet__list-information {
     text-align: left;
-    float: left;
+    padding-left: 15px;
 }
 
-.mountain-splash {
-    flex-wrap: wrap;
-    margin-left: 351px;
-    margin-right: 351px;
-    display: flex;
-    flex-direction: column;
+.river-chalet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    margin-left: 350px;
+    margin-right: 350px;
     min-width: 120px;
-    height: 482px;
+    height: auto;
     padding-top: 80px;
     padding-bottom: 80px;
+    justify-content: center;
 }
 
 
-.mountain-splash__photo {
-    float: left;
-    width: 70%;
-    height: auto;
-    min-width: 390px;
+.river-chalet__photo {
+    object-position: bottom;
+    object-fit: cover;
+    grid-column: 1;
+    padding: 0px 15px;
+    width: 670px;
+    height: 440px;
+    min-width: auto;
     min-height: auto;
     border-radius: 3%;
 }
 
-.mountain-splash__list-information {
+.river-chalet__list-information {
     text-align: left;
-    float: left;
+    padding-left: 15px;
 }
 
 .cost-room-text {
@@ -182,4 +201,13 @@ h1 {
 
 .button-holder__button-to-push:hover {
     background-color: #ff9933;
+}
+
+.cost-room-text {
+    font-weight: bold;
+}
+
+.orange-check-mark {
+    width: 4.3%;
+    padding-right: 20px;
 }
