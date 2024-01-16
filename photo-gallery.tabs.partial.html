@@ -3,42 +3,46 @@
     <h2 class="gallery__title">Gallery</h2>
     <div class="gallery__tabs">
       <div class="gallery__tabs-nav">
-        <button
-          class="gallery__tab-item--link tab-item-active"
-          onclick="openTab(event, 'tab-content-summer')"
-        >
-          Summer
-        </button>
-        <button
-          class="gallery__tab-item--link"
-          onclick="openTab(event, 'tab-content-winter')"
-        >
-          Winter
-        </button>
-        <button
-          class="gallery__tab-item--link"
-          onclick="openTab(event, 'tab-content-spring')"
-        >
-          Spring
-        </button>
-        <button
-          class="gallery__tab-item--link"
-          onclick="openTab(event, 'tab-content-autumn')"
-        >
-          Autumn
-        </button>
-        <button
-          class="gallery__tab-item--link"
-          onclick="openTab(event, 'tab-content-fishing')"
-        >
-          Fishing
-        </button>
-        <button
-          class="gallery__tab-item--link"
-          onclick="openTab(event, 'tab-content-spa')"
-        >
-          SPA
-        </button>
+        <div class="tabs-nav-btns top-btns">
+          <button
+            class="gallery__tab-item--link tab-item-active"
+            onclick="openTab(event, 'tab-content-summer')"
+          >
+            Summer
+          </button>
+          <button
+            class="gallery__tab-item--link"
+            onclick="openTab(event, 'tab-content-winter')"
+          >
+            Winter
+          </button>
+          <button
+            class="gallery__tab-item--link"
+            onclick="openTab(event, 'tab-content-spring')"
+          >
+            Spring
+          </button>
+        </div>
+        <div class="tabs-nav-btns bottom-btns">
+          <button
+            class="gallery__tab-item--link"
+            onclick="openTab(event, 'tab-content-autumn')"
+          >
+            Autumn
+          </button>
+          <button
+            class="gallery__tab-item--link"
+            onclick="openTab(event, 'tab-content-fishing')"
+          >
+            Fishing
+          </button>
+          <button
+            class="gallery__tab-item--link"
+            onclick="openTab(event, 'tab-content-spa')"
+          >
+            SPA
+          </button>
+        </div>
       </div>
       <div class="gallery__tab-content-wrapper">
         <div
