@@ -24,30 +24,34 @@ h1 {
 }
 
 .river-chalet {
-    flex-wrap: wrap;
-    margin-left: 351px;
-    margin-right: 351px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: auto;
+    margin-left: 350px;
+    margin-right: 350px;
     flex-direction: column;
     min-width: 120px;
-    height: 482px;
+    height: auto;
     padding-top: 80px;
     padding-bottom: 80px;
 }
 
 
 .river-chalet__photo {
-    float: left;
-    width: 70%;
-    height: auto;
-    min-width: 390px;
+    object-position: right;
+    grid-column: 1;
+    width: 670px;
+    height: 433px;
+    min-width: auto;
     min-height: auto;
     border-radius: 3%;
 }
 
 .river-chalet__list-information {
     text-align: left;
-    float: left;
+    object-position: left;
+    position: absolute;
+    padding-left: 700px;
 }
 
 .lookout-lodge {
