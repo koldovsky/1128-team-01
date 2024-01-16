@@ -4,7 +4,8 @@
 @import "order-a-call.css";
 @import "adventure.css";
 @import "cabin-rentals.css";
-@import "index.activity.partial.css";
-@import "index.question.partial.css";
+@import "activity.css";
+@import "question.css";
 @import "facilities.css";
+@import "shop-and-cafe.css";
 @import "footer.partial.css";
