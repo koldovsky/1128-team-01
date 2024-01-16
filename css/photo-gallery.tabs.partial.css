@@ -75,10 +75,6 @@
   display: grid;
 }
 
-.gallery__tab-content-wrapper {
-  padding: 0 10px;
-}
-
 .tab-content__item {
   aspect-ratio: 1;
   max-width: 275px;
@@ -111,6 +107,10 @@
 @media (min-width: 584px) {
   .gallery__title {
     font-size: 36px;
+  }
+
+  .gallery__tab-content-wrapper {
+    padding: 0 20px;
   }
 
   .gallery__tab-item--link {
@@ -274,6 +274,10 @@
 
   .gallery__tab-item--link {
     font-size: 18px;
+  }
+
+  .gallery__tab-content-wrapper {
+    padding: 0 30px;
   }
 
   .gallery__tab-content {
