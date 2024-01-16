@@ -17,10 +17,12 @@
   font-stretch: 100%;
 }
 .activities__group {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0;
+  margin: 20px 20px 30px 50px;
+  align-items: center;
 }
 .activities__item {
   background-color: var(--classic-white);
@@ -63,4 +65,16 @@
 .activity__price,
 .activity__description {
   margin: 10px;
+}
+
+@media (max-width: 992px) {
+  .activities__group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 786px) {
+  .activities__group {
+    grid-template-columns: 1fr;
+  }
 }
