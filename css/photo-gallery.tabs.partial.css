@@ -34,7 +34,7 @@
 
 .gallery__tab-item--link {
   font-family: "Circular Std Bold";
-  font-size: 18px;
+  font-size: 14px;
   padding: 15px 20px;
   display: flex;
   justify-content: center;
@@ -111,6 +111,10 @@
 @media (min-width: 584px) {
   .gallery__title {
     font-size: 36px;
+  }
+
+  .gallery__tab-item--link {
+    font-size: 16px;
   }
 
   .tab-content__item {
@@ -266,6 +270,10 @@
 @media (min-width: 768px) {
   .gallery__title {
     font-size: 40px;
+  }
+
+  .gallery__tab-item--link {
+    font-size: 18px;
   }
 
   .gallery__tab-content {
