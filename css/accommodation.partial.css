@@ -31,6 +31,7 @@ h1 {
 
 .river-chalet {
     display: grid;
+    grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
     width: auto;
     margin-left: 350px;
@@ -47,7 +48,8 @@ h1 {
     object-position: bottom;
     object-fit: cover;
     grid-column: 1;
-    padding: 0px 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     width: 670px;
     height: 440px;
     min-width: auto;
@@ -56,12 +58,16 @@ h1 {
 }
 
 .river-chalet__list-information {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 0px;
     text-align: left;
     padding-left: 15px;
 }
 
 .lookout-lodge {
     display: grid;
+    grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
     width: auto;
     margin-left: 350px;
@@ -87,12 +93,16 @@ h1 {
 }
 
 .lookout-lodge__list-information {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 0px;
     text-align: left;
     padding-left: 15px;
 }
 
 .smoky-view {
     display: grid;
+    grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
     width: auto;
     margin-left: 350px;
@@ -118,12 +128,16 @@ h1 {
 }
 
 .smoky-view__list-information {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 0px;
     text-align: left;
     padding-left: 15px;
 }
 
 .mountain-haven {
     display: grid;
+    grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
     width: auto;
     margin-left: 350px;
@@ -149,12 +163,16 @@ h1 {
 }
 
 .mountain-haven__list-information {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 0px;
     text-align: left;
     padding-left: 15px;
 }
 
 .mountain-splash {
     display: grid;
+    grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
     width: auto;
     margin-left: 350px;
@@ -180,6 +198,9 @@ h1 {
 }
 
 .mountain-splash__list-information {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 0px;
     text-align: left;
     padding-left: 15px;
 }
@@ -215,4 +236,15 @@ h1 {
 .orange-check-mark {
     width: 4.3%;
     padding-right: 20px;
+}
+
+.room-advantages {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+}
+
+.include-room {
+    display: flex;
+    flex-direction: column;
 }
