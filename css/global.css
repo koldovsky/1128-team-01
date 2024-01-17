@@ -9,6 +9,7 @@
 :root {
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
+  --btns-border-bottom-active: black;
   --font-standard-color: #282520;
   --form-bg-color: #fff;
   --classic-white: #fff;
@@ -24,10 +25,10 @@
   --activity-description-color: rgb(132, 132, 132);
   --activity-price-color: rgb(249, 130, 80);
   --activity-title-color: rgb(40, 37, 12);
-  --questions-reservation-color:rgba(0, 0, 0, 0);
+  --questions-reservation-color: rgba(0, 0, 0, 0);
   --facilities-header-text: #282520;
-  --shop-and-cafe-description-color:rgb(209, 209, 209);
-  --shop-and-cafe-feature-color:rgb(87, 156, 126);
+  --shop-and-cafe-description-color: rgb(209, 209, 209);
+  --shop-and-cafe-feature-color: rgb(87, 156, 126);
 }
 
 img {
