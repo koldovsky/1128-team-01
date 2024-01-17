@@ -1,10 +1,10 @@
 function openTab(event) {
   const tabName = event.currentTarget.dataset.tab;
-  const tab_content = document.querySelectorAll(".gallery__tab-content");
-  tab_content.forEach(tab => tab.style.display = "none");
+  const tabContent = document.querySelectorAll(".gallery__tab-content");
+  tabContent.forEach(tab => tab.style.display = "none");
   
-  const tab_links = document.querySelectorAll(".gallery__tab-item--link");
-  tab_links.forEach(link => link.classList.remove("tab-item-active"));
+  const tabLinks = document.querySelectorAll(".gallery__tab-item--link");
+  tabLinks.forEach(link => link.classList.remove("tab-item-active"));
   
   const currentTab = document.querySelector(`.${tabName}`);
   currentTab.style.display = "grid";
@@ -13,8 +13,8 @@ function openTab(event) {
 }
 
 document.addEventListener("partialsLoaded", function() {
-  const tab_nav_btns = document.querySelectorAll(".gallery__tab-item--link");
-  tab_nav_btns.forEach(btn => {
+  const tabNavBtns = document.querySelectorAll(".gallery__tab-item--link");
+  tabNavBtns.forEach(btn => {
     btn.addEventListener('click', openTab);
   });
 })
