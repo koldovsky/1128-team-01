@@ -21,8 +21,8 @@
 .gallery__tabs-nav {
   display: grid;
   gap: 0;
-  grid-template-columns: 1;
-  grid-template-rows: 2;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
   margin-bottom: 30px;
   max-width: 1200px;
   color: var(--font-standard-color);
