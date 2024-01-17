@@ -17,42 +17,61 @@
   font-stretch: 100%;
 }
 .activities__group {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 0;
-  margin: 20px 20px 30px 50px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  margin-top: 50px;
+  margin-left: -15px;
+  margin-right: -15px;
   align-items: center;
 }
 .activities__item {
   background-color: var(--classic-white);
-  padding: 15px;
-  margin: 15px;
+  padding-left:15px;
+  padding-right:15px;
+  margin: 0px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  height: 412.525px;
-  width: 298.125px;
-  line-height: 25.6px;
+  display:flex;
+  flex-basis: calc(33.3333% - 30px); 
+  max-width: calc(33.3333% - 30px);
+  margin-bottom: 30px; 
+
 }
 
 .activity__image {
-  width: 258.125px;
-  height: 171.125px;
-  border-radius: 8px;
+  display:block;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  border-radius: 10px;
+  width: 100%; 
+  height:  auto; 
+  object-fit: cover; 
 }
 
 .activity__title {
+  display:block;
   color: var(--activity-title-color);
   font-family: "Circular Std", serif;
-  font-size: 1.5rem;
   font-weight: 500;
+  margin-top:20px;
+  max-width:100%;
+  font-size:25px;
+  font-stretch:100%;
+  line-height:35px;
+  text-decoration-style:solid;
 }
 
 .activity__price {
+  display:block;
   color: var(--activity-price-color);
   font-family: "Circular Std", serif;
   font-size: 20px;
   font-weight: 500;
+  margin-top:5px;
+  max-width:100%;
+  letter-spacing:-0.4px;
+  line-height:24px;
 }
 
 .activity__description {
@@ -60,21 +79,28 @@
   font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 400;
+  margin-top: 15px;
 }
-.activity__title,
-.activity__price,
-.activity__description {
-  margin: 10px;
+.activity__content {
+display:flex;
+flex-basis:100%;
+flex-direction:column;
+justify-content:flex-start;
+max-width:100%;
+padding: 20px;
+text-align:center;
 }
 
 @media (max-width: 992px) {
-  .activities__group {
-    grid-template-columns: repeat(2, 1fr);
+  .activities__item {
+    flex-basis: calc(50% - 30px); 
+    max-width: calc(50% - 30px);
   }
 }
 
-@media (max-width: 786px) {
-  .activities__group {
-    grid-template-columns: 1fr;
+@media (max-width: 768px) {
+  .activities__item {
+    flex-basis: calc(100% - 30px);
+    max-width: calc(100% - 30px);
   }
 }

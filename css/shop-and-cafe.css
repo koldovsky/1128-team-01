@@ -67,8 +67,11 @@
   flex-basis: 50%;
   padding-left: 15px;
   padding-right: 15px;
-  background-color:var(--shop-and-cafe-feature-color)
+  background-color:var(--shop-and-cafe-feature-color);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
+
+
 
 .feature__content {
   display: flex;
@@ -83,8 +86,13 @@
   border-top-right-radius: 10px;
 }
 
-/*.feature__image {
-}*/
+.feature__image {
+  display:block;
+  justify-content:flex-start;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  height: 322.2px;
+}
 
 .feature__title {
     margin-top:20px;
@@ -101,4 +109,9 @@
     margin-top: 5px;
     color: var(--shop-and-cafe-description-color);
 }
+}
+@media (max-width: 767px) {
+  .shop-and-cafe__features {
+    grid-template-columns: 1fr;
+  }
 }
