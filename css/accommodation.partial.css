@@ -1,203 +1,270 @@
-.accommodation-style {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 :root {
-    --background-color-section: #F2F2F0;
+    --background-color-section: rgba(183, 183, 183, 0.2);
     --price-color: #629673;
+    --main-text-color: #3e3e3e;
+    --button-reserve-color: #f98250;
+    --button-reserve-hover: #51d7a8;
+    --button-reserve-text-color: #fff;
+
 }
 
-.river__chalet {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin-bottom: 20px;
-    padding: 20px;
+body {
+    font-family: 'Circular Std Bold', Arial, Helvetica, sans-serif;
+    color: var(--main-text-color);
+}
+
+h1 {
+    text-align: center;
+}
+
+.accommodation-main-contain__background-image {
+    background-image: url('../img/accommodation_background.jpg');
+    background-size: auto;
+    width: 100%;
+}
+
+.accommodation-main-contain__background-color {
     background-color: var(--background-color-section);
-    font-family: 'Circular Std Bold', Arial, Helvetica, sans-serif;
-    margin: 50px;
+    background-size: auto;
+    width: 100%;
 }
 
-.river__chalet-photo {
-    float: left;
-    width: 50%;
+.river-chalet {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    margin-left: 350px;
+    margin-right: 350px;
+    min-width: 120px;
     height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    justify-content: center;
+}
+
+
+.river-chalet__photo {
+    object-position: bottom;
+    object-fit: cover;
+    grid-column: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 670px;
+    height: 440px;
+    min-width: auto;
+    min-height: auto;
     border-radius: 3%;
 }
 
-.river__chalet-inner-list {
-    float: right;
-}
-
-.river__chalet-cost-price {
-    font-weight: bold;
-    font-size: 35px;
-}
-
-.river__chalet-color-price {
-    color: var(--price-color);
-}
-
-.river__chalet-name-cabin {
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.lookout__lodge {
+.river-chalet__list-information {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin-bottom: 20px;
-    padding: 20px;
-    font-family: 'Circular Std Bold', Arial, Helvetica, sans-serif;
-    margin: 50px;
+    margin-inline: 0px;
+    text-align: left;
+    padding-left: 15px;
 }
 
-.lookout__lodge-photo {
-    float: left;
-    width: 50%;
+.river-chalet__list-information span {
+    margin-bottom: 14px;
+}
+
+.lookout-lodge {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    margin-left: 350px;
+    margin-right: 350px;
+    min-width: 120px;
     height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    justify-content: center;
+}
+
+
+.lookout-lodge__photo {
+    object-position: bottom;
+    object-fit: cover;
+    grid-column: 1;
+    padding: 0px 15px;
+    width: 670px;
+    height: 440px;
+    min-width: auto;
+    min-height: auto;
     border-radius: 3%;
 }
 
-.lookout__lodge-inner-list {
-    float: right;
-}
-
-.lookout__lodge-cost-price {
-    font-weight: bold;
-    font-size: 35px;
-}
-
-.lookout__lodge-color-price {
-    color: var(--price-color);
-}
-
-.lookout__lodge-name-cabin {
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.smoky__view {
+.lookout-lodge__list-information {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: var(--background-color-section);
-    font-family: 'Circular Std Bold', Arial, Helvetica, sans-serif;
-    margin: 50px;
+    margin-inline: 0px;
+    text-align: left;
+    padding-left: 15px;
 }
 
-.smoky__view-photo {
-    float: left;
-    width: 50%;
+.lookout-lodge__list-information span {
+    margin-bottom: 14px;
+}
+
+.smoky-view {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    margin-left: 350px;
+    margin-right: 350px;
+    min-width: 120px;
     height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    justify-content: center;
+}
+
+
+.smoky-view__photo {
+    object-position: bottom;
+    object-fit: cover;
+    grid-column: 1;
+    padding: 0px 15px;
+    width: 670px;
+    height: 440px;
+    min-width: auto;
+    min-height: auto;
     border-radius: 3%;
 }
 
-.smoky__view-inner-list {
-    float: right;
-}
-
-.smoky__view-cost-price {
-    font-weight: bold;
-    font-size: 35px;
-}
-
-.smoky__view-color-price {
-    color: var(--price-color);
-}
-
-.smoky__view-name-cabin {
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.mountain__haven {
+.smoky-view__list-information {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin-bottom: 20px;
-    padding: 20px;
-    font-family: 'Circular Std Bold', Arial, Helvetica, sans-serif;
-    margin: 50px;
+    margin-inline: 0px;
+    text-align: left;
+    padding-left: 15px;
 }
 
-.mountain__haven-photo {
-    float: left;
-    width: 50%;
+.smoky-view__list-information span {
+    margin-bottom: 14px;
+}
+
+.mountain-haven {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    margin-left: 350px;
+    margin-right: 350px;
+    min-width: 120px;
     height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    justify-content: center;
+}
+
+
+.mountain-haven__photo {
+    object-position: bottom;
+    object-fit: cover;
+    grid-column: 1;
+    padding: 0px 15px;
+    width: 670px;
+    height: 440px;
+    min-width: auto;
+    min-height: auto;
     border-radius: 3%;
 }
 
-.mountain__haven-list {
-    float: right;
-}
-
-.mountain__haven-cost-price {
-    font-weight: bold;
-    font-size: 35px;
-}
-
-.mountain__haven-color-price {
-    color: var(--price-color);
-}
-
-.mountain__haven-name-cabin {
-    font-weight: bold;
-    font-size: 25px;
-}
-
-.mountain__splash {
+.mountain-haven__list-information {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 80%;
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: var(--background-color-section);
-    font-family: 'Circular Std Bold', Arial, Helvetica, sans-serif;
-    margin: 50px;
+    margin-inline: 0px;
+    text-align: left;
+    padding-left: 15px;
 }
 
-.mountain__splash-photo {
-    float: left;
-    width: 50%;
+.mountain-haven__list-information span {
+    margin-bottom: 14px;
+}
+
+.mountain-splash {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+    margin-left: 350px;
+    margin-right: 350px;
+    min-width: 120px;
     height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    justify-content: center;
+}
+
+
+.mountain-splash__photo {
+    object-position: bottom;
+    object-fit: cover;
+    grid-column: 1;
+    padding: 0px 15px;
+    width: 670px;
+    height: 440px;
+    min-width: auto;
+    min-height: auto;
     border-radius: 3%;
 }
 
-.mountain__splash-list {
-    float: right;
+.mountain-splash__list-information {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 0px;
+    text-align: left;
+    padding-left: 15px;
 }
 
-.mountain__splash-cost-price {
-    font-weight: bold;
+.mountain-splash__list-information span {
+    margin-bottom: 14px;
+}
+
+.cost-room-text {
     font-size: 35px;
 }
 
-.mountain__splash-color-price {
+.colored-text-price {
     color: var(--price-color);
 }
 
-.mountain__splash-name-cabin {
+.button-holder__button-to-push {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--button-reserve-color);
+    color: var(--button-reserve-text-color);
+    text-decoration: none;
+    font-size: 15px;
     font-weight: bold;
-    font-size: 25px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
 }
 
-.reserve-cabin-button {
-    background-color: orange;
-    color: white;
-    padding: 10px 20px;
-    margin-top: 20px;
-    cursor: pointer;
-    border: none;
-    border-radius: 10%;
+.button-holder__button-to-push:hover {
+    background-color: var(--button-reserve-hover);
+}
+
+.cost-room-text {
+    font-weight: bold;
+}
+
+.orange-check-mark {
+    width: 4.3%;
+    padding-right: 20px;
+}
+
+.room-advantages {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+}
+
+.include-room {
+    display: flex;
+    flex-direction: column;
 }

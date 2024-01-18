@@ -4,16 +4,15 @@
   background-position: center;
   min-width: 320px;
   padding: 180px 0;
-  height: 541.2px;
   line-height: 25.6px;
   width: 100%;
   font-family: Roboto, sans-serif;
 }
+
 .questions__text {
   color: var(--classic-white);
   font-family: "Circular Std", serif;
   font-size: 60px;
-  font-stretch: 100%;
   font-weight: 700;
   letter-spacing: -1.26px;
   line-height: 70.8px;
@@ -22,40 +21,32 @@
 
 .questions__call-us {
   font-family: "Roboto", sans-serif;
-  font-size: 15.4px;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
   letter-spacing: normal;
   color: var(--classic-white);
   text-decoration: none;
-}
 
-.questions__call-us {
   background-color: var(--activity-price-color);
   background-image: linear-gradient(
     0deg,
     var(--form-content-box-shadow-color),
     var(--form-content-box-shadow-color)
   );
-}
 
-.questions__call-us {
   border-bottom-left-radius: 32px;
   border-bottom-right-radius: 32px;
   border-top-left-radius: 32px;
   border-top-right-radius: 32px;
   box-shadow: 0 0 0 0 var(--form-content-box-shadow-color);
-}
 
-.questions__call-us {
   padding: 20px 32px;
   margin: 10px;
   position: relative;
   display: inline-block;
   text-align: center;
-}
 
-.questions__call-us {
   transition-property: color, background-color, border-color, box-shadow,
     -webkit-box-shadow;
   transition-duration: 0.2s;
@@ -64,27 +55,41 @@
 
 .questions__call-us:hover {
   color: var(--activity-title-color);
-  border-color: var(--classic-white);
+  background-color: var(--classic-white);
 }
 
-.questions__call-us {
-  cursor: pointer;
-  user-select: none;
-  vertical-align: middle;
-  max-width: 100%;
-  overflow-wrap: break-word;
-  overflow-x: visible;
-  overflow-y: visible;
-  text-align: center;
-  text-transform: uppercase;
-  word-break: break-word;
-}
-.questions__reservation{
+.questions__reservation {
+  background-color: var(--questions-reservation-color);
   text-decoration: none;
+  display: inline-block;
+  padding: 20px 32px;
+  border-radius: 32px;
+  border: 1px solid var(--classic-white);
+  color: var(--classic-white);
+  text-align: center;
+  margin: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-stretch: 100%;
+  font-size: 1rem;
+}
+
+.questions__reservation:hover {
+  color: var(--activity-title-color);
+  background-color: var(--classic-white);
+}
+
+.questions__group-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 55px;
+}
+@media (max-width: 356px) {
+  .questions__group-buttons {
+    flex-direction: column;  
+    align-items: center; 
   }
 
-.questions__group-buttons{
-  display:flex;
-  flex-direction:row;
-  justify-content: center;
 }
