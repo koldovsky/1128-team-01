@@ -28,7 +28,7 @@
   --questions-reservation-color: rgba(0, 0, 0, 0);
   --facilities-header-text: #282520;
   --shop-and-cafe-description-color: rgb(209, 209, 209);
-  --shop-and-cafe-feature-color: rgb(87, 156, 126);
+  --shop-and-cafe-feature-color: rgb(87, 156, 126, 0.51);
   --how-to-get-contacts-bg-color: #787777;
 }
 
