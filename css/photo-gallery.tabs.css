@@ -115,6 +115,13 @@
     max-width: none;
   }
 
+  .tab-content__item:hover  {
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.02);
+  }
+  
+
   .gallery__big-img {
     max-width: 770px;
     max-height: 730px;
