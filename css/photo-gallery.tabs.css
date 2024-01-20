@@ -1,3 +1,15 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Circular Std Bold";
+  background-image: url("../img/background-mountains.jpg");
+  background-size: cover;
+  background-position: center 200px;
+  background-attachment: fixed;
+  padding: 80px 0;
+}
+
 .gallery__wrapper {
   display: flex;
   flex-direction: column;
@@ -115,12 +127,11 @@
     max-width: none;
   }
 
-  .tab-content__item:hover  {
+  .tab-content__item:hover {
     cursor: pointer;
     transition: 0.5s;
     transform: scale(1.02);
   }
-  
 
   .gallery__big-img {
     max-width: 770px;
