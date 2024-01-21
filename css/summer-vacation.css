@@ -8,16 +8,9 @@
     background-attachment: local;
     padding-top: 80px;
     padding-bottom: 80px;
-    
+    padding-right: 24px;
+    padding-left: 24px;
 }
-
-.vacation__main-container {
-    padding: 0 24px;
-}
-
-/* .vacation__list-and-text-container {
-    padding: 0 15px;
-} */
 
 .vacation__title-container {
     padding-bottom: 5px;
@@ -26,7 +19,7 @@
 
 .vacation__title {
     font-size: 22px;
-    font-family: "Roboto", serif;
+    font-family: "Circular Std Bold", serif;
 }
 
 .vacation__text-container {
@@ -62,7 +55,3 @@
 .vacation__list-text {
     padding-left: 10px;
 }
-
-/* .vacation__list-element svg {
-    fill: var(--about-checkbox-color);
-} */
