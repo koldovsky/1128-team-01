@@ -1,4 +1,5 @@
 .header__container {
+  display:inline;
   width: calc(100% + 20px);
     -webkit-box-align: center;
     -webkit-align-items: center;
