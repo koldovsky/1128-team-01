@@ -1,5 +1,5 @@
 .contact {
-  background-color: #676363;
+  background-color: var(--how-to-get-contacts-bg-color);
   background-size: cover;
   box-sizing: border-box;
   background-image: url(../img/how-to-get-contacts-bg.jpg);
@@ -9,15 +9,14 @@
   padding-top: 100px;
   padding-bottom: 100px;
   width: 100%;
+  justify-content: center;
 }
 
 .contact__container {
-  max-width: 1200px;
   padding-left: 24px;
   padding-right: 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: grid;
+  margin: 0 auto;
 }
 
 .contact__content {
@@ -36,7 +35,7 @@ p.contact__description {
   margin-top: 25px;
 }
 
-p.contact__subtitle {
+.contact__subtitle {
   font-family: "Circular Std Bold", sans-serif;
   font-size: 18px;
   margin-bottom: 5px;
@@ -45,7 +44,13 @@ p.contact__subtitle {
 .contact__address {
   font-size: 16px;
   margin-top: 25px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__details {
+  display: flex;
+  flex-direction: column;
 }
 
 .contact__email,
@@ -75,11 +80,11 @@ p.contact__subtitle {
   border-radius: 34px;
   text-align: center;
   background-color: var(--form-input-bg-color);
-  border-width: 0px;
+  border-width: 0;
   padding-bottom: 16px;
   padding-top: 16px;
   text-align: center;
-  border: 0px;
+  border: 0;
   margin-top: 12px;
   width: 100%;
 }
@@ -89,7 +94,7 @@ p.contact__subtitle {
   border-radius: 34px;
   background-color: var(--form-submit-button-bg-color);
   font-size: 14px;
-  border-width: 0px;
+  border-width: 0;
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 16px;
@@ -105,7 +110,10 @@ p.contact__subtitle {
 
 @media (min-width: 765px) {
   .contact__container {
-    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   .contact__form {
@@ -116,17 +124,40 @@ p.contact__subtitle {
   }
 
   .contact__address {
-    grid-template-columns: auto auto;
-    column-gap: 30px;
-    justify-items: start;
-  }
-
-  .contact__email,
-  .contact__phone {
-    align-self: start;
+    justify-items: center;
+    margin-top: 45px;
   }
 
   .contact__form {
     margin-top: 0;
+  }
+
+  .contact__details {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    align-items: center;
+  }
+
+  .contact__details div {
+    margin-bottom: 0;
+    padding-left: 15px;
+  }
+
+  .contact__details {
+    flex-direction: row;
+  }
+
+  .contact__subtitle {
+    margin: 0;
+    padding-right: 15px;
+    width: 30%;
+    display: inline-block;
+  }  
+}
+
+@media (min-width: 990px) {
+  .contact__container {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }

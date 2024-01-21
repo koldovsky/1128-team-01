@@ -1,6 +1,6 @@
 @import "global.css";
 @import "modal.css";
-@import "header.css";
+@import "header.partial.css";
 @import "order-a-call.css";
 @import "adventure.css";
 @import "cabin-rentals.css";

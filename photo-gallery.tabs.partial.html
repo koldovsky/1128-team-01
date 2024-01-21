@@ -1,45 +1,33 @@
 <section class="gallery">
-  <div class="gallery__wrapper">
+  <div class="gallery__wrapper container">
     <h2 class="gallery__title">Gallery</h2>
     <div class="gallery__tabs">
       <div class="gallery__tabs-nav">
         <div class="tabs-nav-btns top-btns">
           <button
             class="gallery__tab-item--link tab-item-active"
-            onclick="openTab(event, 'tab-content-summer')"
+            data-tab="tab-content-summer"
           >
             Summer
           </button>
-          <button
-            class="gallery__tab-item--link"
-            onclick="openTab(event, 'tab-content-winter')"
-          >
+          <button class="gallery__tab-item--link" data-tab="tab-content-winter">
             Winter
           </button>
-          <button
-            class="gallery__tab-item--link"
-            onclick="openTab(event, 'tab-content-spring')"
-          >
+          <button class="gallery__tab-item--link" data-tab="tab-content-spring">
             Spring
           </button>
         </div>
         <div class="tabs-nav-btns bottom-btns">
-          <button
-            class="gallery__tab-item--link"
-            onclick="openTab(event, 'tab-content-autumn')"
-          >
+          <button class="gallery__tab-item--link" data-tab="tab-content-autumn">
             Autumn
           </button>
           <button
             class="gallery__tab-item--link"
-            onclick="openTab(event, 'tab-content-fishing')"
+            data-tab="tab-content-fishing"
           >
             Fishing
           </button>
-          <button
-            class="gallery__tab-item--link"
-            onclick="openTab(event, 'tab-content-spa')"
-          >
+          <button class="gallery__tab-item--link" data-tab="tab-content-spa">
             SPA
           </button>
         </div>
@@ -48,7 +36,7 @@
         <div
           class="gallery__tab-content tab-content-summer gallery__tab-content--default"
         >
-          <div class="tab-content__item big-img">
+          <div class="tab-content__item gallery__big-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/summer/summer_tree_house.webp"
@@ -57,7 +45,7 @@
               <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/summer/summer_two_horses.webp"
@@ -66,7 +54,7 @@
               <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/summer/summer_lake.webp"
@@ -75,7 +63,7 @@
               <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/summer/summer_treehouse_indoors.webp"
@@ -84,7 +72,7 @@
               <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/summer/summer_house_in_the_forest.webp"
@@ -93,7 +81,7 @@
               <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item big-img">
+          <div class="tab-content__item gallery__big-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/summer/summer_flowers.webp"
@@ -104,7 +92,7 @@
           </div>
         </div>
         <div class="gallery__tab-content tab-content-winter">
-          <div class="tab-content__item big-img">
+          <div class="tab-content__item gallery__big-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/winter/winter_houses_and_mountains_far.webp"
@@ -113,7 +101,7 @@
               <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/winter/winter_skier.webp"
@@ -122,7 +110,7 @@
               <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/winter/winter_woman.webp"
@@ -131,7 +119,7 @@
               <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/winter/winter_house.webp"
@@ -140,7 +128,7 @@
               <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/winter/winter_horse.webp"
@@ -149,7 +137,7 @@
               <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item big-img">
+          <div class="tab-content__item gallery__big-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/winter/winter_houses_and_mountains_close.webp"
@@ -160,7 +148,7 @@
           </div>
         </div>
         <div class="gallery__tab-content tab-content-spring">
-          <div class="tab-content__item big-img">
+          <div class="tab-content__item gallery__big-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/spring/spring_cabin.webp"
@@ -169,7 +157,7 @@
               <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/spring/spring_cabin_and_lake.webp"
@@ -178,7 +166,7 @@
               <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/spring/spring_cabin_and_forest.webp"
@@ -189,7 +177,7 @@
           </div>
         </div>
         <div class="gallery__tab-content tab-content-autumn">
-          <div class="tab-content__item big-img">
+          <div class="tab-content__item gallery__big-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/autumn/autumn-house.webp"
@@ -198,7 +186,7 @@
               <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/autumn/autumn-forest-house.webp"
@@ -207,7 +195,7 @@
               <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/autumn/autumn-girl-tree.webp"
@@ -218,7 +206,7 @@
           </div>
         </div>
         <div class="gallery__tab-content tab-content-fishing">
-          <div class="tab-content__item big-img">
+          <div class="tab-content__item gallery__big-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/fishing/fishing-boy-river.webp"
@@ -227,7 +215,7 @@
               <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/fishing/fishing-boat-mountains.webp"
@@ -236,7 +224,7 @@
               <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/fishing/fishing-boat-river.webp"
@@ -247,7 +235,7 @@
           </div>
         </div>
         <div class="gallery__tab-content tab-content-spa">
-          <div class="tab-content__item big-img">
+          <div class="tab-content__item gallery__big-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/spa/spa-view-from-inside.webp"
@@ -256,7 +244,7 @@
               <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/spa/spa-baths-outside.webp"
@@ -265,7 +253,7 @@
               <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/spa/spa-view-outside.webp"
