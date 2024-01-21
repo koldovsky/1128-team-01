@@ -24,7 +24,7 @@
 }
 
 .header__adress {
-  display: inline;
+  display: block;
   text-align: center;
   color: #282520;
   line-height: 1.18;
@@ -43,6 +43,7 @@
 }
 
 .header__contacts{
+  display:block;
   color: rgb(249, 130, 80);
   display: inline;
   font-family: Roboto, sans-serif;

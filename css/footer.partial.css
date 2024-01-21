@@ -1,5 +1,5 @@
 .footer{
-    display:inline-block;
+    display:inline;
     
 }
 
@@ -43,8 +43,10 @@
 }
 .footer__creat{
     text-align: left;
+    color:#282520!important;
 }
 
-.footer_rights{
+.footer__rights{
     text-align: right;
+    color:#282520!important;
 }
