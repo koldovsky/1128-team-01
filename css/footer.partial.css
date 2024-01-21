@@ -27,6 +27,7 @@
     color: #599673;
     flex:row;
     display: flex;
+    flex: row;
     position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -41,11 +42,11 @@
     cursor: pointer
 }
 .footer__creat{
-    text-align: left;
+    align-items: left;
     color:#282520!important;
 }
 
 .footer__rights{
-    text-align: right;
+   align-items: right;
     color:#282520!important;
 }
