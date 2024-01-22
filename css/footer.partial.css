@@ -1,5 +1,6 @@
-.footer {
-  display: block;
+.footer__container {
+  display: flex;
+  flex:row;
   
   
 }

@@ -39,7 +39,7 @@
   letter-spacing: -0.021em;
 }
 
-.header__contacts {
+.header__contacts a{
   display: flex;
   flex: column;
   text-decoration-color : rgb(249, 130, 80);
