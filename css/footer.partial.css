@@ -1,16 +1,16 @@
 .footer{
-    display:inline;
+    display:flex;
     
 }
 
 .footer__logo{
     display: block;
-  position: relative;
+  
   max-width: 300px;
 }
 
 .footer__nav{
-    position: relative;
+    
     max-width: 100%;
     color: #282520;
     line-height: normal;
@@ -26,9 +26,9 @@
     height: 30px;
     color: #599673;
     flex:row;
-    display: flex;
-    flex: row;
-    position: relative;
+    
+    
+    
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;

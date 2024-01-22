@@ -1,5 +1,6 @@
 .header__container {
-  display:inline;
+  display:flex;
+  flex:row;
   width: calc(100% + 20px);
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -16,7 +17,6 @@
 
 .header__logo {
   display: block;
-  position: relative;
   max-width: 300px;
 }
 
@@ -40,7 +40,8 @@
 }
 
 .header__contacts{
-  display:block;
+  display:flex;
+  flex: columns;
   color: rgb(249, 130, 80)!important;
   display: inline;
   font-family: Roboto, sans-serif;
@@ -64,11 +65,11 @@
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
-    flex-direction: column;
+    flex-direction: row;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    justify-content: space-around;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
