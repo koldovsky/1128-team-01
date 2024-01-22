@@ -1,4 +1,4 @@
- .registration__form {
+ .registration__form-accomodation {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -6,8 +6,8 @@
   overflow: hidden;
 }
 
-.background-image {
-  background-image: url("./img/Accomodation__back-for-form.jpg");
+.background-image__accomodation {
+  background-image: url("/img/accomodation__back_for_form.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -18,7 +18,7 @@
   justify-content: center;
 }
 
-.container {
+.container__accomodation {
   width: 650px;
   padding-left: 50px;
   padding-right: 50px;
@@ -38,7 +38,7 @@ input[type="text"],
 input[type="tel"] {
   width: 100%;
   padding: 15px;
-  margin: 5px 0 22px 0;
+  margin: 0px 0 0px 0;
   display: inline-block;
   border-radius: 20px;
   border: none;
@@ -76,13 +76,13 @@ p {
   margin-top: 5px;
 }
 
-.container__custom-select {
+.container__custom-select-accomodation {
   position: relative;
   width: 100%;
   border-radius: 20px;
 }
 
-.container__custom-select select {
+.container__custom-select-accomodation select {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -100,7 +100,7 @@ p {
   height: 51.11px;
 }
 
-.container__custom-select::after {
+.container__custom-select-accomodation::after {
   content: '\25BC';
   font-family: "Roboto";
   position: absolute;
@@ -112,12 +112,12 @@ p {
   color: #ddd;
 }
 
-.container__custom-select select:focus {
+.container__custom-select-accomodation select:focus {
   background-color: #ddd;
   outline: none;
 }
 
-.container__custom-select option {
+.container__custom-select-accomodation option {
   background-color: #f1f1f1;
   font-size: 18px;
 }
