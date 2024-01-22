@@ -1,4 +1,5 @@
 .header__container {
+  margin:20px auto;
   display: flex;
   flex: row;
   justify-content: space-around;
@@ -48,7 +49,7 @@
 }
 
 .header__nav {
-  margin: -5px -22.5px;
+  margin: -5px auto;
   align-items: center;
   
   color: rgb(40, 37, 32) !important;

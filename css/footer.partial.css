@@ -11,7 +11,6 @@
 .footer__nav {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: space-between;
   max-width: 100%;
   color: #282520;
@@ -22,7 +21,7 @@
   font-style: normal;
 }
 
-.footer__social {
+.ooter__logo_soc{
   text-align: right;
   display: flex;
   width: 30px;
