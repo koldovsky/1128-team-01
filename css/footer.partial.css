@@ -1,5 +1,6 @@
 .footer {
-  display: flex;
+  display: block;
+  
   
 }
 
@@ -34,11 +35,10 @@ align-items: center;
   cursor: pointer;
 }
 .footer__span {
-  display: flex;
-  flex: row;
-  justify-content: space-around;
-  align-items: center;
-  color: #282520 !important;
+    font-size:12px;
+  display: inline;
+       color: #282520 !important;
+       font-weight: 400;
 }
 
 
