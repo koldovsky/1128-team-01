@@ -1,10 +1,11 @@
 .footer {
   display: flex;
+  flex-direction: row;
 }
 
 .footer__logo {
   display: block;
-
+align-items: center;
   max-width: 300px;
 }
 
@@ -28,8 +29,8 @@
   height: 30px;
   color: #599673;
   flex: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: right;
+  align-items: right;
   cursor: pointer;
 }
 .footer__span {
