@@ -21,7 +21,7 @@
   font-style: normal;
 }
 
-.ooter__logo_soc{
+.footer__logo_soc{
   text-align: right;
   display: flex;
   width: 30px;
@@ -32,16 +32,12 @@
   align-items: center;
   cursor: pointer;
 }
-.footer__creat {
+.footer__span {
   display: flex;
   flex: row;
-  align-items: left;
+  justify-content: space-around;
+  align-items: center;
   color: #282520 !important;
 }
 
-.footer__rights {
-  display: flex;
-  flex: row;
-  align-items: right;
-  color: #282520 !important;
-}
+
