@@ -1,6 +1,7 @@
 .header__container {
   display: flex;
   flex: row;
+  justify-content: space-around;
   width: calc(100% + 20px);
   align-items: center;
   flex-wrap: wrap;
@@ -11,11 +12,15 @@
 
 .header__logo {
   display: block;
+  overflow-wrap: break-word ;
+  box-sizing: border-box;
   max-width: 300px;
+  ;
+
 }
 
 .header__adress {
-  display: block;
+  display: flexbox;
   text-align: center;
   color: #282520;
   line-height: 1.18;
@@ -35,8 +40,8 @@
 
 .header__contacts {
   display: flex;
-  flex: columns;
-  color: rgb(249, 130, 80) !important;
+  flex: column;
+  text-decoration-color : rgb(249, 130, 80);
   font-family: Roboto, sans-serif;
   font-size: 16px;
   font-stretch: 100%;
@@ -44,8 +49,8 @@
 
 .header__nav {
   margin: -5px -22.5px;
-  align-items: flex-start;
-  box-sizing: border-box;
+  align-items: center;
+  
   color: rgb(40, 37, 32) !important;
 
   font-family: Roboto, sans-serif;
@@ -53,6 +58,6 @@
   font-weight: 400;
   display: flex;
   flex: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  
 }

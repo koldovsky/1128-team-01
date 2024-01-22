@@ -9,6 +9,10 @@
 }
 
 .footer__nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
   max-width: 100%;
   color: #282520;
   line-height: normal;
@@ -18,7 +22,8 @@
   font-style: normal;
 }
 
-.footer__logo_soc {
+.footer__social {
+  text-align: right;
   display: flex;
   width: 30px;
   height: 30px;
