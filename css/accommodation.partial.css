@@ -1,3 +1,8 @@
+@import "global.css";
+@import "accommodation-reservation.partial.css";
+@import "header.css";
+@import "footer.partial.css";
+
 :root {
     --background-color-section: rgba(183, 183, 183, 0.2);
     --price-color: #629673;
