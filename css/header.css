@@ -1,9 +1,11 @@
 header {
   margin: 0;
+height: 211px;
+width:100px;
 }
 
 .header__container {
-  margin: 20px auto;
+  margin: auto;
   padding: 30px 15px;
   display: flex;
   flex-direction: row;
@@ -50,12 +52,23 @@ header {
 }
 
 .header__nav {
-  margin: -5px auto;
+  padding: 10px 40px 30px 40px;
+  margin:  auto;
   align-items: center;
-  color: rgb(40, 37, 32) !important;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 700;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  
+}
+.header__nav a:visited{
+  color: var(--font-standard-color);
+}
+.header__nav a{
+  margin: 0 15px;
+  color: var(--font-standard-color);
+}
+.header__nav a:hover{
+  color: var(--activity-price-color);
 }

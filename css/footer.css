@@ -1,14 +1,26 @@
-.footer__container {
+footer .container {
+  height: 242px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+
 }
 
+.footer__container {
+  display: grid;
+  grid-template-areas: "logo nav nav_soc";
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+
 .footer__logo {
-  align-items: center;
-  max-width: 300px;
+  grid-area: "logo";
+  width: 211px;
+  height: 89px;
+  margin:auto;
 }
 
 .footer__nav {
+  grid-area: "nav";
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -21,6 +33,7 @@
 }
 
 .footer__logo_soc {
+  grid-area: "nav_soc";
   text-align: right;
   display: flex;
   width: 30px;
@@ -30,6 +43,17 @@
   justify-content: right;
   align-items: right;
   cursor: pointer;
+}
+.soc__logo{
+  display: flex;
+  width: 30px;
+  height: 30px;
+  color: #599673;
+  flex-direction: row;
+  justify-content: right;
+  align-items: right;
+  cursor: pointer;
+
 }
 .footer__span {
   font-size: 12px;
