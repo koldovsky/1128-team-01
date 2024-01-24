@@ -21,13 +21,34 @@ var max = function (list) {
 
 // https://www.codewars.com/kata/find-the-first-non-consecutive-number/train/javascript
 function min(arr, toReturn) {
-  let minIndex = 0;
+  return toReturn === "value"
+    ? Math.min(...arr)
+    : arr.indexOf(Math.min(...arr));
+}
 
-  for (i = 0; i < arr.length; i++) {
-    if (arr[i] < arr[minIndex]) minIndex = i;
+// Advanced tasks
+// https://www.codewars.com/kata/a-wolf-in-sheeps-clothing/train/javascript
+function warnTheSheep(queue) {
+  return queue[queue.length - 1] === "wolf"
+    ? "Pls go away and stop eating my sheep"
+    : `Oi! Sheep number ${
+        queue.length - 1 - queue.indexOf("wolf")
+      }! You are about to be eaten by a wolf!`;
+}
+
+// https://www.codewars.com/kata/57f781872e3d8ca2a000007e/train/javascript
+function maps(x) {
+  return x.map((value) => value * 2);
+}
+
+// https://www.codewars.com/kata/find-the-first-non-consecutive-number/train/javascript
+function firstNonConsecutive(arr) {
+  for (i = 0; i < arr.length - 1; i++) {
+    if (arr[i + 1] - arr[i] !== 1) {
+      return arr[i + 1];
+    }
   }
-
-  return toReturn === "index" ? minIndex : arr[minIndex];
+  return null;
 }
 
 // Additional tasks
