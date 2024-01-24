@@ -1,28 +1,24 @@
 header {
-  margin:0;
+  margin: 0;
 }
 
 .header__container {
-  margin:20px auto;
-  padding:30px 15px;
+  margin: 20px auto;
+  padding: 30px 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   width: calc(100% + 20px);
   align-items: center;
   flex-wrap: wrap;
- 
-  
 }
 
 .header__logo {
   display: block;
-  overflow-wrap: break-word ;
+  overflow-wrap: break-word;
   box-sizing: border-box;
   width: 211px;
   height: 89px;
-  
-
 }
 
 .header__adress {
@@ -49,8 +45,8 @@ header {
   font-size: 16px;
   font-stretch: 100%;
 }
-.header__contacts a{
-  color : var(--activity-price-color);
+.header__contacts a {
+  color: var(--activity-price-color);
 }
 
 .header__nav {
@@ -62,5 +58,4 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
 }
