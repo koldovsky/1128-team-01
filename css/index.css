@@ -1,6 +1,6 @@
 @import "global.css";
 @import "modal.css";
-@import "header.partial.css";
+@import "header.css";
 @import "order-a-call.css";
 @import "adventure.css";
 @import "cabin-rentals.css";
@@ -8,4 +8,4 @@
 @import "question.css";
 @import "facilities.css";
 @import "shop-and-cafe.css";
-@import "footer.partial.css";
+@import "footer.css";
