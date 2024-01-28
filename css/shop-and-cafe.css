@@ -82,3 +82,26 @@
     grid-template-columns: 1fr;
   }
 }
+
+.clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.clients__counter {
+  text-align: center;
+}
+
+.clients__text {
+  font: 500 2rem/1 "Circular Std", sans-serif;
+  color: var(--classic-white);
+  margin-bottom: 10px;
+}
+
+.clients__count {
+  font: 400 1.5rem/1 "Circular Std", sans-serif;
+  color: var(--shop-and-cafe-description-color);
+}
