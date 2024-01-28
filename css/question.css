@@ -9,6 +9,23 @@
   font-family: Roboto, sans-serif;
 }
 
+.questions__container {
+  opacity: 0;
+  transform: translateX(50%);
+  animation: fadeInFromRight 6.5s ease-out forwards;
+}
+
+@keyframes fadeInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .questions__text {
   color: var(--classic-white);
   font-family: "Circular Std", serif;
