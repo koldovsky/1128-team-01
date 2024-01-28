@@ -30,7 +30,7 @@
 }
 
 .rental_policies__caption {
-    display: inline;
+
 }
 
 .rental_policies__icon_text {
@@ -39,4 +39,11 @@
 
 .rental_policies__panel-list {
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rental_policies__block {
+    display: flex;
+    flex-direction: column;
 }
