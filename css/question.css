@@ -92,3 +92,9 @@
     align-items: center;
   }
 }
+
+.questions__call-us.animate-hover,
+.questions__reservation.animate-hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-out;
+}
