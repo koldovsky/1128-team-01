@@ -4,6 +4,8 @@ header {
   width: 100%;
 }
 
+
+
 .header__container {
   margin: auto;
   padding: 30px 15px;
@@ -30,9 +32,9 @@ header {
   font-size: 16px;
   font-feature-settings: normal;
   font-optical-sizing: auto;
-  font-size: 16px;
+
   font-stretch: 100%;
-  font-style: normal;
+
   font-weight: 500;
   text-transform: none;
   text-decoration: none;
@@ -69,4 +71,28 @@ header {
 }
 .header__nav a:hover {
   color: var(--activity-price-color);
+}
+
+@media (max-width: 584px){
+
+.header__contacts{
+  display: none;
+}
+
+.header__adress{
+  display: none;
+}
+
+.header__nav{
+  display: none;
+}
+.header__container{
+  display: flex;
+  flex-direction: row;
+  padding: 8px 12px;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-weight: 400;
+}
+  
 }
