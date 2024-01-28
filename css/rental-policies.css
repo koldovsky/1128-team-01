@@ -17,6 +17,7 @@
 
 .rental_policies__reference {
     display: block;
+    line-height: 30px;
 }
 
 .rental_policies__icon_border {
@@ -57,7 +58,7 @@
     background-image: url("../img/rental_policies_background.jpg");
     min-width: 300px;
     padding: 80px 0;
-    text-align: center;
+    margin: auto;
 }
 .rental_policies__both-block {
     display: flex;
@@ -67,6 +68,7 @@
 .rental_policies__text_about {
     margin-top: 25px;
     text-align: start;
+    line-height: 25px;
 }
 .rental_policies__common {
     padding: 0 24px;
