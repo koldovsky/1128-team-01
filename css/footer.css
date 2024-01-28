@@ -1,10 +1,7 @@
-
-
 footer .container {
   height: 242px;
   display: flex;
   flex-direction: column;
-
 }
 
 .footer__container {
@@ -14,17 +11,15 @@ footer .container {
   grid-template-columns: 1fr 3fr 1fr;
 }
 
-
 .footer__logo {
   grid-area: "logo";
   width: 211px;
   height: 89px;
-  margin:auto;
+  margin: auto;
   padding: 0 15px;
 }
 
 .footer__nav {
-  
   grid-area: "nav";
   display: flex;
   flex-direction: column;
@@ -36,13 +31,13 @@ footer .container {
   font-weight: 700;
   font-style: normal;
 }
-.footer__social{
+.footer__social {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: end;
-  margin:0 10px;
+  margin: auto;
 }
-.footer__social p{
+.footer__social p {
   font-size: 25px;
   font-weight: 500;
 }
@@ -63,36 +58,90 @@ footer .container {
   display: flex;
   width: 30px;
   height: 30px;
-  margin:auto;
+  margin: auto;
   color: #599673;
   flex-direction: row;
   justify-content: right;
   align-items: right;
   cursor: pointer;
-
 }
 .footer__span {
-  display:flex;
+  display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
   font-size: 12px;
   color: #282520 !important;
-  
+
   margin: 0 -15px;
   font-weight: 400;
 }
-.footer__nav a:visited{
+.footer__nav a:visited {
   color: var(--font-standard-color);
 }
-.footer__nav a{
+.footer__nav a {
   margin: 0 15px;
   color: var(--font-standard-color);
 }
-.footer__nav a:hover{
+.footer__nav a:hover {
   color: var(--activity-price-color);
 }
 
-@media (min-width: 584px){
+@media (max-width: 767px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+  }
 
-  
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+  }
+  .footer__span {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #282520 !important;
+  }
+
+  .footer__nav a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: auto;
+    padding: 10px 0;
+    line-height: normal;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .footer__social {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: auto;
+  }
+  .soc__logo img{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    color: #599673;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+    cursor: pointer;
+  }
+  .footer__span span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
 }

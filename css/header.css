@@ -3,8 +3,74 @@ header {
   height: 211px;
   width: 100%;
 }
+.header__burger{
+  margin-top:auto ;
+  margin-left: auto;
+  margin-bottom: auto;
+  align-items: center;
+}
+
+.header__menu-btn {
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 19px 8px;
+  margin-left: auto;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+  order: 3;
+}
+
+.header__menu-btn:hover {
+  opacity: 0.6;
+}
+
+.header__navicon {
+  display: block;
+  width: 24px;
+  height: 2px;
+  position: relative;
+  background: var(--facilities-header-text);
+  cursor: pointer;
+  transition: background .2s ease-out;
+}
+
+.header__navicon:before,
+.header__navicon:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background: var(--facilities-header-text);
+  transition: all .2s ease-out;
+}
+
+.header__navicon:before {
+  top: 7px;
+}
+
+.header__navicon:after {
+  top: -7px;
+}
 
 
+.header.responsive .header__navicon {
+  background: transparent;
+}
+
+.header.responsive .header__navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header.responsive .header__navicon:after {
+  transform: rotate(45deg);
+}
+
+.header.responsive .header__navicon:before,
+.header.responsive .header__navicon:after {
+  top: 0;
+}
 
 .header__container {
   margin: auto;
@@ -73,26 +139,54 @@ header {
   color: var(--activity-price-color);
 }
 
-@media (max-width: 584px){
+@media (max-width: 584px) {
+  .header__contacts {
+    display: none;
+  }
 
-.header__contacts{
-  display: none;
-}
+  .header__adress {
+    display: none;
+  }
 
-.header__adress{
-  display: none;
-}
-
-.header__nav{
-  display: none;
-}
-.header__container{
-  display: flex;
-  flex-direction: row;
-  padding: 8px 12px;
-  justify-content: space-between;
-  align-items: flex-start;
-  font-weight: 400;
-}
+  .header__nav {
+    display: none;
+  }
+  .header__container {
+    display: flex;
+    flex-direction: row;
+    padding: 8px 12px;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-weight: 400;
+  }
   
+}
+@media (max-width: 990px) {
+  .header__container {
+    display: flex;
+    flex-direction: row;
+    padding: 8px 12px;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-weight: 400;
+  }
+  .header__contacts {
+    display: none;
+  }
+
+  .header__adress {
+    display: none;
+  }
+
+  .header__nav {
+    display: none;
+  }
+}
+
+@media(min-width: 991px){
+.header__menu-btn {
+        display: none;
+
+}
+
 }
