@@ -1,3 +1,5 @@
+
+
 footer .container {
   height: 242px;
   display: flex;
@@ -7,6 +9,7 @@ footer .container {
 
 .footer__container {
   display: grid;
+  margin: 0 -15px;
   grid-template-areas: "logo nav nav_soc";
   grid-template-columns: 1fr 3fr 1fr;
 }
@@ -17,19 +20,31 @@ footer .container {
   width: 211px;
   height: 89px;
   margin:auto;
+  padding: 0 15px;
 }
 
 .footer__nav {
+  
   grid-area: "nav";
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   max-width: 100%;
-  color: #282520;
   line-height: normal;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
+}
+.footer__social{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin:0 10px;
+}
+.footer__social p{
+  font-size: 25px;
+  font-weight: 500;
 }
 
 .footer__logo_soc {
@@ -44,10 +59,11 @@ footer .container {
   align-items: right;
   cursor: pointer;
 }
-.soc__logo{
+.soc__logo a{
   display: flex;
   width: 30px;
   height: 30px;
+  margin:auto;
   color: #599673;
   flex-direction: row;
   justify-content: right;
@@ -56,8 +72,27 @@ footer .container {
 
 }
 .footer__span {
+  display:flex;
+  flex-direction: row;
+  justify-content:space-between;
   font-size: 12px;
-  display: inline;
   color: #282520 !important;
+  
+  margin: 0 -15px;
   font-weight: 400;
+}
+.footer__nav a:visited{
+  color: var(--font-standard-color);
+}
+.footer__nav a{
+  margin: 0 15px;
+  color: var(--font-standard-color);
+}
+.footer__nav a:hover{
+  color: var(--activity-price-color);
+}
+
+@media (min-width: 584px){
+
+  
 }
