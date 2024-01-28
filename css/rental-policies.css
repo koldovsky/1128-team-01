@@ -1,1 +1,42 @@
-/*css*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+:root {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.rental_policies__title {
+    text-align: center;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+}
+
+.rental_policies__small_title {
+    text-align: center;
+}
+
+.rental_policies__reference {
+    display: block;
+}
+
+.rental_policies__icon_border {
+    display: inline;
+
+}
+
+.rental_policies__caption {
+    display: inline;
+}
+
+.rental_policies__icon_text {
+    display: flex;
+}
+
+.rental_policies__panel-list {
+    font-size: 16px;
+}
