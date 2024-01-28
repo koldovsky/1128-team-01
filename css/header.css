@@ -1,7 +1,7 @@
 header {
   margin: 0;
   height: 211px;
-  width: calc(100% + 20px);
+  width: 100%;
 }
 
 .header__container {
