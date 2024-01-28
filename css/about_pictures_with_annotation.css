@@ -1,0 +1,12 @@
+.about_pictures_annotation_block {
+    background-image: url("../img/about_background_picture_with_annotetion.jpg");
+    min-width: 300px;
+    padding: 90px 0;
+}
+
+.about_title_pictures {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: var(--classic-white);
+}
