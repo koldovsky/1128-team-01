@@ -119,8 +119,6 @@
   .activities {
     padding-right: 24px;
     padding-left: 24px;
-    margin-left: 8px;
-    margin-right: -15px;
   }
 
   .activities__item {
@@ -128,5 +126,10 @@
     max-width: calc(100% - 24px);
     padding-left: 16px;
     padding-right: 16px;   
+  }
+
+  .activities__group{
+    margin-left: 8px;
+    margin-right: -15px;
   }
 }
