@@ -1,0 +1,107 @@
+.shop-and-cafe {
+  display: block;
+  background: url("../img/shop_and_cafe_background.jpg") center/cover no-repeat;
+  min-width: 320px;
+  width: 100%;
+}
+
+.shop-and-cafe__content {
+  padding: 105px 40px 110px;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.shop-and-cafe__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.shop-and-cafe__title {
+  font: 700 2.75rem/1 "Circular Std", sans-serif;
+  color: var(--classic-white);
+  margin: 30px 0 0;
+}
+
+.shop-and-cafe__description {
+  color: var(--shop-and-cafe-description-color);
+  margin-top: 10px;
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+  max-width: 100%;
+}
+
+.shop-and-cafe__features {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.shop-and-cafe__features .feature {
+  display: flex;
+  flex-basis: 50%;
+  padding: 0 15px;
+  background-color: var(--shop-and-cafe-feature-color);
+  border-radius: 10px;
+  background-size: auto;
+}
+
+.feature__content {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.feature__image {
+  display: block;
+  overflow: hidden;
+  height: 60%;
+  border-radius: 8px;
+}
+
+.feature__title {
+  margin-top: 20px;
+  font: 500 1.5625rem/1.4 "Circular Std", serif;
+  color: var(--classic-white);
+}
+
+.feature__description {
+  margin-top: 5px;
+  color: var(--shop-and-cafe-description-color);
+}
+
+@media (max-width: 767px) {
+  .shop-and-cafe__features {
+    grid-template-columns: 1fr;
+  }
+}
+
+.clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.clients__counter {
+  text-align: center;
+}
+
+.clients__text {
+  font: 500 2rem/1 "Circular Std", sans-serif;
+  color: var(--classic-white);
+  margin-bottom: 10px;
+}
+
+.clients__count {
+  font: 400 1.5rem/1 "Circular Std", sans-serif;
+  color: var(--shop-and-cafe-description-color);
+}

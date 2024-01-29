@@ -1,0 +1,100 @@
+.questions {
+  background-image: url("../img/forest_back.jpg");
+  background-size: cover;
+  background-position: center;
+  min-width: 320px;
+  padding: 180px 0;
+  line-height: 25.6px;
+  width: 100%;
+  font-family: Roboto, sans-serif;
+}
+
+.questions__container {
+  opacity: 0;
+  transform: translateX(50%);
+  animation: fadeInFromRight 6.5s ease-out forwards;
+}
+
+@keyframes fadeInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.questions__text {
+  color: var(--classic-white);
+  font-family: "Circular Std", serif;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: -1.26px;
+  line-height: 70.8px;
+  text-align: center;
+}
+
+.questions__call-us {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--classic-white);
+  text-decoration: none;
+  background-color: var(--activity-price-color);
+  border-radius: 32px 32px 32px 32px;
+  padding: 20px 32px;
+  margin: 10px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.questions__call-us:hover {
+  color: var(--activity-title-color);
+  background-color: var(--classic-white);
+}
+
+.questions__reservation {
+  background-color: var(--questions-reservation-color);
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 32px;
+  border-radius: 32px 32px;
+  border: 1px solid var(--classic-white);
+  color: var(--classic-white);
+  text-align: center;
+  margin: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+.questions__reservation:hover {
+  color: var(--activity-title-color);
+  background-color: var(--classic-white);
+}
+
+.questions__group-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 55px;
+}
+
+@media (max-width: 356px) {
+  .questions__group-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.questions__call-us.animate-hover,
+.questions__reservation.animate-hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-out;
+}

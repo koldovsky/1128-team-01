@@ -1,0 +1,41 @@
+.about_image_about_yosemite {
+    min-width: 272px;
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+}
+.about_image_about_yosemite img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.about_title_about_yosemite {
+    font-family: "Circular Std Bold", serif;
+    font-size: 34px;
+    text-align: center;
+}
+.about_description_about_yosemite {
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+    margin-top: 25px;
+    text-align: center;
+    line-height: 30px;
+}
+.about_text_about_yosemite {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    margin-top: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+.about_about_yosemite_block {
+    display: flex;
+    min-width: 300px;
+    padding: 80px 0;
+    flex-direction: column;
+    background-image: url("../img/about_about_yosemite.jpg");
+}
+.about_yosemite_block_text {
+    display: block;
+}

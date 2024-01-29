@@ -1,0 +1,93 @@
+@import "global.css";
+@import "header.css";
+@import "footer.css";
+
+
+.rental_policies__title {
+    text-align: center;
+    font-family: "Circular Std Bold", serif;
+    font-size: 39px;
+}
+
+.rental_policies__small_title {
+    text-align: center;
+    font-size: 19px;
+    margin-top: 30px;
+}
+
+.rental_policies__reference {
+    display: block;
+    line-height: 30px;
+}
+
+.rental_policies__icon_border {
+    display: inline;
+    min-width: 50px;
+
+}
+
+.rental_policies__icon_border svg {
+    width: 100%;
+}
+
+.rental_policies__caption {
+    font-family: "Circular Std Bold", serif;
+    font-size: 18px;
+    text-align: start;
+}
+
+.rental_policies__icon_text {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.rental_policies__panel-list {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.rental_policies__block {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+.rental_policies__main {
+    background-image: url("../img/rental_policies_background.jpg");
+    min-width: 300px;
+    padding: 80px 0;
+    margin: auto;
+}
+.rental_policies__both-block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+}
+.rental_policies__text_about {
+    margin-top: 25px;
+    text-align: start;
+    line-height: 25px;
+}
+.rental_policies__common {
+    padding: 0 24px;
+}
+
+
+.rental_policies__reference_number:visited {
+    color: var(--form-submit-button-hover-bg-color);
+}
+.rental_policies__reference_number{
+    color: var(--form-submit-button-hover-bg-color);
+}
+.rental_policies__reference_number:hover {
+    color: var(--form-submit-button-hover-bg-color);
+}
+
+@media (min-width: 768px) {
+    .rental_policies__both-block {
+        flex-direction: row;
+    }
+
+}

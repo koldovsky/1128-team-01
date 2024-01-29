@@ -1,0 +1,60 @@
+.about_pictures_annotation_block {
+    background-image: url("../img/about_background_picture_with_annotetion.jpg");
+    min-width: 300px;
+    padding: 90px 0 120px 0;
+    background-size: cover;
+}
+
+.about_title_pictures {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: var(--classic-white);
+    line-height: 25px;
+}
+.about_text_for_title {
+    padding: 0 15px;
+}
+.about_pictures_block {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.about_picture_text {
+    margin-top: 50px;
+    padding: 0 15px;
+}
+.about_picture_text img {
+    min-width: 272px;
+    max-width: 370px;
+    margin: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    aspect-ratio: 1;
+}
+
+.about_title_for_pictures {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    color: var(--classic-white);
+    margin-top: 20px;
+}
+.about_text_under_pictures {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: var(--classic-white);
+    line-height: 25px;
+    padding-top: 5px;
+}
+@media (min-width: 768px) {
+    .about_pictures_block {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .about_pictures_block {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

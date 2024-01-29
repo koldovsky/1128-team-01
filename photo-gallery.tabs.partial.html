@@ -1,274 +1,272 @@
 <section class="gallery">
-  <div class="gallery__wrapper">
+  <div class="gallery__wrapper container">
     <h2 class="gallery__title">Gallery</h2>
     <div class="gallery__tabs">
       <div class="gallery__tabs-nav">
-        <button
-          class="gallery__tab-item--link tab-item-active"
-          onclick="openTab(event, 'tab-content-summer')"
-        >
-          Summer
-        </button>
-        <button
-          class="gallery__tab-item--link"
-          onclick="openTab(event, 'tab-content-winter')"
-        >
-          Winter
-        </button>
-        <button
-          class="gallery__tab-item--link"
-          onclick="openTab(event, 'tab-content-spring')"
-        >
-          Spring
-        </button>
-        <button
-          class="gallery__tab-item--link"
-          onclick="openTab(event, 'tab-content-autumn')"
-        >
-          Autumn
-        </button>
-        <button
-          class="gallery__tab-item--link"
-          onclick="openTab(event, 'tab-content-fishing')"
-        >
-          Fishing
-        </button>
-        <button
-          class="gallery__tab-item--link"
-          onclick="openTab(event, 'tab-content-spa')"
-        >
-          SPA
-        </button>
+        <div class="tabs-nav-btns top-btns">
+          <button
+            class="gallery__tab-item--link tab-item-active"
+            data-tab="tab-content-summer"
+          >
+            Summer
+          </button>
+          <button class="gallery__tab-item--link" data-tab="tab-content-winter">
+            Winter
+          </button>
+          <button class="gallery__tab-item--link" data-tab="tab-content-spring">
+            Spring
+          </button>
+        </div>
+        <div class="tabs-nav-btns bottom-btns">
+          <button class="gallery__tab-item--link" data-tab="tab-content-autumn">
+            Autumn
+          </button>
+          <button
+            class="gallery__tab-item--link"
+            data-tab="tab-content-fishing"
+          >
+            Fishing
+          </button>
+          <button class="gallery__tab-item--link" data-tab="tab-content-spa">
+            SPA
+          </button>
+        </div>
       </div>
       <div class="gallery__tab-content-wrapper">
         <div
           class="gallery__tab-content tab-content-summer gallery__tab-content--default"
         >
-          <div class="tab-content__item big-img">
+          <div class="tab-content__item gallery__big-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/summer/summer_tree_house.webp"
                 alt="A tree house in the forest"
+                onclick="openModal('img/gallery/summer/summer_tree_house.webp')"
               />
-              <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/summer/summer_two_horses.webp"
                 alt="Two horses in the meadow"
+                onclick="openModal('img/gallery/summer/summer_two_horses.webp')"
               />
-              <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/summer/summer_lake.webp"
                 alt="A lake and the forest "
+                onclick="openModal('img/gallery/summer/summer_lake.webp')"
               />
-              <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/summer/summer_treehouse_indoors.webp"
                 alt="Indoors of the tree house"
+                onclick="openModal('img/gallery/summer/summer_treehouse_indoors.webp')"
               />
-              <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/summer/summer_house_in_the_forest.webp"
                 alt="A house in the forest"
+                onclick="openModal('img/gallery/summer/summer_house_in_the_forest.webp')"
               />
-              <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item big-img">
+          <div class="tab-content__item gallery__big-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/summer/summer_flowers.webp"
                 alt="Flowers on the house"
+                onclick="openModal('img/gallery/summer/summer_flowers.webp')"
               />
-              <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
         </div>
         <div class="gallery__tab-content tab-content-winter">
-          <div class="tab-content__item big-img">
+          <div class="tab-content__item gallery__big-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/winter/winter_houses_and_mountains_far.webp"
                 alt="A lookout on a mountain village from afar"
+                onclick="openModal('img/gallery/winter/winter_houses_and_mountains_far.webp')"
               />
-              <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/winter/winter_skier.webp"
                 alt="A skier in the mountains"
+                onclick="openModal('img/gallery/winter/winter_skier.webp')"
               />
-              <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/winter/winter_woman.webp"
                 alt="A woman on the porch"
+                onclick="openModal('img/gallery/winter/winter_woman.webp')"
               />
-              <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/winter/winter_house.webp"
                 alt="A house near the lake and the forest"
+                onclick="openModal('img/gallery/winter/winter_house.webp')"
               />
-              <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/winter/winter_horse.webp"
                 alt="A horse in winter"
+                onclick="openModal('img/gallery/winter/winter_horse.webp')"
               />
-              <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item big-img">
+          <div class="tab-content__item gallery__big-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/winter/winter_houses_and_mountains_close.webp"
                 alt="A lookout on a mountain village from close"
+                onclick="openModal('img/gallery/winter/winter_houses_and_mountains_close.webp')"
               />
-              <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
         </div>
         <div class="gallery__tab-content tab-content-spring">
-          <div class="tab-content__item big-img">
+          <div class="tab-content__item gallery__big-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/spring/spring_cabin.webp"
                 alt="A cabin on the hill"
+                onclick="openModal('img/gallery/spring/spring_cabin.webp')"
               />
-              <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/spring/spring_cabin_and_lake.webp"
                 alt="A cabin near the lake and the forest"
+                onclick="openModal('img/gallery/spring/spring_cabin_and_lake.webp')"
               />
-              <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/spring/spring_cabin_and_forest.webp"
                 alt="A cabin near the forest"
+                onclick="openModal('img/gallery/spring/spring_cabin_and_forest.webp')"
               />
-              <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
         </div>
         <div class="gallery__tab-content tab-content-autumn">
-          <div class="tab-content__item big-img">
+          <div class="tab-content__item gallery__big-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/autumn/autumn-house.webp"
                 alt="House against a background of autumn trees"
+                onclick="openModal('img/gallery/autumn/autumn-house.webp')"
               />
-              <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/autumn/autumn-forest-house.webp"
                 alt="House in autumn colorful forest"
+                onclick="openModal('img/gallery/autumn/autumn-forest-house.webp')"
               />
-              <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/autumn/autumn-girl-tree.webp"
                 alt="Girl in white dress, autumn sky and house"
+                onclick="openModal('img/gallery/autumn/autumn-girl-tree.webp')"
               />
-              <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
         </div>
         <div class="gallery__tab-content tab-content-fishing">
-          <div class="tab-content__item big-img">
+          <div class="tab-content__item gallery__big-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/fishing/fishing-boy-river.webp"
                 alt="Fisherman on a steep river bank"
+                onclick="openModal('img/gallery/fishing/fishing-boy-river.webp')"
               />
-              <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/fishing/fishing-boat-mountains.webp"
                 alt="Boat bow, river and rocky mountains"
+                onclick="openModal('img/gallery/fishing/fishing-boat-mountains.webp')"
               />
-              <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/fishing/fishing-boat-river.webp"
                 alt="Small river pier and mountain forest"
+                onclick="openModal('img/gallery/fishing/fishing-boat-river.webp')"
               />
-              <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
         </div>
         <div class="gallery__tab-content tab-content-spa">
-          <div class="tab-content__item big-img">
+          <div class="tab-content__item gallery__big-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/spa/spa-view-from-inside.webp"
                 alt="SPA from the inside with mountain view"
+                onclick="openModal('img/gallery/spa/spa-view-from-inside.web')"
               />
-              <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/spa/spa-baths-outside.webp"
                 alt=" Outdoors baths look like coconuts under canopy of palm leaves"
+                onclick="openModal('img/gallery/spa/spa-baths-outside.webp')"
               />
-              <button class="btn-open-lightbox" type="button"></button>
             </span>
           </div>
-          <div class="tab-content__item small-img">
+          <div class="tab-content__item gallery__small-img">
             <span class="img-wrapper">
               <img
                 src="img/gallery/spa/spa-view-outside.webp"
                 alt="Outdoor bed against the backdrop of sunset, mountains and river"
+                onclick="openModal('img/gallery/spa/spa-view-outside.webp')"
               />
-              <button class="btn-open-lightbox" type="button"></button>
             </span>
+          </div>
+          <div class="modal" id="myModal">
+            <div class="modal-content">
+              <span class="modal-close" onclick="closeModal()">&times;</span>
+              <img src="" alt="Modal Image" id="modalImage" class="modal-image">
+            </div>
           </div>
         </div>
       </div>
