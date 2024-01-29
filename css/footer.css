@@ -23,23 +23,23 @@ footer .container {
   grid-area: "nav";
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   max-width: 100%;
   line-height: normal;
   font-size: 16px;
   font-weight: 700;
   font-style: normal;
+  
 }
 .footer__social {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
+  display: block;
   margin: auto;
 }
 .footer__social p {
   font-size: 25px;
   font-weight: 500;
+  text-align: right;
 }
 
 .footer__logo_soc {
@@ -55,24 +55,27 @@ footer .container {
   cursor: pointer;
 }
 .soc__logo a{
-  display: flex;
+  display: inline-block;
   width: 30px;
   height: 30px;
-  margin: auto;
+  
   color: #599673;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: right;
   align-items: right;
   cursor: pointer;
+  margin: auto;
 }
-.footer__span {
-  display: flex;
+.footer__span{
+  display:flex;
   flex-direction: row;
   justify-content: space-between;
   font-size: 12px;
+  align-items: center;
   color: #282520 !important;
-
-  margin: 0 -15px;
+  margin-left: 40px;
+  margin-right: 70px;
+  margin-top: 20px;
   font-weight: 400;
 }
 .footer__nav a:visited {

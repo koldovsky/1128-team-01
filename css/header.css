@@ -75,11 +75,12 @@ header {
 }
 
 .header__container {
+  
   margin: auto;
-  padding: 30px 15px;
+  padding: 30px 75px;
   display: grid;
-  grid-template-columns: ( 2fr 4fr 4fr 1fr);
-  justify-content: space-between;
+  grid-template-columns: ( 2fr 3fr 2fr 1fr);
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -95,6 +96,7 @@ header {
 
 .header__adress {
   grid-column: 1;
+  margin-left:-50px ;
   display: flexbox;
   text-align: center;
   color: #282520;
