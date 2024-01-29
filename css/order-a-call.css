@@ -21,7 +21,7 @@
     justify-content: flex-end;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
     padding: 40px;
     box-sizing: border-box;
 }
@@ -36,16 +36,7 @@
 .ordercall__grid {
     width: 100%;
     display: grid;
-    grid-template-columns: 60% 42%;
-    margin-left: -15px;
-}
-
-.ordercall__grid:first-child {
-    grid-column: 1;
-}
-
-.ordercall__grid:last-child {
-    grid-column: 2;
+    grid-template-columns: 60% 40%;
 }
 
 .ordercall__item {
@@ -168,6 +159,9 @@
 
 
 @media screen and (max-width: 992px) {
+    .ordercall__grid {
+        grid-template-columns: 1;
+    }
     .ordercall {
         padding-top: 140px;
         padding-bottom: 140px;
