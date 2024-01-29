@@ -1,6 +1,6 @@
 const modal = document.getElementById("lightboxModal");
 const modalImage = document.getElementById('modalImage');
-const panzoom = Panzoom(modalImage, {
+const panzoom = new Panzoom(modalImage, {
   maxZoom: 2,
   contain: 'outside',
 });

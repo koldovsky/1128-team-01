@@ -17,4 +17,5 @@ document.addEventListener("partialsLoaded", function() {
   tabNavBtns.forEach(btn => {
     btn.addEventListener('click', openTab);
   });
+  import('./panzoom.js');
 })
