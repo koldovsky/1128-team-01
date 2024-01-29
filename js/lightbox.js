@@ -19,6 +19,4 @@ function attachLightboxEventListeners() {
     });
 }
 
-document.addEventListener("partialsLoaded", function() {
-    attachLightboxEventListeners();
-});
+attachLightboxEventListeners();
