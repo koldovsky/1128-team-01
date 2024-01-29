@@ -1,4 +1,4 @@
-const modal = document.getElementById("myModal");
+const modal = document.getElementById("lightboxModal");
 const modalImage = document.getElementById('modalImage');
 const panzoom = Panzoom(modalImage, {
   maxZoom: 2,
