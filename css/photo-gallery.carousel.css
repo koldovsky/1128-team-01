@@ -8,7 +8,7 @@
     background-image: url("../img/about_background_picture_with_annotetion.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 50px;
+    padding-top: 80px;
 }
 
 .guests__title{
@@ -17,6 +17,28 @@
     color: var(--classic-white);
     display: flex;
     justify-content: center;
+    margin-bottom: 35px;
+}
+
+.guests__carousel-items {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+picture .guests__carousel-pic {
+    display: block; 
+    flex-grow: 0;
+    max-width: 100%; 
+    height: 284.45px; 
+    overflow: hidden; 
+    margin: 0 5px; 
+    flex-shrink: 0;
+}
+
+.img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
 }
 
 
