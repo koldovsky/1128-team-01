@@ -1,5 +1,6 @@
 .ordercall {
-    background: url("../img/bg-order-a-call.jpg") 45% 26%/ cover no-repeat, rgb(89, 150, 115);
+    background: url("../img/bg-order-a-call.jpg") 45% 26% / cover no-repeat,
+        rgb(89, 150, 115);
     min-width: 320px;
     font-size: 16px;
     line-height: 1.6;
@@ -21,7 +22,7 @@
     justify-content: flex-end;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
     padding: 40px;
     box-sizing: border-box;
 }
@@ -36,16 +37,7 @@
 .ordercall__grid {
     width: 100%;
     display: grid;
-    grid-template-columns: 60% 42%;
-    margin-left: -15px;
-}
-
-.ordercall__grid:first-child {
-    grid-column: 1;
-}
-
-.ordercall__grid:last-child {
-    grid-column: 2;
+    grid-template-columns: 60% 40%;
 }
 
 .ordercall__item {
@@ -71,7 +63,7 @@
 .ordercall__form-header {
     color: var(--font-standart-color);
     font-size: 25px;
-    font-family: 'Circular Std', sans-serif;
+    font-family: "Circular Std", sans-serif;
     line-height: 1.4;
     font-weight: 550;
     margin: 0;
@@ -106,7 +98,6 @@
     text-align: left;
     margin-bottom: 24px;
     width: 100%;
-
 }
 
 .form__field:last-of-type {
@@ -165,9 +156,10 @@
     word-wrap: break-word;
 }
 
-
-
 @media screen and (max-width: 992px) {
+    .ordercall__grid {
+        grid-template-columns: 1;
+    }
     .ordercall {
         padding-top: 140px;
         padding-bottom: 140px;

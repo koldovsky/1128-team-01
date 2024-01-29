@@ -19,7 +19,7 @@
     flex-direction: column;
     flex-basis: 100%;
     max-width: 100%;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .adventure__header-title {
@@ -48,7 +48,7 @@
 
 .adventure__grid {
     display: grid;
-    grid-template-columns:repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
@@ -62,7 +62,7 @@
 .image-wrapper {
     position: relative;
     margin: 0 auto;
-    --image-wrapper-width:90%;
+    --image-wrapper-width: 90%;
     width: var(--image-wrapper-width);
     height: 0;
     padding-top: calc(100% * (100 / 180));
@@ -104,7 +104,7 @@
 
 @media (max-width: 992px) {
     .adventure__grid {
-        grid-template-columns:repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 

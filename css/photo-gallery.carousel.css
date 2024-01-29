@@ -1,0 +1,33 @@
+.guests{
+    min-width: 320px;
+    max-width: 1900px;
+    padding: 100px  0px 0px;   
+}
+
+.guests-background{
+    background-image: url("../img/about_background_picture_with_annotetion.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+
+.guests__title{
+    font-family: "Circular Std Bold";
+    font-size: 39px;
+    color: var(--classic-white);
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (min-width: 990px){
+    .guests__title{
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 760px){
+    .guests__title{
+        font-size: 34px;
+    }
+}

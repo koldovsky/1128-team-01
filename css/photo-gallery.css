@@ -1,5 +1,8 @@
 @import "global.css";
+/* @import "photo-gallery.tabs.partial.css"; */
 @import "photo-gallery.tabs.css";
+@import "photo-gallery.carousel.css";
 @import "header.css";
 @import "footer.css";
 @import "lightbox-for-gallery.css";
+
