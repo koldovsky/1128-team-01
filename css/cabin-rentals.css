@@ -4,49 +4,56 @@
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: scroll;
-}
-
-.cabin-rentals__inner {
   margin: auto;
+  padding: 90px 24px;
   position: static;
   width: auto;
   text-align: center;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
   align-items: center;
   color: var(--classic-white);
 }
 
 .cabin-rentals__title {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  font-size: 44px;
-  font-family: "Circular Std", "Calibri";
+  padding-bottom: 40px;
+  font-size: 34px;
+  font-family: "Circular Std Bold", serif;
 }
 
 .cabin-rentals__cabin-block {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
-  min-width: 320px;
-  max-width: 1200px;
+  /* min-width: 300px;
+  max-width: 1200px; */
 }
 
 .cabin-rentals__cabin {
-  display: flex;
+  position: relative;
   aspect-ratio: 2/1.5;
   border-radius: 10px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-  min-width: 320px;
   width: 100%;
   height: 100%;
-  padding: 15% 30%;
+  min-height: 360px;
   align-items: center;
   justify-content: center;
+}
+
+.cabin-rentals__cabin::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--obscure-background-color);
+  z-index: 1;
 }
 
 .first-cabin {
@@ -65,15 +72,25 @@
   background-image: url("../img/fourth_cabin.webp");
 }
 
-/* .cabin-rentals__cabin img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
+.cabin-rentals__text {
+  z-index: 2;
+  position: relative;
+}
 
-/* .cabin-rentals__text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(50%, 50%);
-} */
+.cabin-rentals__price {
+  font-size: 34px;
+  font-family: "Circular Std Bold", serif;
+  padding-top: 35%;
+  padding-bottom: 30px;
+}
+
+.cabin-rentals__name {
+  font-size: 22px;
+  font-family: "Circular Std Bold", serif;
+  padding-bottom: 15px;
+}
+
+.cabin-rentals__description {
+  color: var(--description-text-color);
+  padding-bottom: 35px;
+}

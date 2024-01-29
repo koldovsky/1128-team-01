@@ -31,6 +31,8 @@
   --shop-and-cafe-feature-color: rgb(87, 156, 126, 0.51);
   --how-to-get-contacts-bg-color: #787777;
   --about-checkbox-color: rgb(249, 130, 80);
+  --obscure-background-color: rgba(35, 34, 33, 0.8);
+  --description-text-color:rgb(189, 189, 189);
 }
 
 img {
