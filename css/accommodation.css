@@ -1,7 +1,7 @@
 @import "accommodation-reservation.css";
 @import "header.css";
 @import "footer.css";
-@import "fonts.css";
+@import "global.css";
 
 :root {
   --price-color: #629673;
@@ -12,8 +12,6 @@
 }
 
 body {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  color: var(--main-text-color);
   margin: 0;
 }
 
@@ -26,6 +24,18 @@ a {
   text-decoration: none;
 }
 
+.list-header,
+.list-header-second,
+.button-to-push {
+  color: var(--main-text-color);
+  font-family: "Circular Std Bold", Arial, Helvetica, sans-serif;
+}
+
+.room-adventages,
+.cabin-include-test {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
 .river-chalet__inner,
 .lookout-lodge__inner,
 .smoky-view__inner,
@@ -34,6 +44,8 @@ a {
   max-width: 1200px;
   margin: auto;
   line-height: 1;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
 }
 
 .river-chalet,
@@ -48,7 +60,8 @@ a {
 
 .river-chalet,
 .smoky-view,
-.mountain-splash {
+.mountain-splash,
+.header-name__rental {
   background-image: url("../img/accommodation_background_dark.jpg");
   background-size: contain;
 }
@@ -65,26 +78,11 @@ a {
   text-align: center;
 }
 
-.river-chalet__inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 .river-chalet__list {
   display: grid;
   grid-template-rows: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.lookout-lodge__main-cell {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-.lookout-lodge__inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 .lookout-lodge__list {
@@ -94,16 +92,6 @@ a {
   padding-right: 15px;
 }
 
-.smoky-view__main-cell {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-.smoky-view__inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 .smoky-view__list {
   display: grid;
   grid-template-rows: auto;
@@ -111,31 +99,11 @@ a {
   padding-right: 15px;
 }
 
-.mountain-haven__main-cell {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-.mountain-haven__inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 .mountain-haven__list {
   display: grid;
   grid-template-rows: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.mountain-splash__main-cell {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-.mountain-splash__inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 .mountain-splash__list {
@@ -177,15 +145,15 @@ a {
 }
 
 .room__photo {
-  border-radius: 5%;
-  overflow: clip;
+  border-radius: 4%;
   min-width: 320px;
+  padding: 0 15px;
 }
 
 .orange-check-mark {
   padding-right: 20px;
-  display: inline;
-  width: 3.5%;
+  display:inline;
+  width: 10px;
 }
 
 .button-to-push {
@@ -200,7 +168,8 @@ a {
   transition: background-color 0.3s ease;
 }
 
-.background-color h2 {
+.header-name__rental {
+  padding-top: 80px;
   text-align: center;
 }
 
