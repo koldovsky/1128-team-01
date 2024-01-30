@@ -1,10 +1,16 @@
 .guests{
     min-width: 320px;
-    max-width: 1900px;
-    padding: 100px  0px 0px;   
+    /* max-width: 1900px; */
+    padding: 100px  0px 0px;  
+    width: 100%;
+}
+
+.guests {
+    transition: transform 0.3s ease;  
 }
 
 .guests-background{
+    
     background-image: url("../img/about_background_picture_with_annotetion.jpg");
     background-size: cover;
     background-repeat: no-repeat;
