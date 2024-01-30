@@ -25,6 +25,22 @@ a {
   text-decoration: none;
 }
 
+.river-chalet__inner,
+.lookout-lodge__inner,
+.smoky-view__inner,
+.mountain-haven__inner,
+.mountain-splash__inner {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.river-chalet,
+.smoky-view,
+.mountain-splash {
+    background-color: var(--background-color-section);
+    background-size: cover;
+}
+
 .container {
   max-width: 1200px;
 }
@@ -40,12 +56,11 @@ a {
   padding-bottom: 80px;
 }
 
+
+
 .river-chalet__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: auto;
-  margin-left: 350px;
-  margin-right: 350px;
 }
 
 .river-chalet__list {
@@ -63,9 +78,6 @@ a {
 .lookout-lodge__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: auto;
-  margin-left: 350px;
-  margin-right: 350px;
 }
 
 .lookout-lodge__list {
@@ -83,9 +95,6 @@ a {
 .smoky-view__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: auto;
-  margin-left: 350px;
-  margin-right: 350px;
 }
 
 .smoky-view__list {
@@ -103,9 +112,6 @@ a {
 .mountain-haven__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: auto;
-  margin-left: 350px;
-  margin-right: 350px;
 }
 
 .mountain-haven__list {
@@ -123,9 +129,6 @@ a {
 .mountain-splash__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: auto;
-  margin-left: 350px;
-  margin-right: 350px;
 }
 
 .mountain-splash__list {
@@ -191,13 +194,7 @@ a {
 
 .background-image {
   background-image: url("../img/accommodation_background.jpg");
-  background-size: auto;
-  width: 100%;
-}
-
-.background-color {
-  background-color: var(--background-color-section);
-  background-size: auto;
+  background-size: contain;
   width: 100%;
 }
 
