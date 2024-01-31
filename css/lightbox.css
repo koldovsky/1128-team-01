@@ -10,15 +10,6 @@
   background-color: rgba(0, 0, 0, 0.854);
 }
 
-/* .lightbox-modal__content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-} */
-
 .lightbox-modal__header {
   position: relative;
   width: 100%;
