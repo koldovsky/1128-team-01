@@ -56,7 +56,10 @@
   opacity: 1;
 }
 
-@media (max-width: 992px) {
+
+/* If display: block; */
+
+/* @media (max-width: 992px) {
   .lightbox-modal__image-wrapper {
       margin-top: 6%;
       height: 75%;
@@ -68,6 +71,6 @@
       height: 60%;
       margin-top: 15%;
   }
-} 
+}  */
 
 
