@@ -160,11 +160,14 @@ a {
   padding: 15px 30px;
   background-color: var(--button-reserve-color);
   color: var(--button-reserve-text-color);
-  text-decoration: none;
   font-size: 14px;
   font-weight: bold;
   border-radius: 25px;
-  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.button-to-push:hover {
+  background-color: var(--button-reserve-hover);
 }
 
 .header-name__rental {
