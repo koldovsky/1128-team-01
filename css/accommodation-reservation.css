@@ -7,7 +7,7 @@
 }
 
 .background-image__accomodation {
-  background-image: url("/img/accomodation__back_for_form.jpg");
+  background-image: url("../img/accomodation__back_for_form.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
