@@ -1,0 +1,32 @@
+.information__title {
+  text-align: center;
+  font-size: 39px;
+  font-family: "Circular Std Bold", sans-serif;
+}
+
+.information__description {
+    text-align: center;
+    font-size: 19px;
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 35px;
+    margin-bottom: 70px;
+    line-height: 30.4px;
+}
+
+.information__how-to-get {
+    display: flex;
+    padding: 50px;
+    padding-top: 75px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0;
+    justify-content: center;
+    background-color: #F8F8F8;
+}
+
+.information__how-to-get-inner {
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 992px;
+}
