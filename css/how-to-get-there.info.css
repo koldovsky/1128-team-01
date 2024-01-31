@@ -1,7 +1,8 @@
 .information__title {
-  text-align: center;
-  font-size: 39px;
-  font-family: "Circular Std Bold", sans-serif;
+    text-align: center;
+    font-size: 39px;
+    font-family: "Circular Std Bold", sans-serif;
+    color: rgb(40, 37, 32);
 }
 
 .information__description {
@@ -18,15 +19,108 @@
 .information__how-to-get {
     display: flex;
     padding: 50px;
+    padding-bottom: 0px;
     padding-top: 75px;
     font-family: "Roboto", sans-serif;
     letter-spacing: 0;
     justify-content: center;
-    background-color: #F8F8F8;
+    background-image: url('../img/how-to-get-info-background.jpg');
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: overlay;
+
 }
 
 .information__how-to-get-inner {
     padding-left: 40px;
     padding-right: 40px;
-    max-width: 992px;
+    max-width: 900px;
+}
+
+.description__car-image,
+.description__train-image {
+    color: #f98250;
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.description__white-circle-for-car,
+.description__white-circle-for-train {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.car,
+.train {
+    display: flex;
+    align-items: flex-start;
+}
+
+.description__car-title {
+    font-family: "Circular Std Bold", sans-serif;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.description__car-text {
+    margin-left: 20px;
+    font-size: 16px;
+    line-height: 25.6px;
+    max-width: 650px;
+}
+
+.description__train-title {
+    font-family: "Circular Std Bold", sans-serif;
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.description__train-text {
+    margin-left: 20px;
+    font-size: 16px;
+    line-height: 25.6px;
+    max-width: 650px;
+    margin-bottom: 60px;
+}
+
+.pictures__how-to-get {
+    display: flex;
+    max-width: 1450px;
+}
+
+.pictures__left-container,
+.pictures__right-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.pictures__left-container {
+    flex: 1;
+
+}
+
+.pictures__right-container {
+    flex: 1;
+}
+
+.pictures__house,
+.pictures__forest-coast,
+.pictures__cable-car {
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    max-height: 460px;
+}
+
+.pictures__house,
+.pictures__cable-car {
+    max-height: 230px;
 }
