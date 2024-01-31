@@ -10,7 +10,12 @@
                     <p class="ordercall__form-text">
                         Plan your next vacation and enjoy the nature around you!
                     </p>
-                    <form action="#" class="ordercall__form form">
+                    <form
+                        class="ordercall__form form"
+                        id="orderACallForm"
+                        action="https://formspree.io/f/xayrewnk"
+                        method="POST"
+                    >
                         <div class="form__inputs-block">
                             <div class="form__field">
                                 <input
@@ -28,7 +33,7 @@
                                 <input
                                     class="form__input"
                                     type="tel"
-                                    name="telnum"
+                                    name="telnumber"
                                     id="phone-input"
                                     placeholder="Phone number*"
                                     required
@@ -37,6 +42,7 @@
                                 />
                             </div>
                             <button
+                                id="orderACallForm-button"
                                 type="submit"
                                 class="ordercall__form-submit-button submit-button"
                             >
@@ -44,6 +50,7 @@
                                     >Order a call</span
                                 >
                             </button>
+                            <p id="orderACallForm-status"></p>
                         </div>
                     </form>
                 </div>
