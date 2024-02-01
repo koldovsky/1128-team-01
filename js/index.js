@@ -5,8 +5,7 @@ document.addEventListener('partialsLoaded', () => {
         import('./shop-and-cafe-counter-clients.js'),
         import('./header.js'),
         import('./order-call-form.js'),
-        import('./adventure_cards.js'),
-        import('./lightbox.js')
+        import('./adventure_cards.js')
     ])
     .then(() => {
         console.log('All scripts loaded successfully');

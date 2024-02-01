@@ -1,5 +1,15 @@
 const form = document.getElementById("orderACallForm");
-    
+
+const openModal = () => {
+    const modal = document.getElementById("orderCallFormModal");
+    modal.style.display = "flex";
+}
+
+const closeModal = () => {
+    const modal = document.getElementById("orderCallFormModal");
+    modal.style.display = "none";
+}  
+
 async function handleSubmit(event) {
     event.preventDefault();
     const status = document.getElementById("orderACallForm-status");
@@ -11,8 +21,21 @@ async function handleSubmit(event) {
         }
     });
     if (response.ok) {
-        status.innerHTML = "Thanks for your submission!";
-        form.reset()
+        openModal();
+        form.reset();
     }
 }
-form.addEventListener("submit", handleSubmit)
+
+function attachFormEventListeners() {
+    form.addEventListener("submit", handleSubmit)
+
+    const closeButtons = document.getElementsByClassName("order-call-modal__message-btn-fro-close");
+    
+    Array.from(closeButtons).forEach(button => {
+        button.addEventListener("click", () => {
+            closeModal();
+        });
+    });
+}
+
+attachFormEventListeners();
