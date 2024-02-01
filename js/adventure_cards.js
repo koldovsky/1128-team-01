@@ -1,45 +1,5 @@
-// const response = await fetch('json/adventure_cards.json');
-// const adventureCards = await response.json();
-const adventureCards =[
-    {
-        "id": 1,
-        "src": "img/adventures/getaway.webp",
-        "alt": "Yosemite Gateway Horse Ranch",
-        "description": "Yosemite Gateway Horse Ranch \"Getaway\" Cottage"
-    },
-    {
-        "id": 2,
-        "src": "img/adventures/toulumne.webp",
-        "alt": "Tuolumne Meadows Lodge",
-        "description": "Tuolumne Meadows Lodge"
-    },
-    {
-        "id": 3,
-        "src": "img/adventures/sierra.webp",
-        "alt": "Sierra Sunrise Vacation Rentale",
-        "description": "Sierra Sunrise Vacation Rentale"
-    },
-    {
-        "id": 4,
-        "src": "img/adventures/evergreen.webp",
-        "alt": "Donya Marie's Cottage on Evergreen",
-        "description": "Donya Marie's Cottage on Evergreen"
-    },
-    {
-        "id": 5,
-        "src": "img/adventures/sierra-cottage.webp",
-        "alt": "Sierra Meadow Cottage",
-        "description": "Sierra Meadow Cottage"
-    },
-    {
-        "id": 6,
-        "src": "img/adventures/river-house.webp",
-        "alt": "Yosemite’s River House",
-        "description": "Yosemite’s River House"
-    }
-];
-
-renderAdventureCards(adventureCards);
+const response = await fetch('json/adventure_cards.json');
+const adventureCards = await response.json();
 
 function renderAdventureCards(adventureCards) {
     let adventureCardsHtml = '';
@@ -63,3 +23,28 @@ function renderAdventureCards(adventureCards) {
     });
     document.querySelector('.adventure__grid')?.insertAdjacentHTML('beforeend', adventureCardsHtml);
 }
+
+function openModal(path) {
+    const modal = document.getElementById("lightboxModal");
+    const element = document.querySelector('.lightbox-modal__image');
+    modal.style.display = "grid";
+    element.src = path;
+}
+
+function attachLightboxEventListeners() {
+    const closeButton = document.getElementsByClassName("lightbox-modal__close-button")[0];
+    closeButton.addEventListener("click", () => document.getElementById("lightboxModal").style.display = "none");
+   
+    const lightboxButtons = document.getElementsByClassName("image-wrapper-btn-lightbox");
+    
+    Array.from(lightboxButtons).forEach(button => {
+        button.addEventListener("click", () => {
+            const imagePath = button.previousElementSibling.getAttribute("src");
+            openModal(imagePath);
+        });
+    });
+}
+
+
+renderAdventureCards(adventureCards);
+attachLightboxEventListeners();
