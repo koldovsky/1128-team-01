@@ -33,6 +33,14 @@
   --about-checkbox-color: rgb(249, 130, 80);
   --obscure-background-color: rgba(35, 34, 33, 0.8);
   --description-text-color:rgb(189, 189, 189);
+  --order-call-form-input-outline-color: #3b99fc;
+  --order-call-modal-bg-color: #f2f4f7;
+  --order-call-modal-bg-color: rgba(240, 232, 232, 0.594);
+  --order-call-modal-massage-bg-color: #fff;
+  --order-call-modal-box-shadow: 0 1px 20px 0 rgba(100,110,130,0.16);
+  --order-call-modal-status-color: #f98250;
+  --order-call-modal-cross-color: #282520;
+
 }
 
 img {
