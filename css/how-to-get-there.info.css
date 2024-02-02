@@ -74,13 +74,13 @@
     font-size: 16px;
     line-height: 25.6px;
     max-width: 650px;
+    margin-bottom: 30px;
 }
 
 .description__train-title {
     font-family: "Circular Std Bold", sans-serif;
     font-size: 18px;
     margin-bottom: 15px;
-    margin-top: 30px;
 }
 
 .description__train-text {
@@ -93,34 +93,56 @@
 
 .pictures__how-to-get {
     display: flex;
-    max-width: 1450px;
+    align-items: stretch;
+    background-color: rgb(245, 245, 244);
+    justify-content: center;
+    height: 100%
 }
 
 .pictures__left-container,
 .pictures__right-container {
     display: flex;
     flex-direction: column;
+    max-width: 37%;
+    height: 100%;
+    box-sizing: border-box;
+    flex: 1;
 }
 
 .pictures__left-container {
-    flex: 1;
-
+    margin-right: 2rem;
+    margin-left: 2.5rem;
 }
 
 .pictures__right-container {
-    flex: 1;
+    margin-right: 2.5rem;
 }
 
-.pictures__house,
-.pictures__forest-coast,
-.pictures__cable-car {
-    width: 100%;
+.pictures__forest-coast {
+    height: 100%;
     border-radius: 15px;
     object-fit: cover;
-    max-height: 460px;
 }
 
 .pictures__house,
 .pictures__cable-car {
-    max-height: 230px;
+    max-height: 200px;
+    height: 48%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.pictures__cable-car {
+    margin-bottom: 1rem;
+}
+
+
+.map__how-to-get {
+    background-color: rgb(245, 245, 244);
+    padding-top: 80px;
+    width: 100%;
+}
+
+.map__yosemite {
+    width: 100%;
 }
