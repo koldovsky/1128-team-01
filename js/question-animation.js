@@ -1,5 +1,5 @@
-var callUsButton = document.querySelector(".questions__call-us");
-var reservationButton = document.querySelector(".questions__reservation");
+const callUsButton = document.querySelector(".questions__call-us");
+const reservationButton = document.querySelector(".questions__reservation");
 
 callUsButton.addEventListener("mouseover", function () {
   callUsButton.classList.add("animate-hover");

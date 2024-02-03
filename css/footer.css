@@ -6,13 +6,13 @@ footer .container {
 
 .footer__container {
   display: grid;
-  margin: 0 -15px;
+  margin: 0px;
   grid-template-areas: "logo nav nav_soc";
   grid-template-columns: 1fr 3fr 1fr;
 }
 
 .footer__logo {
-  grid-area: "logo";
+  grid-area: logo;
   width: 211px;
   height: 89px;
   margin: auto;
@@ -20,10 +20,10 @@ footer .container {
 }
 
 .footer__nav {
-  grid-area: "nav";
+  grid-area: nav;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   max-width: 100%;
   line-height: normal;
@@ -32,18 +32,17 @@ footer .container {
   font-style: normal;
 }
 .footer__social {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
+  display: block;
   margin: auto;
 }
 .footer__social p {
   font-size: 25px;
   font-weight: 500;
+  text-align: right;
 }
 
 .footer__logo_soc {
-  grid-area: "nav_soc";
+  grid-area: nav_soc;
   text-align: right;
   display: flex;
   width: 30px;
@@ -54,25 +53,28 @@ footer .container {
   align-items: right;
   cursor: pointer;
 }
-.soc__logo a{
-  display: flex;
+.soc__logo a {
+  display: inline-block;
   width: 30px;
   height: 30px;
-  margin: auto;
+
   color: #599673;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: right;
   align-items: right;
   cursor: pointer;
+  margin: auto;
 }
 .footer__span {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-size: 12px;
+  align-items: center;
   color: #282520 !important;
-
-  margin: 0 -15px;
+  margin-left: 40px;
+  margin-right: 70px;
+  margin-top: 20px;
   font-weight: 400;
 }
 .footer__nav a:visited {
@@ -127,7 +129,7 @@ footer .container {
     justify-content: end;
     margin: auto;
   }
-  .soc__logo img{
+  .soc__logo img {
     display: flex;
     width: 30px;
     height: 30px;
@@ -138,10 +140,14 @@ footer .container {
     align-items: right;
     cursor: pointer;
   }
-  .footer__span span{
+  .footer__span span {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: auto;
+  }
+
+  .footer__social p {
+    text-align: center;
   }
 }

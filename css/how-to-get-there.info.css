@@ -1,0 +1,181 @@
+.information__title {
+    text-align: center;
+    font-size: 39px;
+    font-family: "Circular Std Bold", sans-serif;
+    color: rgb(40, 37, 32);
+}
+
+.information__description {
+    text-align: center;
+    font-size: 19px;
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 35px;
+    margin-bottom: 70px;
+    line-height: 30.4px;
+}
+
+.information__how-to-get {
+    display: flex;
+    padding: 50px;
+    padding-bottom: 0px;
+    padding-top: 75px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0;
+    justify-content: center;
+    background-image: url('../img/how-to-get-info-background.jpg');
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: overlay;
+
+}
+
+.information__how-to-get-inner {
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 900px;
+}
+
+.description__car-image,
+.description__train-image {
+    color: #f98250;
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.description__white-circle-for-car,
+.description__white-circle-for-train {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.car,
+.train {
+    display: flex;
+    align-items: flex-start;
+}
+
+.description__car-title {
+    font-family: "Circular Std Bold", sans-serif;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.description__car-text {
+    margin-left: 20px;
+    font-size: 16px;
+    line-height: 25.6px;
+    max-width: 650px;
+    margin-bottom: 30px;
+}
+
+.description__train-title {
+    font-family: "Circular Std Bold", sans-serif;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.description__train-text {
+    margin-left: 20px;
+    font-size: 16px;
+    line-height: 25.6px;
+    max-width: 650px;
+    margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+    .pictures__how-to-get {
+        display: flex;
+        align-items: stretch;
+        background-color: rgb(249, 249, 249);
+        justify-content: center;
+        height: 100%;
+        max-height: 500px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .pictures__left-container,
+    .pictures__right-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 45%;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .pictures__left-container {
+        flex: 1;
+        margin-right: 2rem;
+        margin-left: 1rem;
+    }
+
+    .pictures__right-container {
+        flex: 1;
+        margin-right: 1rem;
+    }
+
+    .pictures__forest-coast {
+        height: 100%;
+        border-radius: 15px;
+        object-fit: cover;
+    }
+
+    .pictures__house,
+    .pictures__cable-car {
+        max-height: 100%;
+        height: 48%;
+        border-radius: 15px;
+        object-fit: cover;
+    }
+
+    .pictures__cable-car {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pictures__how-to-get {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pictures__left-container,
+    .pictures__right-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .pictures__forest-coast,
+    .pictures__cable-car,
+    .pictures__house {
+        width: 91%;
+        border-radius: 15px;
+        object-fit: cover;
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+    .pictures__cable-car{
+        margin-bottom: 20px;
+    }
+}
+
+.map__how-to-get {
+    background-color: rgb(255, 255, 255);
+    padding-top: 80px;
+    width: 100%;
+}
+
+.map__yosemite {
+    width: 100%;
+}
+

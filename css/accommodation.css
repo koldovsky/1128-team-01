@@ -1,9 +1,9 @@
 @import "accommodation-reservation.css";
 @import "header.css";
 @import "footer.css";
+@import "global.css";
 
 :root {
-  --background-color-section: rgba(183, 183, 183, 0.2);
   --price-color: #629673;
   --main-text-color: #3e3e3e;
   --button-reserve-color: #f98250;
@@ -12,8 +12,7 @@
 }
 
 body {
-  font-family: "Circular Std", Arial, Helvetica, sans-serif;
-  color: var(--main-text-color);
+  margin: 0;
 }
 
 img {
@@ -25,27 +24,58 @@ a {
   text-decoration: none;
 }
 
-.container {
+.list-header,
+.list-header-second,
+.button-to-push {
+  color: var(--main-text-color);
+  font-family: "Circular Std Bold", Arial, Helvetica, sans-serif;
+}
+
+.room-adventages,
+.cabin-include {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.river-chalet__inner,
+.lookout-lodge__inner,
+.smoky-view__inner,
+.mountain-haven__inner,
+.mountain-splash__inner {
   max-width: 1200px;
+  margin: auto;
+  line-height: 1;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.river-chalet,
+.lookout-lodge,
+.smoky-view,
+.mountain-haven,
+.mountain-splash {
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.river-chalet,
+.smoky-view,
+.mountain-splash,
+.header-name__rental {
+  background-image: url("../img/accommodation_background_dark.jpg");
+  background-size: contain;
+}
+
+.lookout-lodge,
+.mountain-haven {
+  background-image: url("../img/accommodation_background_light.jpg");
+  background-size: contain;
 }
 
 .header-name-text {
   align-items: center;
   font-size: 35px;
   text-align: center;
-}
-
-.river-chalet__main-cell {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-.river-chalet__inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: auto;
-  margin-left: 350px;
-  margin-right: 350px;
 }
 
 .river-chalet__list {
@@ -55,37 +85,11 @@ a {
   padding-right: 15px;
 }
 
-.lookout-lodge__main-cell {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-.lookout-lodge__inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: auto;
-  margin-left: 350px;
-  margin-right: 350px;
-}
-
 .lookout-lodge__list {
   display: grid;
   grid-template-rows: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.smoky-view__main-cell {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-.smoky-view__inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: auto;
-  margin-left: 350px;
-  margin-right: 350px;
 }
 
 .smoky-view__list {
@@ -95,37 +99,11 @@ a {
   padding-right: 15px;
 }
 
-.mountain-haven__main-cell {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-.mountain-haven__inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: auto;
-  margin-left: 350px;
-  margin-right: 350px;
-}
-
 .mountain-haven__list {
   display: grid;
   grid-template-rows: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.mountain-splash__main-cell {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-.mountain-splash__inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: auto;
-  margin-left: 350px;
-  margin-right: 350px;
 }
 
 .mountain-splash__list {
@@ -135,9 +113,10 @@ a {
   padding-right: 15px;
 }
 
-.cabin-include-test {
+.cabin-include {
   display: flex;
   flex-direction: column;
+  line-height: 3;
 }
 
 .list-header {
@@ -146,7 +125,7 @@ a {
 }
 
 .list-header-second {
-  font-size: 22px;
+  font-size: 25px;
   font-weight: bold;
 }
 
@@ -157,6 +136,7 @@ a {
 .room-adventages {
   display: flex;
   flex-direction: column;
+  line-height: 25.6px;
 }
 
 .river-chalet__photo-cell {
@@ -165,16 +145,14 @@ a {
 }
 
 .room__photo {
-  border-radius: 5%;
-  max-width: 1200px;
-  min-width: 272px;
-
+  border-radius: 4%;
+  min-width: 320px;
+  padding: 0 15px;
 }
 
 .orange-check-mark {
   padding-right: 20px;
-  display: inline;
-  width: 4%;
+  width: 40px;
 }
 
 .button-to-push {
@@ -182,25 +160,46 @@ a {
   padding: 15px 30px;
   background-color: var(--button-reserve-color);
   color: var(--button-reserve-text-color);
-  text-decoration: none;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
   border-radius: 25px;
-  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
-.background-image {
-  background-image: url("../img/accommodation_background.jpg");
-  background-size: auto;
-  width: 100%;
+.button-to-push:hover {
+  background-color: var(--button-reserve-hover);
 }
 
-.background-color {
-  background-color: var(--background-color-section);
-  background-size: auto;
-  width: 100%;
-}
-
-.background-color h2 {
+.header-name__rental {
+  padding-top: 80px;
   text-align: center;
+}
+
+@media (max-width: 769px){
+  .river-chalet__inner,
+  .lookout-lodge__inner,
+  .smoky-view__inner,
+  .mountain-haven__inner,
+  .mountain-splash__inner {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.cabin-include__details-first {
+  display: grid;
+  grid-template-columns: 0fr 4fr;
+  align-items: center;
+}
+
+.cabin-include__details-second {
+  display: grid;
+  grid-template-columns: 0fr 4fr;
+  align-items: center;
+}
+
+.cabin-include__details-third {
+  display: grid;
+  grid-template-columns: 0fr 4fr;
+  align-items: center;
 }
