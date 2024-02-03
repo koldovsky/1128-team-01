@@ -142,13 +142,6 @@
     }
 }
 
-@media screen and (min-width: 992px) {
-    .pictures__left-container,
-    .pictures__right-container {
-        max-width: 45%;
-    }
-}
-
 @media screen and (max-width: 768px) {
     .pictures__how-to-get {
         display: flex;
