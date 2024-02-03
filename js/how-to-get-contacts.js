@@ -1,17 +1,22 @@
-const form = document.getElementsByClassName("contact__form");
-let phoneNum = document.getElementById("phone-number");
-let userName = document.getElementById("name");
+const form = document.querySelector(".contact__form");
+const message = document.querySelector(".overlaybg")
+let phoneNum = document.querySelector(".phone-number");
+let userName = document.querySelector(".name");
+const submitButton = document.querySelector(".contact__submit")
+const okButton = document.querySelector(".messagebox__button")
+
 const maxUsernameLength = 5
 
-// form.addEventListener("submit", (e) => {
-//   e.preventDefault();
-//   validatInputs();
-// });
+form.addEventListener("submit", showMessageBox);
+okButton.addEventListener("click", hideMessageBox)
 
-// function validatInputs() {
-//     userName = userName.value.trim()
-//     phoneNum = userName.value.trim()
+function showMessageBox(event) {
+    event.preventDefault();
+    message.style.display = "flex";
+}
 
-//     if (userName.value.length > maxUsernameLength):
+function hideMessageBox() {
+    message.style.display = "none"
+}
 
-// }
+

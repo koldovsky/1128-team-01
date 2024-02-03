@@ -114,10 +114,11 @@ p.contact__description {
   left: 0;
   height: 100%;
   width: 100%;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-content: center;
   background: rgba(255, 255, 255, 0.5);
+  display: none;
   
 }
 
@@ -131,12 +132,9 @@ p.contact__description {
   padding-right: 32px;
   padding-top: 43px;
   border-radius: 3px;
-  /* position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-  /* display: flex;
-  justify-content: center; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .tick-icon {
@@ -145,22 +143,19 @@ p.contact__description {
   margin: 0 45% 33px 45%;
 }
 
-/* path {
-  fill: rgb(255, 111, 50);
-} */
-
-
 .messagebox__message {
   margin-bottom: 42px;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 42px;
+  text-align: center;
 }
 
 .messagebox__title {
   margin-bottom: 8px;
   font-size: 16px;
   font-weight: 1200;
+  text-align: center;
 }
 
 .messagebox__button {
