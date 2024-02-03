@@ -37,6 +37,7 @@
       <input
         type="text"
         name="name"
+        id="name"
         placeholder="Name*"
         class="contact__input"
         required
@@ -44,11 +45,20 @@
       <input
         type="text"
         name="phone-number"
+        id="phone-number"
         placeholder="Phone number*"
         class="contact__input"
         required
       />
       <input type="submit" value="Send" class="contact__submit" />
     </form>
+  </div>
+  <div class="overlaybg">
+    <div class="messagebox">
+      <object class="tick-icon" type="image/svg+xml" data="img/tick.svg"></object>
+      <h2 class="messagebox__title">Thank you!</h2>
+      <p class="messagebox__message">We will contact you shortly</p>
+      <button class="messagebox__button">Ok</button>
+    </div>
   </div>
 </section>
