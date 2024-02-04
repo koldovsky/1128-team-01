@@ -1,6 +1,6 @@
 /* Загальні стилі */
 .registration__form {
-  height: 100vh;
+  height: 80vh; /* Зменшуємо висоту форми на 20% */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,62 +20,153 @@
 }
 
 .container__accomodation {
-  width: 650px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 50px;
-  padding-top: 50px;
-  border: 1px solid #ddd;
+  width: 560px; /* 650px - 20% */
+  padding: 70px; /* 50px - 20% */
   background-color: #fff;
   border-radius: 10px;
   text-align: center;
-  height: 850px;
+  height: 720px; /* 850px - 20% */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-
-@media only screen and (max-width: 767px) {
-  .container__accomodation {
-    width: 90%;
-    height: auto;
-    padding: 20px;
-  }
-
-  h2 {
-    font-size: 30px;
-  }
-
-  p {
-    font-size: 16px;
-  }
-
-  input[type="text"],
-  input[type="tel"],
-  select {
-    font-size: 16px;
-    padding: 10px;
-  }
+.container__accomodation > * {
+  margin-bottom: 16px; /* Зменшуємо відступ між елементами на 20% */
 }
 
+input[type="text"],
+input[type="tel"],
+select {
+  width: 100%; 
+  padding: 12px; /* 15px - 20% */
+  margin-bottom: 16px; 
+  border-radius: 16px; /* Зменшуємо радіус на 20% */
+  font-size: 14.4px; /* 18px - 20% */
+  background-color: #f1f1f1; /* Задаємо колір фону */
+  color: #000; /* Задаємо колір тексту */
+  border: none;
+}
+
+select:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus {
+  background-color: #ddd; /* Задаємо темніший колір фону при фокусі */
+}
+
+select[name="cabintype"] {
+  background-color: #f1f1f1; /* Колір фону для cabin type */
+}
+
+select[name="cabintype"]:focus {
+  background-color: #ddd; /* Колір фону для cabin type при фокусі */
+}
+
+/* Додаткові стилі для полів вводу name, phone, checkin, checkout */
+input[type="text"][name="name"],
+input[type="tel"][name="phone"],
+input[type="text"][name="checkin"],
+input[type="text"][name="checkout"] {
+  background-color: #f1f1f1; /* Колір фону */
+}
+
+input[type="text"][name="name"]:focus,
+input[type="tel"][name="phone"]:focus,
+input[type="text"][name="checkin"]:focus,
+input[type="text"][name="checkout"]:focus {
+  background-color: #ddd; /* Колір фону при фокусі */
+}
 
 .container__button-registerbtn {
   background-color: #f98250;
   color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
+  padding: 12.8px 16px; /* 16px 20px - 20% */
+  margin: 6.4px 0; /* 8px 0 - 20% */
   border: none;
-  border-radius: 20px;
+  border-radius: 16px; /* Зменшуємо радіус на 20% */
   cursor: pointer;
   width: 100%;
   opacity: 0.9;
   transition: background-color 0.3s ease-in-out;
-  border-radius: 20px;
-  font-size: 18px;
+  font-size: 14.4px; /* 18px - 20% */
 }
 
 .container__button-registerbtn:hover {
   opacity: 1;
   background-color: rgb(89, 150, 115);
+}
+
+.container__custom-select-accomodation {
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.container__custom-select-accomodation select {
+  padding: 15px;
+  margin: 0 auto;
+  background: #f1f1f1;
+  font-size: 18px;
+  opacity: 0.9;
+  color: rgb(105, 101, 101);
+  height: 51.11px;
+}
+
+.container__custom-select-accomodation::after {
+  font-family: "Roboto";
+  position: absolute;
+  top: 50%;
+  font-size: 14.4px;
+  pointer-events: none;
+  color: #ddd;
+}
+
+.container__custom-select-accomodation select:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.container__custom-select-accomodation option {
+  background-color: #f1f1f1;
+  font-size: 14.4px;
+}
+
+p {
+  margin-top: 5px;
+  font-size: 22px;
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  font-size: 45px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Адаптація для екранів з шириною менше 768px */
+@media only screen and (max-width: 767px) {
+  .container__accomodation {
+    width: 70%; /* 90% - 20% */
+    padding: 16px; /* 20px - 20% */
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  select {
+    font-size: 12px; /* 16px - 20% */
+    padding: 20px; /* 10px - 20% */
+    margin-bottom: 20px; /* 10px - 20% */
+  }
+
+  h2 {
+    font-size: 36px; /* 45px - 20% */
+  }
+
+  p {
+    font-size: 17.6px; /* 22px - 20% */
+  }
+
+  .container__custom-select-accomodation .container__button-registerbtn {
+    padding: 11.2px 11.2px; /* 14px 14px - 20% */
+    font-size: 12px; /* 16px - 20% */
+  }
 }
