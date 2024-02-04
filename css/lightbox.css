@@ -6,7 +6,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
+  overflow: hidden;
   background-color: rgba(0, 0, 0, 0.854);
 }
 
@@ -18,6 +18,7 @@
 }
 
 .lightbox-modal__image-wrapper {
+  z-index: -100;
   margin: auto;
   margin-top: 27px;
   max-width: 90%;
@@ -31,17 +32,44 @@
   object-fit: cover;
 }
 
-.lightbox-modal__close-button {
-  background: url("../img/close_button.svg") no-repeat center;
-  position: absolute; 
-  top: 4px; 
-  right: 25px; 
+.lightbox-modal__toolbar {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  right: 20px;
+  top: 5px;
+}
+
+.lightbox-modal__toolbar-item {
   width: 40px;
-  height: 40px;
+  height: 40px; 
   border: none;
+}
+
+.lightbox-modal__zoomin-button {
+  background: url("../img/adventure-lightbox/zoomin.svg") no-repeat center;
+  opacity: 0.5;
+}
+
+
+.lightbox-modal__zoomout-button {
+  background: url("../img/adventure-lightbox/zoomout.svg") no-repeat center;
+  opacity: 0.5;
+}
+
+.lightbox-modal__close-button {
+  background: url("../img/adventure-lightbox/close_button.svg") no-repeat center;
   opacity: 0.7;
 }
 
 .lightbox-modal__close-button:hover {
+  opacity: 1;
+}
+
+.toolbar-button-hover {
+  opacity: 0.7;
+}
+
+.toolbar-button-hover:hover {
   opacity: 1;
 }
