@@ -79,7 +79,7 @@ header {
   margin: auto;
   padding: 30px 75px;
   display: grid;
-  grid-template-columns: ( 2fr 3fr 2fr 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
@@ -87,6 +87,7 @@ header {
 
 .header__logo {
   grid-column: 2;
+  margin: auto;
   display: block;
   overflow-wrap: break-word;
   box-sizing: border-box;
@@ -99,14 +100,12 @@ header {
   margin-left:-50px ;
   display: flexbox;
   text-align: center;
-  color: #282520;
+  color: var(--font-standard-color);
   line-height: 1.18;
   font-size: 16px;
   font-feature-settings: normal;
   font-optical-sizing: auto;
-
   font-stretch: 100%;
-
   font-weight: 500;
   text-transform: none;
   text-decoration: none;
@@ -117,6 +116,7 @@ header {
 .header__contacts {
   grid-column: 3;
   display: flex;
+  margin: auto;
   flex-direction: column;
   font-size: 16px;
   font-stretch: 100%;
@@ -150,6 +150,9 @@ header {
   .header__contacts {
     display: none;
   }
+  .header__logo{
+    margin: 0
+  }
 
   .header__adress {
     display: none;
@@ -179,6 +182,9 @@ header {
   }
   .header__contacts {
     display: none;
+  }
+  .header__logo{
+    margin: 0
   }
 
   .header__adress {
