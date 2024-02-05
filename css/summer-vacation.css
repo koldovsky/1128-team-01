@@ -63,3 +63,9 @@
     height: 100%;
     min-height: 240px;
 }
+
+@media (min-width: 767px) {
+    .vacation {
+        flex-direction: row;
+    }
+}

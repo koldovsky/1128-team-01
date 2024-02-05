@@ -1,6 +1,22 @@
 <div id="lightboxModal" class="lightbox-modal">
     <div class="lightbox-modal__header">
-        <button class="lightbox-modal__close-button"></button>
+        <div class="lightbox-modal__toolbar">
+            <div class="lightbox-modal__toolbar-zoomin-tool">
+                <button 
+                id="lightboxZoomInButton"
+                class="lightbox-modal__zoomin-button 
+                lightbox-modal__toolbar-item
+                toolbar-button-hover"></button>
+            </div>
+            <div class="lightbox-modal__toolbar-zoomout-tool">
+                <button 
+                id="lightboxZoomOutButton"
+                class="lightbox-modal__zoomout-button lightbox-modal__toolbar-item"></button>
+            </div>
+            <div class="lightbox-modal__toolbar-close-tool">
+                <button class="lightbox-modal__close-button lightbox-modal__toolbar-item"></button>
+            </div>
+        </div>
     </div>
     <div class="lightbox-modal__image-wrapper">
         <img

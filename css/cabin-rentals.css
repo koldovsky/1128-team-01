@@ -140,7 +140,7 @@
 }
 
 .cabin-rentals__general-button-link:hover,
-.cabin-rentals__general-button-link:active{
+.cabin-rentals__general-button-link:active {
   background-color: var(--classic-white);
   border: none;
   color: var(--font-standard-color);
