@@ -89,6 +89,11 @@ p.contact__description {
   width: 100%;
 }
 
+.contact__input:focus {
+  outline: auto;
+  outline-color: var(--order-call-form-input-outline-color);
+}
+
 .contact__submit {
   color: var(--classic-white);
   border-radius: 34px;
@@ -114,7 +119,6 @@ p.contact__description {
   left: 0;
   height: 100%;
   width: 100%;
-  /* display: flex; */
   justify-content: center;
   align-content: center;
   background: rgba(255, 255, 255, 0.5);
@@ -122,10 +126,10 @@ p.contact__description {
   
 }
 
-.messagebox {
+.modal-window {
   color: black;
   background-color: var(--classic-white);
-  width: 280px;
+  min-width: 344px;
   margin: auto;
   padding-bottom: 65px;
   padding-left: 32px;
@@ -133,17 +137,19 @@ p.contact__description {
   padding-top: 43px;
   border-radius: 3px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .tick-icon {
   width: 34px;
   height: 34px;
-  margin: 0 45% 33px 45%;
+  margin: 0 auto 33px
 }
 
-.messagebox__message {
+.modal-window__message {
   margin-bottom: 42px;
   font-size: 16px;
   font-weight: 400;
@@ -151,14 +157,14 @@ p.contact__description {
   text-align: center;
 }
 
-.messagebox__title {
+.modal-window__title {
   margin-bottom: 8px;
   font-size: 16px;
   font-weight: 1200;
   text-align: center;
 }
 
-.messagebox__button {
+.modal-window__button {
   width: 210px;
   height: 36px;  
   color: var(--classic-white);
