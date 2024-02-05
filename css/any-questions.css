@@ -37,7 +37,6 @@
     background-color: var(--obscure-background-color);
     display: flex;
     flex-direction: column;
-    display: flex;
     align-items: center;
     justify-content: center;
 }

@@ -32,6 +32,7 @@
   --how-to-get-contacts-bg-color: #787777;
   --about-checkbox-color: rgb(249, 130, 80);
   --obscure-background-color: rgba(35, 34, 33, 0.8);
+  --obscure-background-color-two: rgba(0, 0, 0, 0.5);
   --description-text-color:rgb(189, 189, 189);
   --button-color:rgb(249, 130, 80);
   --order-call-form-input-outline-color: #3b99fc;
@@ -41,7 +42,7 @@
   --order-call-modal-box-shadow: 0 1px 20px 0 rgba(100,110,130,0.16);
   --order-call-modal-status-color: #f98250;
   --order-call-modal-cross-color: #282520;
-
+  --form-element-background-color: rgba(93, 90, 90, 0.934);
 }
 
 img {
