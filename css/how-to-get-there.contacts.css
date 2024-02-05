@@ -140,7 +140,7 @@ p.contact__description {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  position: relative;
 }
 
 .tick-icon {
@@ -173,6 +173,32 @@ p.contact__description {
   font-size: 12px;
   font-weight: 600;
   border-width: 0;
+}
+
+.modal-window__close-btn{
+  background: none;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 16px;
+    right: 24px;
+    padding: 4px;
+  border-width: 0;
+}
+
+.modal-window__close-btn::before,
+.modal-window__close-btn::after {
+  background-color: var(--order-call-modal-cross-color);
+  transform: rotate(-45deg);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+}
+
+.modal-window__close-btn::after {
+  transform: rotate(45deg);
 }
 
 @media (min-width: 765px) {
