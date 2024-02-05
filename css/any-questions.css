@@ -45,14 +45,21 @@
     all: unset;
     padding-top: 13px;
     padding-bottom: 13px;
+    padding-left: 15px;
     border-radius: 20px;
     width: 100%;
     background-color: var(--form-element-background-color);
-    color: gray;
+}
+
+.question-tab__entry-field::placeholder {
+    color: var(--description-text-color);
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
 }
 
 .question-tab__label {
-    padding: 0 30px;
+    padding-left: 30px;
+    padding-right: 45px;
     width: 100%;
 }
 
@@ -63,4 +70,38 @@
 
 .phone-number {
     padding-bottom: 60px;
+}
+
+.question-tab__button-container {
+    padding: 0 30px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.question-tab__send-button {
+    all: unset;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 20px;
+    width: 100%;
+    background-color: var(--button-color);
+    text-align: center;
+    font-weight: bold;
+    color: var(--classic-white);
+}
+
+.question-tab__send-button:hover,
+.question-tab__send-button:active{
+  background-color: var(--classic-white);
+  color: var(--font-standard-color);
+  transition: color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+
+@media(min-width: 767px) {
+    .question-tab {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+    }
 }
