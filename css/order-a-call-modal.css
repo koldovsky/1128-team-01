@@ -1,0 +1,110 @@
+.order-call-modal {
+    position: fixed;
+    display: none;
+    z-index: 9999;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    opacity: 1;
+    transition: opacity .5s ease-out;
+    background-color: var(--order-call-modal-bg-color);
+}
+
+.order-call-modal__message {
+    background-color: var(--classic-white);
+    opacity: 1;
+    position: relative;
+    min-width: 344px;
+    margin: auto;
+    border-radius: 3px;
+    box-shadow: var(--order-call-modal-box-shadow);
+    transition: opacity .3s ease-out;
+    width: 329px;
+    padding: 43px 32px 65px;
+}
+
+.order-call-modal__content {
+    text-align: center;
+}
+
+.order-call-modal__status {
+    display: flex;
+    width: 34px;
+    height: 34px;
+    margin: 0 auto 33px;
+    align-items: center;
+    justify-content: center;
+    color: var(--order-call-modal-status-color);
+    margin-bottom: 30px;
+}
+
+
+.order-call-modal__status > svg {
+    fill: currentColor;
+    width: 100%;
+    height: 100%;
+}
+
+.order-call-modal__title {
+    font-size: 18px;
+    font-family: "Circular Std Bold", serif;
+    font-weight: 700;
+    margin-bottom: 11px;
+
+}
+
+.order-call-modal__text {
+    margin-bottom: 42px;
+    font-size: 16px;
+    font-family: "Roboto", serif;
+    line-height: 1.43;
+}
+
+.order-call-modal__message-btn {
+    color: var(--classic-white);
+    width: 210px;
+    height: 36px;
+    border-radius: 34px;
+    border: 0;
+    font-size: 13px;
+    font-family: "Circular Std Bold", serif;
+    background-color: var(--form-submit-button-bg-color);
+}
+
+.order-call-modal__message-close-btn {
+    background: none;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 16px;
+    right: 24px;
+    padding: 4px;
+    opacity: .8;
+    transition: opacity .2s ease-out;
+    border: none;
+}
+
+.order-call-modal__message-close-btn::before,
+.order-call-modal__message-close-btn::after {
+    background-color: var(--order-call-modal-cross-color);
+    transform: rotate(-45deg);
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+}
+.order-call-modal__message-close-btn::after {
+    transform: rotate(45deg);
+
+}
+
+.order-call-modal__message-close-btn:hover {
+    opacity: 1;
+}
+

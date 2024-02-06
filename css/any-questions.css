@@ -1,0 +1,107 @@
+.question-tab {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    position: relative;
+    padding: 80px 24px;
+    color: var(--classic-white);
+}
+
+.question-tab::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(var(--obscure-background-color-two), var(--obscure-background-color-two)), url(../img/any_question_background.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.question-tab__title {
+    font-family: "Circular Std Bold", serif;
+    font-size: 34px;
+    padding-bottom: 35px;
+}
+
+.question-tab__text {
+    font-size: 19px;
+    line-height: 26px;
+}
+
+.question-tab__form-block {
+    margin-top: 50px;
+    background-color: var(--obscure-background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.question-tab__entry-field {
+    all: unset;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+    border-radius: 20px;
+    width: 100%;
+    background-color: var(--form-element-background-color);
+}
+
+.question-tab__entry-field::placeholder {
+    color: var(--description-text-color);
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+}
+
+.question-tab__label {
+    padding-left: 30px;
+    padding-right: 45px;
+    width: 100%;
+}
+
+.name {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.phone-number {
+    padding-bottom: 60px;
+}
+
+.question-tab__button-container {
+    padding: 0 30px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.question-tab__send-button {
+    all: unset;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 20px;
+    width: 100%;
+    background-color: var(--button-color);
+    text-align: center;
+    font-weight: bold;
+    color: var(--classic-white);
+}
+
+.question-tab__send-button:hover,
+.question-tab__send-button:active{
+  background-color: var(--classic-white);
+  color: var(--font-standard-color);
+  transition: color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+
+@media(min-width: 767px) {
+    .question-tab {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+    }
+}

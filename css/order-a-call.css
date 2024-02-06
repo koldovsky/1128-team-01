@@ -118,6 +118,12 @@
     border-radius: 34px;
     font-size: 14px;
     padding: 16px 24px;
+
+}
+
+.form__input:focus {
+    outline: auto;
+    outline-color: var(--order-call-form-input-outline-color);
 }
 
 .ordercall__form-submit-button {
