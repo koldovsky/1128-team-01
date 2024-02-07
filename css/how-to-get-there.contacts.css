@@ -114,7 +114,7 @@ p.contact__description {
 }
 
 .overlaybg {
-  position:fixed;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
@@ -151,10 +151,6 @@ p.contact__description {
   margin: 0 auto 33px;
 }
 
-.tick-icon__svg{
-  fill: var(--how-to-get-modal-tick-icon)
-}
-
 .modal-window__message {
   margin-bottom: 42px;
   font-size: 16px;
@@ -172,7 +168,7 @@ p.contact__description {
 
 .modal-window__button {
   width: 210px;
-  height: 36px;  
+  height: 36px;
   color: var(--classic-white);
   border-radius: 34px;
   background-color: var(--form-submit-button-bg-color);
@@ -181,14 +177,14 @@ p.contact__description {
   border-width: 0;
 }
 
-.modal-window__close-btn{
+.modal-window__close-btn {
   background: none;
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    top: 16px;
-    right: 24px;
-    padding: 4px;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 16px;
+  right: 24px;
+  padding: 4px;
   border-width: 0;
 }
 
@@ -252,7 +248,7 @@ p.contact__description {
     padding-right: 15px;
     width: 30%;
     display: inline-block;
-  }  
+  }
 }
 
 @media (min-width: 990px) {
