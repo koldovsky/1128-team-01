@@ -20,5 +20,5 @@ function collectData() {
     if(err) throw err;
   });
 
-  document.querySelector("question-tab__form-block").reset();
+  document.querySelector(".question-tab__form-block").reset();
 }
