@@ -1,24 +1,24 @@
-import {readFileSync, writeFileSync} from 'fs';
-import { json } from 'stream/consumers';
+document.addEventListener("partialsLoaded", () => {
 
-function collectData() {
-  const name = document.getElementById("name").value;
-  const phoneNumber = document.getElementById("phone-number").value;
-  const dataObject = {
-    name: name,
-    "phone-number": phoneNumber,
-  };
+  const existingData = JSON.parse(localStorage.getItem("Clients")) || [];
 
-  const jsonFile = readFileSync("../json/people-to-call.json");
-  const jsonData = JSON.parse(jsonFile);
+  function collectData() {
+    const name = document.getElementById("name").value;
+    const phoneNumber = document.getElementById("phone-number").value;
+    const dataObject = {
+      name: name,
+      "phone-number": phoneNumber,
+    };
+    existingData.push(dataObject);
 
-  jsonData.push(dataObject)
+    localStorage.setItem("Clients", JSON.stringify(existingData));
 
-  const jsonString = JSON.stringify(jsonData);
+    document.querySelector(".question-tab__form-block").reset();
+  }
 
-  writeFileSync("../json/people-to-call.json", jsonString, "utf-8", (err) => {
-    if(err) throw err;
-  });
+  document
+    .querySelector(".question-tab__send-button")
+    .addEventListener("click", collectData);
+});
 
-  document.querySelector("question-tab__form-block").reset();
-}
+// .addEventListener("click", (event) => event.preventDefault())
