@@ -122,8 +122,10 @@ p.contact__description {
   justify-content: center;
   align-content: center;
   background: rgba(255, 255, 255, 0.5);
-  display: none;
-  
+  display: flex;
+  transform: scale(0);
+  top: -100vh;
+  transition: top 1s ease, transform 1s ease;
 }
 
 .modal-window {
@@ -146,7 +148,11 @@ p.contact__description {
 .tick-icon {
   width: 34px;
   height: 34px;
-  margin: 0 auto 33px
+  margin: 0 auto 33px;
+}
+
+.tick-icon__svg{
+  fill: var(--how-to-get-modal-tick-icon)
 }
 
 .modal-window__message {
@@ -194,6 +200,7 @@ p.contact__description {
   position: absolute;
   width: 100%;
   height: 2px;
+  opacity: 0.8;
   left: 0;
 }
 
