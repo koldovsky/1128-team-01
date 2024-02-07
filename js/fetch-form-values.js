@@ -9,10 +9,8 @@ function collectData() {
     "phone-number": phoneNumber,
   };
 
-  document.getElementsByClassName("question-tab__form-block").reset();
-
   const jsonFile = readFileSync("../json/people-to-call.json");
-  const jsonData = json.parse(jsonFile);
+  const jsonData = JSON.parse(jsonFile);
 
   jsonData.push(dataObject)
 
@@ -21,4 +19,6 @@ function collectData() {
   writeFileSync("../json/people-to-call.json", jsonString, "utf-8", (err) => {
     if(err) throw err;
   });
+
+  document.querySelector("question-tab__form-block").reset();
 }
