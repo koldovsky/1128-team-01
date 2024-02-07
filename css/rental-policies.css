@@ -7,6 +7,7 @@
     text-align: center;
     font-family: "Circular Std Bold", serif;
     font-size: 39px;
+    height: 40px;
 }
 
 .rental_policies__small_title {
@@ -74,6 +75,23 @@
     padding: 0 24px;
 }
 
+.rental_policies__js_timer {
+    text-align: center;
+    font-family: "Circular Std Bold", serif;
+    font-size: 39px;
+    height: 40px;
+    color: var(--form-adventures-text-color);
+}
+
+.rental_policies__js_timer_color {
+    color: var(--btns-border-bottom-active);
+    font-size: 38px;
+}
+
+.rental_policies__js_title {
+    color: var(--form-adventures-text-color);
+    font-size: 40px;
+}
 
 .rental_policies__reference_number:visited {
     color: var(--form-submit-button-hover-bg-color);
