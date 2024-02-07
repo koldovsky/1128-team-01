@@ -1,11 +1,7 @@
 .vacation {
-  display: flex;
-  flex-direction: column;
-  background-image: url(../img/about_summer_background.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: local;
+  display: grid;
+  grid-template-columns: 1fr;
+
   padding: 80px 24px;
 }
 
@@ -54,19 +50,27 @@
 }
 
 .vacation__img-container {
-  margin-top: 40px;
-  min-height: 240px;
-  max-width: 715px;
-  max-height: 645px;
+  padding: 0 15px;
+  min-width: 300px;
+  margin-top: 50px;
+  border-radius: 10px;
+  justify-content: center;
+  display: flex;
+}
+
+.vacation_background {
+  background-image: url(../img/about_summer_background.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: local;
 }
 
 .vacation__img-container img {
+  margin: auto;
   border-radius: 10px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
+}
 /* @media (min-width: 767px) {
     .vacation {
         flex-direction: row;
@@ -88,6 +92,5 @@
   }
   .vacation__img-container img {
     object-fit: contain;
-    border-radius: 10px;
   }
 }
