@@ -1,30 +1,30 @@
 .spa {
-    padding: 80px 24px;
-    background-image: url(../img/about_spa_background.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: local;
+  padding: 80px 24px;
+  background-image: url(../img/about_spa_background.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: local;
 }
 
 .spa__title {
-    font-size: 22px;
-    font-family: "Circular Std Bold", inherit;
-    padding-bottom: 10px;
-    text-align: center;
+  font-size: 22px;
+  font-family: "Circular Std Bold", inherit;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
 .spa__text {
-    font-size: 16px;
-    font-family: "Roboto", sans-serif;
-    text-align: center;
-    line-height: 25px;
-    padding-bottom: 30px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  line-height: 25px;
+  padding-bottom: 30px;
 }
 
 .spa__image img {
-    border-radius: 10px;
-    width: 100%;
-    object-fit: cover;
-    aspect-ratio: 1/0.4;
+  border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/0.4;
 }
