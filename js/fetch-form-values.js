@@ -22,5 +22,3 @@ function collectData() {
     if(err) throw err;
   });
 }
-
-collectData();
