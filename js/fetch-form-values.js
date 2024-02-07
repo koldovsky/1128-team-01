@@ -20,5 +20,3 @@ document.addEventListener("partialsLoaded", () => {
     .querySelector(".question-tab__send-button")
     .addEventListener("click", collectData);
 });
-
-// .addEventListener("click", (event) => event.preventDefault())

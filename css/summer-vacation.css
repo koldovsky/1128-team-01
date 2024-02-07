@@ -71,18 +71,6 @@
   border-radius: 10px;
 
 }
-/* @media (min-width: 767px) {
-    .vacation {
-        flex-direction: row;
-        align-items: start;
-    }
-    .vacation__img-container {
-        padding-left: 30px;
-    }
-    .vacation__list-and-text-container {
-        min-width: 400px;
-    }
-} */
 
 @media (min-width: 767px) {
   .vacation {
