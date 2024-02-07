@@ -114,7 +114,7 @@ p.contact__description {
 }
 
 .overlaybg {
-  position:fixed;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
@@ -122,8 +122,10 @@ p.contact__description {
   justify-content: center;
   align-content: center;
   background: rgba(255, 255, 255, 0.5);
-  display: none;
-  
+  display: flex;
+  transform: scale(0);
+  top: -100vh;
+  transition: top 1s ease, transform 1s ease;
 }
 
 .modal-window {
@@ -140,13 +142,13 @@ p.contact__description {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  position: relative;
 }
 
 .tick-icon {
   width: 34px;
   height: 34px;
-  margin: 0 auto 33px
+  margin: 0 auto 33px;
 }
 
 .modal-window__message {
@@ -166,13 +168,40 @@ p.contact__description {
 
 .modal-window__button {
   width: 210px;
-  height: 36px;  
+  height: 36px;
   color: var(--classic-white);
   border-radius: 34px;
   background-color: var(--form-submit-button-bg-color);
   font-size: 12px;
   font-weight: 600;
   border-width: 0;
+}
+
+.modal-window__close-btn {
+  background: none;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 16px;
+  right: 24px;
+  padding: 4px;
+  border-width: 0;
+}
+
+.modal-window__close-btn::before,
+.modal-window__close-btn::after {
+  background-color: var(--order-call-modal-cross-color);
+  transform: rotate(-45deg);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  opacity: 0.8;
+  left: 0;
+}
+
+.modal-window__close-btn::after {
+  transform: rotate(45deg);
 }
 
 @media (min-width: 765px) {
@@ -219,7 +248,7 @@ p.contact__description {
     padding-right: 15px;
     width: 30%;
     display: inline-block;
-  }  
+  }
 }
 
 @media (min-width: 990px) {
