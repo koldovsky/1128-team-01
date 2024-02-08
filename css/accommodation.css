@@ -15,13 +15,9 @@ body {
   margin: 0;
 }
 
-img {
-  width: 100%;
-  display: block;
-}
-
-a {
-  text-decoration: none;
+h2 {
+  font-size: 44px;
+  color: var(--main-text-color);
 }
 
 .list-header,
@@ -175,17 +171,6 @@ a {
   text-align: center;
 }
 
-@media (max-width: 769px){
-  .river-chalet__inner,
-  .lookout-lodge__inner,
-  .smoky-view__inner,
-  .mountain-haven__inner,
-  .mountain-splash__inner {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
 .cabin-include__details-first {
   display: grid;
   grid-template-columns: 0fr 4fr;
@@ -202,4 +187,28 @@ a {
   display: grid;
   grid-template-columns: 0fr 4fr;
   align-items: center;
+}
+
+@media (max-width: 769px){
+  .river-chalet__inner,
+  .lookout-lodge__inner,
+  .smoky-view__inner,
+  .mountain-haven__inner,
+  .mountain-splash__inner {
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .river-chalet__list,
+  .lookout-lodge__list,
+  .smoky-view__list,
+  .mountain-haven__list,
+  .mountain-splash__list {
+    margin-top: 50px;
+  }
 }
