@@ -1,43 +1,98 @@
-.guests{
+.guests {
     min-width: 320px;
-    max-width: 1900px;
-    padding: 100px  0px 0px;   
+    max-width: 100%; 
+    padding: 100px 0px 0px 0px;   
+    box-sizing: border-box; 
 }
 
-.guests-background{
+/* .guests img {
+    width: 50%; 
+    display: block; 
+} */
+
+.guests img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+
+
+.guests-background {
     background-image: url("../img/about_background_picture_with_annotetion.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 80px;
 }
 
-.guests__title{
+.guests__title {
     font-family: "Circular Std Bold";
     font-size: 39px;
     color: var(--classic-white);
-    display: flex;
-    justify-content: center;
+    text-align: center; 
     margin-bottom: 35px;
 }
 
-.guests__carousel-items {
-    display: flex; 
-    justify-content: space-between; 
-}
 
-picture .guests__carousel-pic {
-    display: block; 
-    flex-grow: 0;
-    max-width: 100%; 
-    height: 284.45px; 
+.guests__carousel {
+    position: relative; 
     overflow: hidden; 
-    margin: 0 5px; 
-    flex-shrink: 0;
 }
 
-.img {
+.guests__carousel-btn-back,
+.guests__carousel-btn-next {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: var(--classic-white);
+    cursor: pointer;
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+.guests__carousel-btn-back {
+    left: 0; 
+}
+
+.guests__carousel-btn-next {
+    right: 0; 
+}
+
+
+
+.guests__carousel-items {
+    display: flex;
+    transition: transform 0.3s ease;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+    justify-content: flex-start;
+    justify-content: center; 
+    align-items: flex-end;
+    gap: 0px;
+    overflow: hidden;
+}
+
+
+.guests__carousel-items > div {
+    display: flex; 
+    flex-shrink: 0; 
+    margin: 0;
+    width: 100%;
+    width: 446px; 
+    height: 385px; 
+    overflow: hidden; 
+}
+
+
+.guests__carousel-items img {
+    margin: 0;
+    padding: 0;
     width: 100%; 
-    height: auto; 
+    height: 100%;
+    width: 100%; 
+    /* height: auto;   */
     object-fit: cover; 
 }
 
