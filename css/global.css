@@ -43,6 +43,7 @@
   --order-call-modal-status-color: #f98250;
   --order-call-modal-cross-color: #282520;
   --form-element-background-color: rgba(93, 90, 90, 0.934);
+  --how-to-get-modal-overlay-color: rgba(255, 255, 255, 0.5);
 }
 
 img {

@@ -113,7 +113,17 @@ p.contact__description {
   background-color: var(--form-submit-button-hover-bg-color);
 }
 
-.overlaybg {
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--how-to-get-modal-overlay-color);
+  display: none;
+}
+
+.modal-window__wrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -121,11 +131,10 @@ p.contact__description {
   width: 100%;
   justify-content: center;
   align-content: center;
-  background: rgba(255, 255, 255, 0.5);
   display: flex;
   transform: scale(0);
   top: -100vh;
-  transition: top 1s ease, transform 1s ease;
+  transition: top 0.5s ease, transform 0.5s ease;
 }
 
 .modal-window {

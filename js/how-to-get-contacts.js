@@ -1,11 +1,11 @@
 const form = document.querySelector(".contact__form");
-const message = document.querySelector(".overlaybg");
+const message = document.querySelector(".modal-window__wrapper");
 const phoneField = document.querySelector(".phone-number");
 const userNameField = document.querySelector(".name");
 const submitButton = document.querySelector(".contact__submit");
 const okButton = document.querySelector(".modal-window__button");
 const closeButton = document.querySelector(".modal-window__close-btn");
-
+const overlay = document.querySelector(".fullscreen-overlay")
 const maxUsernameLength = 5;
 
 form.addEventListener("submit", handleSubmit);
@@ -27,7 +27,13 @@ async function handleSubmit(event) {
   }
 }
 
+// function handleSubmit(event) {
+//   event.preventDefault();
+//   showModalWindow();
+// }
+
 function showModalWindow() {
+  overlay.style.display = "block"
   message.style.transform = "scale(1)";
   message.style.top = "0vh";
 }
@@ -35,6 +41,9 @@ function showModalWindow() {
 function hideModalWindow() {
   message.style.transform = "scale(0)";
   message.style.top = "-100vh";
+  setTimeout(() => {
+    overlay.style.display = "none";
+  }, 250);
 }
 
 function validateName() {
@@ -42,3 +51,4 @@ function validateName() {
     console.log("too long name");
   }
 }
+
