@@ -47,6 +47,4 @@ btnBack.addEventListener('click', nextSlide);
 
 renderSlide();
 
-// setInterval(nextSlide, 3000);
-
 window.addEventListener('resize', renderSlide)
