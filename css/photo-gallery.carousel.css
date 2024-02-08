@@ -95,3 +95,16 @@
     /* height: auto;   */
     object-fit: cover; 
 }
+
+
+@media (min-width: 990px){
+    .guests__title{
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 760px){
+    .guests__title{
+        font-size: 34px;
+    }
+}
